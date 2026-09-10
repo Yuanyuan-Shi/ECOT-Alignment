@@ -9,6 +9,7 @@ import numpy as np
 import tensorflow as tf
 from libero.libero import benchmark, get_libero_path
 from libero.libero.benchmark.mu_creation import *  # noqa
+from libero.libero.envs import OffScreenRenderEnv
 from libero.libero.envs.bddl_base_domain import BDDLUtils
 from libero.libero.envs.objects import get_object_dict
 from libero.libero.utils import task_generation_utils
@@ -23,13 +24,122 @@ from libero.libero.utils.task_generation_utils import (
     generate_bddl_from_task_info,
     register_task_info,
 )
-from libero.libero.envs import OffScreenRenderEnv
 from PIL import Image
+from robosuite.utils.camera_utils import get_camera_transform_matrix, project_points_from_world_to_camera
 
+from experiments.robot.libero.alignment_evaluator import ObjectState as AlignmentObjectState
+from experiments.robot.libero.alignment_evaluator import StepState, normalized_gripper_openness
 from experiments.robot.robot_utils import (
     DATE,
     DATE_TIME,
 )
+
+
+def _unwrap_libero_base(env):
+    """Return the underlying BDDL domain through ControlEnv / gym wrappers."""
+    current = env
+    seen = set()
+    while not hasattr(current, "object_states_dict"):
+        if id(current) in seen or not hasattr(current, "env"):
+            raise AttributeError("Could not find LIBERO object_states_dict while unwrapping environment")
+        seen.add(id(current))
+        current = current.env
+    return current
+
+
+def capture_alignment_state(env, obs, gripper_open_fraction=0.5):
+    """Capture evaluator state using ground-truth MuJoCo / LIBERO APIs."""
+    base = _unwrap_libero_base(env)
+    snapshots = {}
+    for name, object_state in base.object_states_dict.items():
+        try:
+            geom = object_state.get_geom_state()
+        except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+            continue
+        try:
+            joints = np.asarray(object_state.get_joint_state(), dtype=float).reshape(-1).tolist()
+        except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+            joints = []
+        if not joints:
+            try:
+                site_joints = base.object_sites_dict[name].joints
+                joints = [
+                    float(base.sim.data.qpos[base.sim.model.get_joint_qpos_addr(joint)]) for joint in site_joints
+                ]
+            except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+                joints = []
+        open_state = None
+        closed_state = None
+        try:
+            open_state = bool(object_state.is_open())
+            closed_state = bool(object_state.is_close())
+        except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+            pass
+        grasped = None
+        try:
+            model_object = base.get_object(name)
+            contact_geoms = getattr(model_object, "contact_geoms", None)
+            if contact_geoms is not None:
+                grasped = bool(base._check_grasp(base.robots[0].gripper, contact_geoms))
+        except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+            pass
+        snapshots[name] = AlignmentObjectState(
+            name=name,
+            position=np.asarray(geom["pos"], dtype=float).copy(),
+            joint_positions=joints,
+            grasped=grasped,
+            open_state=open_state,
+            closed_state=closed_state,
+        )
+
+    # Preserve explicit simulator relations. Failures remain unknown rather than guessed.
+    for name, snapshot in snapshots.items():
+        state = base.object_states_dict[name]
+        for other_name in snapshots:
+            if name == other_name:
+                continue
+            other_state = base.object_states_dict[other_name]
+            try:
+                if state.check_contact(other_state):
+                    snapshot.contacts.append(other_name)
+            except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+                pass
+            try:
+                if other_state.check_contain(state):
+                    snapshot.contained_by.append(other_name)
+            except (AttributeError, IndexError, KeyError, NotImplementedError, TypeError, ValueError):
+                pass
+
+    gripper_positions = np.asarray(obs.get("robot0_gripper_qpos", []), dtype=float).reshape(-1).tolist()
+    gripper_joint_limits = []
+    try:
+        for joint in base.robots[0].gripper.joints:
+            joint_id = base.sim.model.joint_name2id(joint)
+            gripper_joint_limits.append(np.asarray(base.sim.model.jnt_range[joint_id], dtype=float).tolist())
+    except (AttributeError, IndexError, KeyError, TypeError, ValueError):
+        gripper_joint_limits = []
+    gripper_openness = normalized_gripper_openness(gripper_positions, gripper_joint_limits)
+    gripper_open = None if gripper_openness is None else bool(gripper_openness >= gripper_open_fraction)
+    return StepState(
+        ee_position=np.asarray(obs["robot0_eef_pos"], dtype=float).copy(),
+        gripper_positions=gripper_positions,
+        gripper_open=gripper_open,
+        gripper_openness=gripper_openness,
+        gripper_joint_limits=gripper_joint_limits,
+        objects=snapshots,
+    )
+
+
+def project_world_trajectory(env, trajectory, image_shape, camera_name="agentview"):
+    """Project a world-frame XYZ trajectory into the flipped LIBERO RGB image."""
+    base = _unwrap_libero_base(env)
+    height, width = int(image_shape[0]), int(image_shape[1])
+    transform = get_camera_transform_matrix(base.sim, camera_name, height, width)
+    row_col = project_points_from_world_to_camera(
+        np.asarray(trajectory, dtype=float), transform, height, width
+    )
+    return np.stack((row_col[:, 1], row_col[:, 0]), axis=-1)
+
 
 def generate_mu_with_distractor_objects(mu_cls, min_distractors, max_distractors, distractor_seed):
     """Generate a version of the initial state distribution with distractor objects. The number and position of the
@@ -156,7 +266,7 @@ def generate_mu_with_distractor_objects(mu_cls, min_distractors, max_distractors
                         )
                     )
                     self.xy_region_kwargs_list = get_xy_region_kwargs_list_from_regions_info(self.regions)
-                    
+
             else:
                 super().define_regions()
 
@@ -309,6 +419,7 @@ def get_expanded_libero_env(
         env = ood_init_wrapper_cls(env)
 
     return env, task_description
+
 
 def get_libero_env(task, model_family, resolution=256):
     """Initializes and returns the LIBERO environment, along with the task description."""

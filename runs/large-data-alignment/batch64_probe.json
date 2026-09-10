@@ -1,0 +1,10 @@
+{
+  "batch_size": 64,
+  "microbatch_size": 32,
+  "gradient_accumulation_steps": 2,
+  "batches": 2,
+  "seconds": 5.307006359100342,
+  "peak_allocated_gb": 54.705724239349365,
+  "peak_reserved_gb": 62.87890625,
+  "passed": true
+}

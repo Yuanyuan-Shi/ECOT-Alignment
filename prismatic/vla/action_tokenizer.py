@@ -205,6 +205,10 @@ ACTION_TOKENIZERS = {
     "libero_vq_h9_extra_action_tokenizer": partial(
         VQActionTokenizer, vq_vae_path="vq/pretrain_vq+mx-libero_lm_90+fach-9+ng-7+nemb-256+nlatent-512", use_extra=True
     ),
+    # Compatibility name used by released/reproduced ECoT-Lite LIBERO checkpoints.
+    "libero_lm90_vq_h10_extra_action_tokenizer": partial(
+        VQActionTokenizer, vq_vae_path="vq/pretrain_vq+mx-libero_lm_90+fach-9+ng-7+nemb-256+nlatent-512", use_extra=True
+    ),
     # bridge
     "bridge_vq_extra_action_tokenizer": partial(
         VQActionTokenizer,

@@ -1,0 +1,83 @@
+{
+  "loss_version": "directional_hinge_pooled_net_stop_squared_v2",
+  "base_checkpoint": "/home/exx/Projects/ECOT-Alignment/artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+  "optimizer_steps": 2000,
+  "checkpoint": "/home/exx/Projects/ECOT-Alignment/runs/ecot-move-alignment/large-data-lambda1-b32-s2000/checkpoints/step-002000-move-lora.pt",
+  "training": {
+    "overall": {
+      "queries": 12666,
+      "mismatches": 298,
+      "rate": 0.02352755408179378,
+      "excluded": 427,
+      "stop_queries": 193,
+      "stop_mismatches": 1,
+      "directional_queries": 12473,
+      "directional_mismatches": 297
+    },
+    "successful": {
+      "queries": 8742,
+      "mismatches": 174,
+      "rate": 0.01990391214824983,
+      "excluded": 271,
+      "stop_queries": 22,
+      "stop_mismatches": 0,
+      "directional_queries": 8720,
+      "directional_mismatches": 174
+    },
+    "failed": {
+      "queries": 3924,
+      "mismatches": 124,
+      "rate": 0.03160040774719674,
+      "excluded": 156,
+      "stop_queries": 171,
+      "stop_mismatches": 1,
+      "directional_queries": 3753,
+      "directional_mismatches": 123
+    },
+    "directional_loss": 0.0007285502160881462,
+    "stop_loss": 0.13024945607731675,
+    "alignment_loss": 0.0027021436813666174,
+    "performance_loss": 0.011428488756832451,
+    "total_loss": 0.014130632438199068
+  },
+  "validation": {
+    "overall": {
+      "queries": 3123,
+      "mismatches": 125,
+      "rate": 0.04002561639449247,
+      "excluded": 106,
+      "stop_queries": 43,
+      "stop_mismatches": 0,
+      "directional_queries": 3080,
+      "directional_mismatches": 125
+    },
+    "successful": {
+      "queries": 2117,
+      "mismatches": 62,
+      "rate": 0.029286726499763816,
+      "excluded": 72,
+      "stop_queries": 2,
+      "stop_mismatches": 0,
+      "directional_queries": 2115,
+      "directional_mismatches": 62
+    },
+    "failed": {
+      "queries": 1006,
+      "mismatches": 63,
+      "rate": 0.06262425447316103,
+      "excluded": 34,
+      "stop_queries": 41,
+      "stop_mismatches": 0,
+      "directional_queries": 965,
+      "directional_mismatches": 63
+    },
+    "directional_loss": 0.005658544945408032,
+    "stop_loss": 0.04651712816815046,
+    "alignment_loss": 0.006221119098010633,
+    "performance_loss": 0.03123296076350796,
+    "total_loss": 0.037454079861518594
+  },
+  "merge_max_logit_error": 0.00039827823638916016,
+  "elapsed_seconds": 2718.938958644867,
+  "export_state_verified": true
+}

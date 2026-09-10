@@ -1,0 +1,14 @@
+{
+  "train": {
+    "queries": 1245,
+    "zero_vectors": 50,
+    "mismatch_floor_percent": 4.016064257028113,
+    "loss_floor": 0.004462293618920125
+  },
+  "validation": {
+    "queries": 312,
+    "zero_vectors": 9,
+    "mismatch_floor_percent": 2.8846153846153846,
+    "loss_floor": 0.0032051282051282055
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "base_checkpoint": "/home/exx/Projects/ECOT-Alignment/artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+  "optimizer_steps": 200,
+  "move_loss_weight": 0.1,
+  "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/0x47jhxh",
+  "retained_task_ids": [
+    0,
+    3,
+    9,
+    18,
+    35,
+    46,
+    73,
+    81,
+    84
+  ],
+  "checkpoint": "/home/exx/Projects/ECOT-Alignment/runs/ecot-move-alignment/ecot-lite-libero9-move-lora-r16-seed20260904/checkpoints/step-000200-move-lora.pt"
+}

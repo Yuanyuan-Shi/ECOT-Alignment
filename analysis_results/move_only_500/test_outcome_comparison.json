@@ -1,0 +1,38 @@
+{
+  "pretrained": {
+    "successful": {
+      "mismatches": 145,
+      "queries": 2225,
+      "percent": 6.51685393258427
+    },
+    "failed": {
+      "mismatches": 85,
+      "queries": 912,
+      "percent": 9.320175438596491
+    }
+  },
+  "Round 3 lambda 1, 200 steps": {
+    "successful": {
+      "mismatches": 91,
+      "queries": 2275,
+      "percent": 4.0
+    },
+    "failed": {
+      "mismatches": 64,
+      "queries": 643,
+      "percent": 9.953343701399689
+    }
+  },
+  "Mismatch only, 500 steps": {
+    "successful": {
+      "mismatches": 80,
+      "queries": 2259,
+      "percent": 3.5413899955732626
+    },
+    "failed": {
+      "mismatches": 40,
+      "queries": 692,
+      "percent": 5.780346820809249
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "optimizer_steps": 200,
+  "steps_per_epoch": 39,
+  "effective_batch_size": 32,
+  "warmup_steps": 20
+}

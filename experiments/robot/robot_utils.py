@@ -83,11 +83,12 @@ def get_image_resize_size(cfg):
     return resize_size
 
 
-def get_action(cfg, model, obs, task_label, processor=None, task_id=None):
+def get_action(cfg, model, obs, task_label, processor=None, task_id=None, info_dict=None):
     """Queries the model to get an action."""
     if cfg.model_family == "prismatic":
         action, reasoning = get_prismatic_vla_action(
-            model, processor, cfg.pretrained_checkpoint, obs, task_label, cfg.unnorm_key, center_crop=cfg.center_crop, task_id=task_id
+            model, processor, cfg.pretrained_checkpoint, obs, task_label, cfg.unnorm_key,
+            center_crop=cfg.center_crop, task_id=task_id, info_dict=info_dict
         )
         # assert action.shape == (ACTION_DIM,)
     elif cfg.model_family == "openvla":

@@ -1,0 +1,82 @@
+{
+  "base_checkpoint": "/home/exx/Projects/ECOT-Alignment/artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+  "optimizer_steps": 300,
+  "selected_step": 200,
+  "stop_reason": "validation patience exhausted",
+  "best_validation_rate": 0.026490066225165563,
+  "performance_loss_weight": 0.0,
+  "move_loss_weight": 1.0,
+  "training": {
+    "overall": {
+      "queries": 1211,
+      "mismatches": 15,
+      "rate": 0.012386457473162676,
+      "excluded": 40,
+      "stop_queries": 10,
+      "stop_mismatches": 0,
+      "directional_queries": 1201,
+      "directional_mismatches": 15
+    },
+    "successful": {
+      "queries": 900,
+      "mismatches": 13,
+      "rate": 0.014444444444444444,
+      "excluded": 31,
+      "stop_queries": 1,
+      "stop_mismatches": 0,
+      "directional_queries": 899,
+      "directional_mismatches": 13
+    },
+    "failed": {
+      "queries": 311,
+      "mismatches": 2,
+      "rate": 0.006430868167202572,
+      "excluded": 9,
+      "stop_queries": 9,
+      "stop_mismatches": 0,
+      "directional_queries": 302,
+      "directional_mismatches": 2
+    },
+    "directional_loss": 2.1931644067635254e-05,
+    "stop_loss": 0.0,
+    "alignment_loss": 2.1931644067635254e-05
+  },
+  "validation": {
+    "overall": {
+      "queries": 302,
+      "mismatches": 8,
+      "rate": 0.026490066225165563,
+      "excluded": 4,
+      "stop_queries": 5,
+      "stop_mismatches": 0,
+      "directional_queries": 297,
+      "directional_mismatches": 8
+    },
+    "successful": {
+      "queries": 223,
+      "mismatches": 6,
+      "rate": 0.026905829596412557,
+      "excluded": 3,
+      "stop_queries": 0,
+      "stop_mismatches": 0,
+      "directional_queries": 223,
+      "directional_mismatches": 6
+    },
+    "failed": {
+      "queries": 79,
+      "mismatches": 2,
+      "rate": 0.02531645569620253,
+      "excluded": 1,
+      "stop_queries": 5,
+      "stop_mismatches": 0,
+      "directional_queries": 74,
+      "directional_mismatches": 2
+    },
+    "directional_loss": 0.002950376600516264,
+    "stop_loss": 0.0,
+    "alignment_loss": 0.002950376600516264
+  },
+  "checkpoint": "/home/exx/Projects/ECOT-Alignment/runs/ecot-move-alignment/refined-stop-lr5e5-moveonly-seed20261102/checkpoints/step-000200-move-lora.pt",
+  "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/9qelqfkr",
+  "elapsed_training_seconds": 353.02511835098267
+}

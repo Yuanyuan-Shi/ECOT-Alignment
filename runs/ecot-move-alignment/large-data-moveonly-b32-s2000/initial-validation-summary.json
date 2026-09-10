@@ -1,0 +1,37 @@
+{
+  "overall": {
+    "queries": 3123,
+    "mismatches": 265,
+    "rate": 0.08485430675632405,
+    "excluded": 106,
+    "stop_queries": 43,
+    "stop_mismatches": 43,
+    "directional_queries": 3080,
+    "directional_mismatches": 222
+  },
+  "successful": {
+    "queries": 2117,
+    "mismatches": 120,
+    "rate": 0.05668398677373642,
+    "excluded": 72,
+    "stop_queries": 2,
+    "stop_mismatches": 2,
+    "directional_queries": 2115,
+    "directional_mismatches": 118
+  },
+  "failed": {
+    "queries": 1006,
+    "mismatches": 145,
+    "rate": 0.1441351888667992,
+    "excluded": 34,
+    "stop_queries": 41,
+    "stop_mismatches": 41,
+    "directional_queries": 965,
+    "directional_mismatches": 104
+  },
+  "directional_loss": 0.01639123097580915,
+  "stop_loss": 2.6636513012632244,
+  "alignment_loss": 0.0528408573038139,
+  "performance_loss": 0.23003787805325146,
+  "total_loss": 0.0528408573038139
+}

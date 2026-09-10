@@ -5,7 +5,7 @@ PyTorch Module defining OpenVLA as a lightweight wrapper around a PrismaticVLM; 
 discretizing actions with the ActionTokenizer.
 """
 from __future__ import annotations
-from typing import Dict, List, Optional, Union
+from typing import Callable, Dict, List, Optional, Union
 
 import time
 
@@ -293,6 +293,9 @@ class OpenVLA(PrismaticVLM):
 
         # Extract predicted action tokens and translate into (normalized) continuous actions
         predicted_action_token_ids = generated_ids[0, -self.get_action_dim(unnorm_key) :]
+        if info_dict is not None:
+            # Expose the exact token IDs decoded below to rollout instrumentation.
+            info_dict["action_token_ids"] = predicted_action_token_ids.detach().cpu().tolist()
         normalized_actions = self.action_tokenizer.decode_token_ids_to_actions(predicted_action_token_ids.cpu().numpy())
 
         # Un-normalize Actions

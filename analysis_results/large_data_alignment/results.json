@@ -1,0 +1,653 @@
+{
+  "state": {
+    "status": "failed",
+    "stage": "test evaluation pretrained",
+    "updated_at": "2026-09-10T14:08:24-0700",
+    "collection_completed_chunks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "previous_paused_process_ids": [
+      162147,
+      162486
+    ],
+    "pid": 175092,
+    "wandb_sync": {
+      "lambda0": "synced",
+      "lambda1": "synced",
+      "moveonly": "synced"
+    },
+    "error": "Traceback (most recent call last):\n  File \"/home/exx/Projects/ECOT-Alignment/runs/large-data-alignment/launch.py\", line 87, in <module>\n    stats=statistics(score(rows));result=stats['Overall mismatch'];result.update(episodes=90,successes=sum(bool(v) for v in outcomes.values()),categories=stats);write(Q/f'test-{key}.json',result);report()\n  File \"/home/exx/Projects/ECOT-Alignment/runs/large-data-alignment/data.py\", line 12, in write\n    tmp=path.with_suffix(path.suffix+'.tmp');tmp.write_text(json.dumps(value,indent=2)+'\\n');tmp.replace(path)\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/__init__.py\", line 238, in dumps\n    **kw).encode(obj)\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/encoder.py\", line 201, in encode\n    chunks = list(chunks)\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/encoder.py\", line 431, in _iterencode\n    yield from _iterencode_dict(o, _current_indent_level)\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/encoder.py\", line 405, in _iterencode_dict\n    yield from chunks\n  File \"/home/exx/.conda/envs/openvla/lib/python3.10/json/encoder.py\", line 340, in _iterencode_dict\n    raise ValueError(\"Circular reference detected\")\nValueError: Circular reference detected\n"
+  },
+  "plan": {
+    "base_checkpoint": "/home/exx/Projects/ECOT-Alignment/artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+    "collection_tasks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+    ],
+    "collection_trials": 10,
+    "collection_initial_state_offset": 3,
+    "collection_seed": 202609100,
+    "split_seed": 20260910,
+    "test_task_ids": [
+      0,
+      1,
+      8,
+      11,
+      15,
+      20,
+      25,
+      30,
+      31,
+      36,
+      37,
+      46,
+      49,
+      55,
+      56,
+      57,
+      60,
+      63,
+      64,
+      66,
+      67,
+      69,
+      72,
+      75,
+      76,
+      79,
+      80,
+      83,
+      84,
+      87
+    ],
+    "test_trials": 3,
+    "test_initial_state_offset": 13,
+    "test_seed": 202609200,
+    "batch_size": 32,
+    "max_steps": 2000,
+    "learning_rate": 5e-05,
+    "warmup_steps": 50,
+    "validation_every": 250,
+    "checkpoint_steps": [
+      250,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "training_seed": 20260910,
+    "early_stopping": false,
+    "supervision": "Original MiniVLA generated reasoning and action tokens, including failed episodes",
+    "alignment": "pooled eligible-query mean; H10; commanded metres; directional squared hinge at cosine0.5; stop squared net magnitude normalized by0.03m",
+    "microbatch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "batch_note": "User requested physical batch32, one batch per optimizer step, unchanged2000 steps",
+    "loss_version": "directional_hinge_pooled_net_stop_squared_v2",
+    "stop_loss": "(net_command_magnitude_m / 0.03)^2; no hinge",
+    "stop_evaluation": "net_command_magnitude_m > 0.03 is mismatch; unchanged",
+    "wandb_project": "ecot-large-data-900-b32-2k-20260910",
+    "wandb_entity": "yus047-",
+    "wandb_mode": "online",
+    "restart_note": "User requested fresh lambda0 training and exclusion of all former lambda0 results on 2026-09-10; previous run archived.",
+    "superseded_lambda0_archive": "runs/large-data-alignment/superseded-lambda0-20260910-111527"
+  },
+  "models": {
+    "pretrained": {
+      "training": {
+        "overall": {
+          "queries": 12666,
+          "mismatches": 1095,
+          "rate": 0.08645191852202748,
+          "excluded": 427,
+          "stop_queries": 193,
+          "stop_mismatches": 193,
+          "directional_queries": 12473,
+          "directional_mismatches": 902
+        },
+        "successful": {
+          "queries": 8742,
+          "mismatches": 488,
+          "rate": 0.055822466254861584,
+          "excluded": 271,
+          "stop_queries": 22,
+          "stop_mismatches": 22,
+          "directional_queries": 8720,
+          "directional_mismatches": 466
+        },
+        "failed": {
+          "queries": 3924,
+          "mismatches": 607,
+          "rate": 0.15468909276248727,
+          "excluded": 156,
+          "stop_queries": 171,
+          "stop_mismatches": 171,
+          "directional_queries": 3753,
+          "directional_mismatches": 436
+        },
+        "directional_loss": 0.01888996742113702,
+        "stop_loss": 2.6595294098093682,
+        "alignment_loss": 0.05912709140510423,
+        "performance_loss": 0.22935773059081171,
+        "total_loss": 0.22935773059081171
+      },
+      "validation": {
+        "overall": {
+          "queries": 3123,
+          "mismatches": 265,
+          "rate": 0.08485430675632405,
+          "excluded": 106,
+          "stop_queries": 43,
+          "stop_mismatches": 43,
+          "directional_queries": 3080,
+          "directional_mismatches": 222
+        },
+        "successful": {
+          "queries": 2117,
+          "mismatches": 120,
+          "rate": 0.05668398677373642,
+          "excluded": 72,
+          "stop_queries": 2,
+          "stop_mismatches": 2,
+          "directional_queries": 2115,
+          "directional_mismatches": 118
+        },
+        "failed": {
+          "queries": 1006,
+          "mismatches": 145,
+          "rate": 0.1441351888667992,
+          "excluded": 34,
+          "stop_queries": 41,
+          "stop_mismatches": 41,
+          "directional_queries": 965,
+          "directional_mismatches": 104
+        },
+        "directional_loss": 0.01639123097580915,
+        "stop_loss": 2.6636513012632244,
+        "alignment_loss": 0.0528408573038139,
+        "performance_loss": 0.23003787805325146,
+        "total_loss": 0.23003787805325146
+      }
+    },
+    "lambda0": {
+      "training": {
+        "overall": {
+          "queries": 12666,
+          "mismatches": 1125,
+          "rate": 0.08882046423495973,
+          "excluded": 427,
+          "stop_queries": 193,
+          "stop_mismatches": 193,
+          "directional_queries": 12473,
+          "directional_mismatches": 932
+        },
+        "successful": {
+          "queries": 8742,
+          "mismatches": 490,
+          "rate": 0.05605124685426676,
+          "excluded": 271,
+          "stop_queries": 22,
+          "stop_mismatches": 22,
+          "directional_queries": 8720,
+          "directional_mismatches": 468
+        },
+        "failed": {
+          "queries": 3924,
+          "mismatches": 635,
+          "rate": 0.16182466870540266,
+          "excluded": 156,
+          "stop_queries": 171,
+          "stop_mismatches": 171,
+          "directional_queries": 3753,
+          "directional_mismatches": 464
+        },
+        "directional_loss": 0.02029849039737768,
+        "stop_loss": 2.6904464660187766,
+        "alignment_loss": 0.06098525490826746,
+        "performance_loss": 0.006338094034782901,
+        "total_loss": 0.006338094034782901
+      },
+      "validation": {
+        "overall": {
+          "queries": 3123,
+          "mismatches": 268,
+          "rate": 0.08581492154979187,
+          "excluded": 106,
+          "stop_queries": 43,
+          "stop_mismatches": 43,
+          "directional_queries": 3080,
+          "directional_mismatches": 225
+        },
+        "successful": {
+          "queries": 2117,
+          "mismatches": 118,
+          "rate": 0.055739253660840815,
+          "excluded": 72,
+          "stop_queries": 2,
+          "stop_mismatches": 2,
+          "directional_queries": 2115,
+          "directional_mismatches": 116
+        },
+        "failed": {
+          "queries": 1006,
+          "mismatches": 150,
+          "rate": 0.14910536779324055,
+          "excluded": 34,
+          "stop_queries": 41,
+          "stop_mismatches": 41,
+          "directional_queries": 965,
+          "directional_mismatches": 109
+        },
+        "directional_loss": 0.01846986858188901,
+        "stop_loss": 2.8103288754012254,
+        "alignment_loss": 0.05691045048814308,
+        "performance_loss": 0.030698671157754074,
+        "total_loss": 0.030698671157754074
+      }
+    },
+    "lambda1": {
+      "training": {
+        "overall": {
+          "queries": 12666,
+          "mismatches": 298,
+          "rate": 0.02352755408179378,
+          "excluded": 427,
+          "stop_queries": 193,
+          "stop_mismatches": 1,
+          "directional_queries": 12473,
+          "directional_mismatches": 297
+        },
+        "successful": {
+          "queries": 8742,
+          "mismatches": 174,
+          "rate": 0.01990391214824983,
+          "excluded": 271,
+          "stop_queries": 22,
+          "stop_mismatches": 0,
+          "directional_queries": 8720,
+          "directional_mismatches": 174
+        },
+        "failed": {
+          "queries": 3924,
+          "mismatches": 124,
+          "rate": 0.03160040774719674,
+          "excluded": 156,
+          "stop_queries": 171,
+          "stop_mismatches": 1,
+          "directional_queries": 3753,
+          "directional_mismatches": 123
+        },
+        "directional_loss": 0.0007285502160881462,
+        "stop_loss": 0.13024945607731675,
+        "alignment_loss": 0.0027021436813666174,
+        "performance_loss": 0.011428488756832451,
+        "total_loss": 0.014130632438199068
+      },
+      "validation": {
+        "overall": {
+          "queries": 3123,
+          "mismatches": 125,
+          "rate": 0.04002561639449247,
+          "excluded": 106,
+          "stop_queries": 43,
+          "stop_mismatches": 0,
+          "directional_queries": 3080,
+          "directional_mismatches": 125
+        },
+        "successful": {
+          "queries": 2117,
+          "mismatches": 62,
+          "rate": 0.029286726499763816,
+          "excluded": 72,
+          "stop_queries": 2,
+          "stop_mismatches": 0,
+          "directional_queries": 2115,
+          "directional_mismatches": 62
+        },
+        "failed": {
+          "queries": 1006,
+          "mismatches": 63,
+          "rate": 0.06262425447316103,
+          "excluded": 34,
+          "stop_queries": 41,
+          "stop_mismatches": 0,
+          "directional_queries": 965,
+          "directional_mismatches": 63
+        },
+        "directional_loss": 0.005658544945408032,
+        "stop_loss": 0.04651712816815046,
+        "alignment_loss": 0.006221119098010633,
+        "performance_loss": 0.03123296076350796,
+        "total_loss": 0.037454079861518594
+      }
+    },
+    "moveonly": {
+      "training": {
+        "overall": {
+          "queries": 12666,
+          "mismatches": 6,
+          "rate": 0.0004737091425864519,
+          "excluded": 427,
+          "stop_queries": 193,
+          "stop_mismatches": 0,
+          "directional_queries": 12473,
+          "directional_mismatches": 6
+        },
+        "successful": {
+          "queries": 8742,
+          "mismatches": 4,
+          "rate": 0.0004575611988103409,
+          "excluded": 271,
+          "stop_queries": 22,
+          "stop_mismatches": 0,
+          "directional_queries": 8720,
+          "directional_mismatches": 4
+        },
+        "failed": {
+          "queries": 3924,
+          "mismatches": 2,
+          "rate": 0.0005096839959225281,
+          "excluded": 156,
+          "stop_queries": 171,
+          "stop_mismatches": 0,
+          "directional_queries": 3753,
+          "directional_mismatches": 2
+        },
+        "directional_loss": 3.474655228721733e-07,
+        "stop_loss": 0.01217315577197911,
+        "alignment_loss": 0.00018583238603021892,
+        "performance_loss": 0.26290133921097236,
+        "total_loss": 0.00018583238603021892
+      },
+      "validation": {
+        "overall": {
+          "queries": 3123,
+          "mismatches": 21,
+          "rate": 0.0067243035542747355,
+          "excluded": 106,
+          "stop_queries": 43,
+          "stop_mismatches": 0,
+          "directional_queries": 3080,
+          "directional_mismatches": 21
+        },
+        "successful": {
+          "queries": 2117,
+          "mismatches": 10,
+          "rate": 0.004723665564478035,
+          "excluded": 72,
+          "stop_queries": 2,
+          "stop_mismatches": 0,
+          "directional_queries": 2115,
+          "directional_mismatches": 10
+        },
+        "failed": {
+          "queries": 1006,
+          "mismatches": 11,
+          "rate": 0.010934393638170975,
+          "excluded": 34,
+          "stop_queries": 41,
+          "stop_mismatches": 0,
+          "directional_queries": 965,
+          "directional_mismatches": 11
+        },
+        "directional_loss": 0.00019515834192036137,
+        "stop_loss": 0.013992644711674346,
+        "alignment_loss": 0.0003851333383659013,
+        "performance_loss": 0.2610294498873957,
+        "total_loss": 0.0003851333383659013
+      }
+    }
+  },
+  "dataset": {
+    "Overall mismatch": {
+      "overall": {
+        "total_queries": 16322,
+        "episodes": 900,
+        "queries": 15789,
+        "mismatches": 1470,
+        "rate": 0.09310279308379252,
+        "coverage": 0.9673446881509619
+      },
+      "successful": {
+        "total_queries": 11202,
+        "episodes": 772,
+        "queries": 10859,
+        "mismatches": 641,
+        "rate": 0.0590293765540105,
+        "coverage": 0.9693804677736119
+      },
+      "failed": {
+        "total_queries": 5120,
+        "episodes": 128,
+        "queries": 4930,
+        "mismatches": 829,
+        "rate": 0.16815415821501015,
+        "coverage": 0.962890625
+      },
+      "difference": 0.10912478166099965,
+      "bootstrap_95_ci": [
+        0.08088894803964433,
+        0.14137203928878259
+      ]
+    },
+    "Directional mismatch": {
+      "overall": {
+        "total_queries": 16322,
+        "episodes": 900,
+        "queries": 15553,
+        "mismatches": 1234,
+        "rate": 0.07934160612100559,
+        "coverage": 0.9528856757750276
+      },
+      "successful": {
+        "total_queries": 11202,
+        "episodes": 772,
+        "queries": 10835,
+        "mismatches": 617,
+        "rate": 0.05694508537148131,
+        "coverage": 0.9672379932154972
+      },
+      "failed": {
+        "total_queries": 5120,
+        "episodes": 128,
+        "queries": 4718,
+        "mismatches": 617,
+        "rate": 0.1307757524374735,
+        "coverage": 0.921484375
+      },
+      "difference": 0.07383066706599219,
+      "bootstrap_95_ci": [
+        0.05003369946331261,
+        0.10238684997175478
+      ]
+    },
+    "Partial directional mismatch": {
+      "overall": {
+        "total_queries": 16322,
+        "episodes": 900,
+        "queries": 15553,
+        "mismatches": 682,
+        "rate": 0.04385006108146338,
+        "coverage": 0.9528856757750276
+      },
+      "successful": {
+        "total_queries": 11202,
+        "episodes": 772,
+        "queries": 10835,
+        "mismatches": 315,
+        "rate": 0.029072450392247345,
+        "coverage": 0.9672379932154972
+      },
+      "failed": {
+        "total_queries": 5120,
+        "episodes": 128,
+        "queries": 4718,
+        "mismatches": 367,
+        "rate": 0.0777871979652395,
+        "coverage": 0.921484375
+      },
+      "difference": 0.048714747572992156,
+      "bootstrap_95_ci": [
+        0.030620717304430257,
+        0.07129001578700432
+      ]
+    },
+    "Nonpositive directional mismatch": {
+      "overall": {
+        "total_queries": 16322,
+        "episodes": 900,
+        "queries": 15553,
+        "mismatches": 552,
+        "rate": 0.03549154503954221,
+        "coverage": 0.9528856757750276
+      },
+      "successful": {
+        "total_queries": 11202,
+        "episodes": 772,
+        "queries": 10835,
+        "mismatches": 302,
+        "rate": 0.027872634979233965,
+        "coverage": 0.9672379932154972
+      },
+      "failed": {
+        "total_queries": 5120,
+        "episodes": 128,
+        "queries": 4718,
+        "mismatches": 250,
+        "rate": 0.052988554472233995,
+        "coverage": 0.921484375
+      },
+      "difference": 0.02511591949300003,
+      "bootstrap_95_ci": [
+        0.011144591281652343,
+        0.042476850224701414
+      ]
+    },
+    "Stop mismatch": {
+      "overall": {
+        "total_queries": 16322,
+        "episodes": 900,
+        "queries": 236,
+        "mismatches": 236,
+        "rate": 1.0,
+        "coverage": 0.014459012375934322
+      },
+      "successful": {
+        "total_queries": 11202,
+        "episodes": 772,
+        "queries": 24,
+        "mismatches": 24,
+        "rate": 1.0,
+        "coverage": 0.0021424745581146223
+      },
+      "failed": {
+        "total_queries": 5120,
+        "episodes": 128,
+        "queries": 212,
+        "mismatches": 212,
+        "rate": 1.0,
+        "coverage": 0.04140625
+      },
+      "difference": 0.0,
+      "bootstrap_95_ci": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

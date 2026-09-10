@@ -1,0 +1,6 @@
+{
+  "episodes": 900,
+  "queries": 16322,
+  "training_episodes": 720,
+  "validation_episodes": 180
+}

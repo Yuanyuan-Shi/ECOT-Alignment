@@ -147,6 +147,8 @@ dmypy.json
 # Caches and Datasets
 cache/
 data/
+artifacts/
+vq
 
 # Rollout videos and wandb logs
 rollouts/
@@ -156,3 +158,30 @@ libero_90 rollouts/
 experiments/logs/
 experiments/robot/libero/analysis/
 experiments/robot/libero/libero_90_tasks/
+experiments/robot/libero/results/
+
+# Model weights and optimizer snapshots (stored locally)
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.onnx
+
+# Generated training data, process state, and archived runs
+/runs/**/*.jsonl
+/runs/**/*.pid
+/runs/**/*.lock
+/runs/**/status.json
+/runs/**/progress.json
+/runs/**/wandb.json
+/runs/**/superseded*/
+/runs/**/adapter-*/
+/runs/large-data-alignment/index-before-tab.html
+MUJOCO_LOG.TXT
+*.tmp
+.env.*
+!.env.example
+
+# Browser storage backups and report locks
+*.sqlite
+/analysis_results/.*.lock

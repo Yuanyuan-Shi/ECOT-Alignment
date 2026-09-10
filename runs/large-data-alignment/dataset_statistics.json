@@ -1,0 +1,157 @@
+{
+  "Overall mismatch": {
+    "overall": {
+      "total_queries": 16322,
+      "episodes": 900,
+      "queries": 15789,
+      "mismatches": 1470,
+      "rate": 0.09310279308379252,
+      "coverage": 0.9673446881509619
+    },
+    "successful": {
+      "total_queries": 11202,
+      "episodes": 772,
+      "queries": 10859,
+      "mismatches": 641,
+      "rate": 0.0590293765540105,
+      "coverage": 0.9693804677736119
+    },
+    "failed": {
+      "total_queries": 5120,
+      "episodes": 128,
+      "queries": 4930,
+      "mismatches": 829,
+      "rate": 0.16815415821501015,
+      "coverage": 0.962890625
+    },
+    "difference": 0.10912478166099965,
+    "bootstrap_95_ci": [
+      0.08088894803964433,
+      0.14137203928878259
+    ]
+  },
+  "Directional mismatch": {
+    "overall": {
+      "total_queries": 16322,
+      "episodes": 900,
+      "queries": 15553,
+      "mismatches": 1234,
+      "rate": 0.07934160612100559,
+      "coverage": 0.9528856757750276
+    },
+    "successful": {
+      "total_queries": 11202,
+      "episodes": 772,
+      "queries": 10835,
+      "mismatches": 617,
+      "rate": 0.05694508537148131,
+      "coverage": 0.9672379932154972
+    },
+    "failed": {
+      "total_queries": 5120,
+      "episodes": 128,
+      "queries": 4718,
+      "mismatches": 617,
+      "rate": 0.1307757524374735,
+      "coverage": 0.921484375
+    },
+    "difference": 0.07383066706599219,
+    "bootstrap_95_ci": [
+      0.05003369946331261,
+      0.10238684997175478
+    ]
+  },
+  "Partial directional mismatch": {
+    "overall": {
+      "total_queries": 16322,
+      "episodes": 900,
+      "queries": 15553,
+      "mismatches": 682,
+      "rate": 0.04385006108146338,
+      "coverage": 0.9528856757750276
+    },
+    "successful": {
+      "total_queries": 11202,
+      "episodes": 772,
+      "queries": 10835,
+      "mismatches": 315,
+      "rate": 0.029072450392247345,
+      "coverage": 0.9672379932154972
+    },
+    "failed": {
+      "total_queries": 5120,
+      "episodes": 128,
+      "queries": 4718,
+      "mismatches": 367,
+      "rate": 0.0777871979652395,
+      "coverage": 0.921484375
+    },
+    "difference": 0.048714747572992156,
+    "bootstrap_95_ci": [
+      0.030620717304430257,
+      0.07129001578700432
+    ]
+  },
+  "Nonpositive directional mismatch": {
+    "overall": {
+      "total_queries": 16322,
+      "episodes": 900,
+      "queries": 15553,
+      "mismatches": 552,
+      "rate": 0.03549154503954221,
+      "coverage": 0.9528856757750276
+    },
+    "successful": {
+      "total_queries": 11202,
+      "episodes": 772,
+      "queries": 10835,
+      "mismatches": 302,
+      "rate": 0.027872634979233965,
+      "coverage": 0.9672379932154972
+    },
+    "failed": {
+      "total_queries": 5120,
+      "episodes": 128,
+      "queries": 4718,
+      "mismatches": 250,
+      "rate": 0.052988554472233995,
+      "coverage": 0.921484375
+    },
+    "difference": 0.02511591949300003,
+    "bootstrap_95_ci": [
+      0.011144591281652343,
+      0.042476850224701414
+    ]
+  },
+  "Stop mismatch": {
+    "overall": {
+      "total_queries": 16322,
+      "episodes": 900,
+      "queries": 236,
+      "mismatches": 236,
+      "rate": 1.0,
+      "coverage": 0.014459012375934322
+    },
+    "successful": {
+      "total_queries": 11202,
+      "episodes": 772,
+      "queries": 24,
+      "mismatches": 24,
+      "rate": 1.0,
+      "coverage": 0.0021424745581146223
+    },
+    "failed": {
+      "total_queries": 5120,
+      "episodes": 128,
+      "queries": 212,
+      "mismatches": 212,
+      "rate": 1.0,
+      "coverage": 0.04140625
+    },
+    "difference": 0.0,
+    "bootstrap_95_ci": [
+      0.0,
+      0.0
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "runs/round3/launch_lambda1.py": "7a8b54a661333c68ca90bb97521b5dd12720f546c7c8323686826773f6151a81",
+  "runs/round3/train.sh": "e55c87086f20399369db300aec05843ef97f27a094bdbc11fd965b3de0facbac",
+  "runs/round3/evaluate.sh": "9801276a2b2f3e241d2edb07f97b9cf68e1fee442ae13e146ff1d0f5ebb147a1",
+  "vla-scripts/finetune_move_alignment.py": "16c0c8e06cc9ccfa4eafc9cfc336389ed5ec0a4d719d87719d04843a556eabed",
+  "experiments/robot/libero/move_alignment_training.py": "a983bd88f9baa6da417d39a7f35769a3fad4312029ba0c6c511a95ce2c419c59",
+  "experiments/robot/libero/round3_move_comparison.py": "2cd27779c3982ad1e9c88153233f4b85ab74373b317d2e084cb0e8721133aa9e"
+}

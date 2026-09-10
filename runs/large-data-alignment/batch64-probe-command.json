@@ -1,0 +1,6 @@
+[
+  "/home/exx/.conda/envs/openvla/bin/python",
+  "-u",
+  "vla-scripts/finetune_large_alignment.py",
+  "--probe"
+]

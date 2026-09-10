@@ -1,0 +1,41 @@
+{
+  "optimizer_step": 300,
+  "validation": {
+    "overall": {
+      "queries": 302,
+      "mismatches": 9,
+      "rate": 0.029801324503311258,
+      "excluded": 4,
+      "stop_queries": 5,
+      "stop_mismatches": 0,
+      "directional_queries": 297,
+      "directional_mismatches": 9
+    },
+    "successful": {
+      "queries": 223,
+      "mismatches": 7,
+      "rate": 0.03139013452914798,
+      "excluded": 3,
+      "stop_queries": 0,
+      "stop_mismatches": 0,
+      "directional_queries": 223,
+      "directional_mismatches": 7
+    },
+    "failed": {
+      "queries": 79,
+      "mismatches": 2,
+      "rate": 0.02531645569620253,
+      "excluded": 1,
+      "stop_queries": 5,
+      "stop_mismatches": 0,
+      "directional_queries": 74,
+      "directional_mismatches": 2
+    },
+    "directional_loss": 0.0027789932680622985,
+    "stop_loss": 0.0,
+    "alignment_loss": 0.0027789932680622985
+  },
+  "best_step": 200,
+  "best_validation_rate": 0.026490066225165563,
+  "checks_without_improvement": 4
+}

@@ -1,0 +1,69 @@
+{
+  "saved_at": "2026-09-06T22:57:57.991441-07:00",
+  "experiments": [
+    {
+      "lambda": 0.5,
+      "display_name": "Round 4 lambda=0.5 \u2014 failure-weight3",
+      "status": "training",
+      "name": "failure-weight3",
+      "run_dir": "runs/ecot-move-alignment/round4-lambda05-restart-failure-weight3",
+      "start_gate": "runs/round4/start-failure-weight3",
+      "checkpoint": "runs/ecot-move-alignment/round4-lambda05-restart-failure-weight3/checkpoints/step-000200-move-lora.pt",
+      "evaluation_root": "experiments/robot/libero/results/round4-move-eval-failure-weight3-90task-2trial-seed20261201",
+      "process_pid": 88667,
+      "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/foxogq97",
+      "key": "round4-failure-weight3",
+      "status_file": "runs/round4/status.json",
+      "last_logged_optimizer_step": 121,
+      "checkpoint_exists": false
+    },
+    {
+      "lambda": 0.5,
+      "display_name": "Round 4 lambda=0.5 \u2014 balanced-sampling",
+      "status": "waiting for GPU slot",
+      "name": "balanced-sampling",
+      "run_dir": "runs/ecot-move-alignment/round4-lambda05-restart-balanced-sampling",
+      "start_gate": "runs/round4/start-balanced-sampling",
+      "checkpoint": "runs/ecot-move-alignment/round4-lambda05-restart-balanced-sampling/checkpoints/step-000200-move-lora.pt",
+      "evaluation_root": "experiments/robot/libero/results/round4-move-eval-balanced-sampling-90task-2trial-seed20261201",
+      "process_pid": 88668,
+      "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/jb9v5bbl",
+      "key": "round4-balanced-sampling",
+      "status_file": "runs/round4/status.json",
+      "last_logged_optimizer_step": 0,
+      "checkpoint_exists": false
+    },
+    {
+      "lambda": 1.0,
+      "display_name": "Round 4 lambda=1.0 \u2014 failure-weight3",
+      "status": "waiting for GPU slot",
+      "name": "failure-weight3",
+      "run_dir": "runs/ecot-move-alignment/round4-lambda1-restart-failure-weight3",
+      "start_gate": "runs/round4-lambda1/start-failure-weight3",
+      "checkpoint": "runs/ecot-move-alignment/round4-lambda1-restart-failure-weight3/checkpoints/step-000200-move-lora.pt",
+      "evaluation_root": "experiments/robot/libero/results/round4-move-eval-lambda1-failure-weight3-90task-2trial-seed20261201",
+      "process_pid": 89306,
+      "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/umvh91x5",
+      "key": "round4-lambda1-failure-weight3",
+      "status_file": "runs/round4-lambda1/status.json",
+      "last_logged_optimizer_step": 0,
+      "checkpoint_exists": false
+    },
+    {
+      "lambda": 1.0,
+      "display_name": "Round 4 lambda=1.0 \u2014 balanced-sampling",
+      "status": "waiting for GPU slot",
+      "name": "balanced-sampling",
+      "run_dir": "runs/ecot-move-alignment/round4-lambda1-restart-balanced-sampling",
+      "start_gate": "runs/round4-lambda1/start-balanced-sampling",
+      "checkpoint": "runs/ecot-move-alignment/round4-lambda1-restart-balanced-sampling/checkpoints/step-000200-move-lora.pt",
+      "evaluation_root": "experiments/robot/libero/results/round4-move-eval-lambda1-balanced-sampling-90task-2trial-seed20261201",
+      "process_pid": 89307,
+      "wandb_url": "https://wandb.ai/yus047-/ecot-move-alignment/runs/nobmut2c",
+      "key": "round4-lambda1-balanced-sampling",
+      "status_file": "runs/round4-lambda1/status.json",
+      "last_logged_optimizer_step": 0,
+      "checkpoint_exists": false
+    }
+  ]
+}

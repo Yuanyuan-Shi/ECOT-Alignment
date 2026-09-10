@@ -1,0 +1,10 @@
+{
+  "original_dtypes": [
+    "torch.float32"
+  ],
+  "repeat_max_error": 0.0,
+  "merge_max_error": 0.000244140625,
+  "tf32_disabled": true,
+  "export_dtype": "float32",
+  "export_attention_backend": "math"
+}

@@ -1,0 +1,123 @@
+{
+  "queries": 1245,
+  "zero_vectors": 50,
+  "metric": "teacher-forced soft-decoded policy translation sum; dropout disabled",
+  "models": {
+    "Original MiniVLA": {
+      "total_loss": 0.2534884374543845,
+      "performance_loss": 0.22977923931606323,
+      "move_loss": 0.02370919641855371,
+      "move_reward": 0.7840186246906419,
+      "move_alignment_rate": 0.8891566257400206,
+      "cosine_negative_rate": 0.035341365461847386,
+      "cosine_zero_to_threshold_rate": 0.07550200810394134,
+      "successful_query_rate": 0.7429718875502008,
+      "query_count": 1245,
+      "average_move_cosine": 0.7840186246906419,
+      "move_misalignment_count": 138,
+      "move_misalignment_percentage": 11.08433734939759,
+      "cosine_negative_count": 44,
+      "cosine_negative_percentage": 3.534136546184739,
+      "cosine_zero_to_threshold_count": 94,
+      "cosine_zero_to_threshold_percentage": 7.550200803212851,
+      "cosine_aligned_count": 1107,
+      "cosine_aligned_percentage": 88.91566265060241,
+      "successful_query_count": 925,
+      "failed_query_count": 320,
+      "directional_mismatches": 88,
+      "directional_queries": 1195,
+      "directional_mismatch_percent": 7.364016736401673,
+      "checkpoint": "artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+      "outcomes": {
+        "successful": {
+          "queries": 896,
+          "mismatches": 63,
+          "percent": 7.03125
+        },
+        "failed": {
+          "queries": 299,
+          "mismatches": 25,
+          "percent": 8.361204013377927
+        }
+      }
+    },
+    "Round 3 lambda=1": {
+      "total_loss": 0.014021965255399784,
+      "performance_loss": 0.009225270915851297,
+      "move_loss": 0.004796694338940697,
+      "move_reward": 0.8474810368085961,
+      "move_alignment_rate": 0.94136546194314,
+      "cosine_negative_rate": 0.0,
+      "cosine_zero_to_threshold_rate": 0.05863453805686001,
+      "successful_query_rate": 0.7429718875502008,
+      "query_count": 1245,
+      "average_move_cosine": 0.8474810368085961,
+      "move_misalignment_count": 73,
+      "move_misalignment_percentage": 5.863453815261044,
+      "cosine_negative_count": 0,
+      "cosine_negative_percentage": 0.0,
+      "cosine_zero_to_threshold_count": 73,
+      "cosine_zero_to_threshold_percentage": 5.863453815261044,
+      "cosine_aligned_count": 1172,
+      "cosine_aligned_percentage": 94.13654618473896,
+      "successful_query_count": 925,
+      "failed_query_count": 320,
+      "directional_mismatches": 23,
+      "directional_queries": 1195,
+      "directional_mismatch_percent": 1.9246861924686192,
+      "checkpoint": "artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+      "adapter": "/home/exx/Projects/ECOT-Alignment/runs/ecot-move-alignment/round3-ecot-lite-libero90-hinge-lora-r16-lambda10-seed20261102/adapter-final",
+      "outcomes": {
+        "successful": {
+          "queries": 896,
+          "mismatches": 18,
+          "percent": 2.0089285714285716
+        },
+        "failed": {
+          "queries": 299,
+          "mismatches": 5,
+          "percent": 1.6722408026755853
+        }
+      }
+    },
+    "Mismatch only": {
+      "total_loss": 0.004466697853058576,
+      "performance_loss": 0.23663591163225442,
+      "move_loss": 0.004466697853058576,
+      "move_reward": 0.8518563085291759,
+      "move_alignment_rate": 0.9590361451049406,
+      "cosine_negative_rate": 0.0,
+      "cosine_zero_to_threshold_rate": 0.04096385541570235,
+      "successful_query_rate": 0.7429718875502008,
+      "query_count": 1245,
+      "average_move_cosine": 0.8518563085291759,
+      "move_misalignment_count": 51,
+      "move_misalignment_percentage": 4.096385542168675,
+      "cosine_negative_count": 0,
+      "cosine_negative_percentage": 0.0,
+      "cosine_zero_to_threshold_count": 51,
+      "cosine_zero_to_threshold_percentage": 4.096385542168675,
+      "cosine_aligned_count": 1194,
+      "cosine_aligned_percentage": 95.90361445783132,
+      "successful_query_count": 925,
+      "failed_query_count": 320,
+      "directional_mismatches": 1,
+      "directional_queries": 1195,
+      "directional_mismatch_percent": 0.08368200836820083,
+      "checkpoint": "artifacts/ecot-libero90/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+      "outcomes": {
+        "successful": {
+          "queries": 896,
+          "mismatches": 1,
+          "percent": 0.11160714285714286
+        },
+        "failed": {
+          "queries": 299,
+          "mismatches": 0,
+          "percent": 0.0
+        }
+      },
+      "adapter": "/home/exx/Projects/ECOT-Alignment/runs/ecot-move-alignment/round3-ecot-lite-libero90-hinge-lora-r16-lambdamoveonly500-seed20261102/adapter-final"
+    }
+  }
+}

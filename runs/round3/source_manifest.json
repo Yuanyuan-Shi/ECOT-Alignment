@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "vla-scripts/finetune_move_alignment.py": "16c0c8e06cc9ccfa4eafc9cfc336389ed5ec0a4d719d87719d04843a556eabed",
+    "experiments/robot/libero/move_alignment_training.py": "a983bd88f9baa6da417d39a7f35769a3fad4312029ba0c6c511a95ce2c419c59",
+    "experiments/robot/libero/round3_move_comparison.py": "a3858b595a3577766c8b51e96ac2cbf026496848994ddf888ccb5c6d9ceb89f9",
+    "runs/round3/train.sh": "e55c87086f20399369db300aec05843ef97f27a094bdbc11fd965b3de0facbac",
+    "runs/round3/evaluate.sh": "9801276a2b2f3e241d2edb07f97b9cf68e1fee442ae13e146ff1d0f5ebb147a1",
+    "runs/round3/launch.py": "11cdf3a857ac3acb319ee2ded3a4a9f779e7d4a522d572bdc13e4b2ca12aa03d",
+    "analysis_results/annotations/round2_move_labels_effective_90episodes_2026-09-05.json": "4dcfc31caebbd70e04c223fd833cf52a68b3178c358557dc183a5d7b106d4938"
+  },
+  "vq_dependency_commit": "09d4851288ca5deaaa1ab367a208e520f8ee9a84"
+}

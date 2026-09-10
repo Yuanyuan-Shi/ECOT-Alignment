@@ -1,0 +1,1275 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-04T22:37:21.034390+00:00",
+  "origin": "http://127.0.0.1:8000",
+  "source": "Firefox localStorage snapshot",
+  "values": {
+    "ecotTask0Task3LabelsBackupV46": {
+      "schema_version": 1,
+      "source_key": "ecotQueryTaxonomyReviewsV2",
+      "task_ids": [
+        0,
+        3
+      ],
+      "saved_at": "2026-09-04T21:52:59.237Z",
+      "reviews": {
+        "libero_90-task0-episode0-seed20260901::q1": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:42.416Z",
+          "derived_case": "Case 5",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "F",
+          "overall_alignment": "F",
+          "target_reasoning": "T",
+          "target_action": "F",
+          "subtask_reasoning": "T",
+          "subtask_action": "F"
+        },
+        "libero_90-task0-episode0-seed20260901::q3": {
+          "subtask_checkpoint": {
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T00:41:29.618Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 1",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:45.819Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q4": {
+          "subtask_checkpoint": {
+            "rule_version": 2,
+            "judgment": "incomplete",
+            "completed_units": 0,
+            "updated_at": "2026-09-04T01:09:04.671Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:47.238Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q5": {
+          "subtask_checkpoint": {
+            "rule_version": 2,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T01:10:11.193Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated subtask primitive is not reliably supported by the state predicates. Available alignment components are incomplete or only partially supportive. This chunk immediately precedes recorded task success. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:48.651Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q0": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "overall_alignment": "F",
+          "derived_case": "Case 5",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:40.947Z",
+          "target_reasoning": "T",
+          "target_action": "F",
+          "subtask_reasoning": "T",
+          "subtask_action": "F"
+        },
+        "libero_90-task0-episode0-seed20260901::q2": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "overall_alignment": "F",
+          "derived_case": "Case 4",
+          "confidence": "High",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:44.542Z",
+          "target_reasoning": "T",
+          "target_action": "T",
+          "subtask_reasoning": "T",
+          "subtask_action": "F",
+          "target_case": "Case 1",
+          "subtask_case": "Case 3"
+        },
+        "libero_90-task3-episode0-seed20260904::q5": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T04:29:10.560Z"
+          },
+          "status": "corrected",
+          "kinematic_alignment": "F",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "No",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:41.230Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q0": {
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:46.780Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q1": {
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:45.564Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q9": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:32:42.476Z"
+          },
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:30.078Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q15": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:33:30.939Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q21": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:02.340Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q24": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:27.456Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q27": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:54.338Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q32": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:35:21.470Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q36": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:36:12.744Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q37": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "incomplete",
+            "completed_units": 0,
+            "updated_at": "2026-09-04T21:36:40.831Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q3": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:43.622Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q4": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:42.623Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q6": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:39.958Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q7": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:37.724Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q2": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "High",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:44.521Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q8": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:45:00.127Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q10": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:32.896Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q11": {
+          "status": "corrected",
+          "kinematic_alignment": "F",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "No",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:53.739Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q12": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:07.423Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q13": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:18.719Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q14": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:23.436Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q16": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:06.306Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q17": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:20.030Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q18": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:27.250Z"
+        }
+      }
+    },
+    "ecotTask0Task3Task9LabelsBackupV48": {
+      "schema_version": 1,
+      "source_key": "ecotQueryTaxonomyReviewsV2",
+      "task_ids": [
+        0,
+        3,
+        9
+      ],
+      "saved_at": "2026-09-04T22:09:38.871Z",
+      "reviews": {
+        "libero_90-task0-episode0-seed20260901::q1": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:42.416Z",
+          "derived_case": "Case 5",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "F",
+          "overall_alignment": "F",
+          "target_reasoning": "T",
+          "target_action": "F",
+          "subtask_reasoning": "T",
+          "subtask_action": "F"
+        },
+        "libero_90-task0-episode0-seed20260901::q3": {
+          "subtask_checkpoint": {
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T00:41:29.618Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 1",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:45.819Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q4": {
+          "subtask_checkpoint": {
+            "rule_version": 2,
+            "judgment": "incomplete",
+            "completed_units": 0,
+            "updated_at": "2026-09-04T01:09:04.671Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:47.238Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q5": {
+          "subtask_checkpoint": {
+            "rule_version": 2,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T01:10:11.193Z"
+          },
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated subtask primitive is not reliably supported by the state predicates. Available alignment components are incomplete or only partially supportive. This chunk immediately precedes recorded task success. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:48.651Z"
+        },
+        "libero_90-task0-episode0-seed20260901::q0": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "overall_alignment": "F",
+          "derived_case": "Case 5",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:40.947Z",
+          "target_reasoning": "T",
+          "target_action": "F",
+          "subtask_reasoning": "T",
+          "subtask_action": "F"
+        },
+        "libero_90-task0-episode0-seed20260901::q2": {
+          "status": "corrected",
+          "reasoning": "F",
+          "action": "F",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "overall_alignment": "F",
+          "derived_case": "Case 4",
+          "confidence": "High",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:42:44.542Z",
+          "target_reasoning": "T",
+          "target_action": "T",
+          "subtask_reasoning": "T",
+          "subtask_action": "F",
+          "target_case": "Case 1",
+          "subtask_case": "Case 3"
+        },
+        "libero_90-task3-episode0-seed20260904::q5": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T04:29:10.560Z"
+          },
+          "status": "corrected",
+          "kinematic_alignment": "F",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "No",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:41.230Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q0": {
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:46.780Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q1": {
+          "status": "corrected",
+          "reasoning": "T",
+          "action": "T",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "derived_case": "Case 6",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:45.564Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q9": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:32:42.476Z"
+          },
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:30.078Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q15": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:33:30.939Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q21": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:02.340Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q24": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:27.456Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q27": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:34:54.338Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q32": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:35:21.470Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q36": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "complete",
+            "completed_units": 1,
+            "updated_at": "2026-09-04T21:36:12.744Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q37": {
+          "subtask_checkpoint": {
+            "rule_version": 3,
+            "judgment": "incomplete",
+            "completed_units": 0,
+            "updated_at": "2026-09-04T21:36:40.831Z"
+          }
+        },
+        "libero_90-task3-episode0-seed20260904::q3": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:43.622Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q4": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:42.623Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q6": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:39.958Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q7": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "F",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:37.724Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q2": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "High",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:44:44.521Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q8": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:45:00.127Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q10": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:32.896Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q11": {
+          "status": "corrected",
+          "kinematic_alignment": "F",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "No",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:46:53.739Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q12": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:07.423Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q13": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:18.719Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q14": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:47:23.436Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q16": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:06.306Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q17": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "N/A",
+          "subtask_alignment": "F",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:20.030Z"
+        },
+        "libero_90-task3-episode0-seed20260904::q18": {
+          "status": "corrected",
+          "kinematic_alignment": "T",
+          "target_alignment": "T",
+          "subtask_alignment": "T",
+          "faithfulness": "Yes",
+          "confidence": "Low",
+          "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+          "decisive_error": false,
+          "updated_at": "2026-09-04T21:49:27.250Z"
+        }
+      }
+    },
+    "ecotQueryTaxonomyReviewsV2": {
+      "libero_90-task0-episode0-seed20260901::q1": {
+        "status": "corrected",
+        "reasoning": "F",
+        "action": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:42.416Z",
+        "derived_case": "Case 5",
+        "kinematic_alignment": "T",
+        "target_alignment": "F",
+        "subtask_alignment": "F",
+        "overall_alignment": "F",
+        "target_reasoning": "T",
+        "target_action": "F",
+        "subtask_reasoning": "T",
+        "subtask_action": "F"
+      },
+      "libero_90-task0-episode0-seed20260901::q3": {
+        "subtask_checkpoint": {
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T00:41:29.618Z"
+        },
+        "status": "corrected",
+        "reasoning": "T",
+        "action": "T",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "derived_case": "Case 1",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:45.819Z"
+      },
+      "libero_90-task0-episode0-seed20260901::q4": {
+        "subtask_checkpoint": {
+          "rule_version": 2,
+          "judgment": "incomplete",
+          "completed_units": 0,
+          "updated_at": "2026-09-04T01:09:04.671Z"
+        },
+        "status": "corrected",
+        "reasoning": "T",
+        "action": "T",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "derived_case": "Case 6",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:47.238Z"
+      },
+      "libero_90-task0-episode0-seed20260901::q5": {
+        "subtask_checkpoint": {
+          "rule_version": 2,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T01:10:11.193Z"
+        },
+        "status": "corrected",
+        "reasoning": "T",
+        "action": "T",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "derived_case": "Case 6",
+        "confidence": "Low",
+        "evidence": "The stated subtask primitive is not reliably supported by the state predicates. Available alignment components are incomplete or only partially supportive. This chunk immediately precedes recorded task success. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:48.651Z"
+      },
+      "libero_90-task0-episode0-seed20260901::q0": {
+        "status": "corrected",
+        "reasoning": "F",
+        "action": "F",
+        "kinematic_alignment": "T",
+        "target_alignment": "F",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "overall_alignment": "F",
+        "derived_case": "Case 5",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:40.947Z",
+        "target_reasoning": "T",
+        "target_action": "F",
+        "subtask_reasoning": "T",
+        "subtask_action": "F"
+      },
+      "libero_90-task0-episode0-seed20260901::q2": {
+        "status": "corrected",
+        "reasoning": "F",
+        "action": "F",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "overall_alignment": "F",
+        "derived_case": "Case 4",
+        "confidence": "High",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:42:44.542Z",
+        "target_reasoning": "T",
+        "target_action": "T",
+        "subtask_reasoning": "T",
+        "subtask_action": "F",
+        "target_case": "Case 1",
+        "subtask_case": "Case 3"
+      },
+      "libero_90-task3-episode0-seed20260904::q5": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T04:29:10.560Z"
+        },
+        "status": "corrected",
+        "kinematic_alignment": "F",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "No",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:41.230Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q0": {
+        "status": "corrected",
+        "reasoning": "T",
+        "action": "T",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "derived_case": "Case 6",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:46.780Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q1": {
+        "status": "corrected",
+        "reasoning": "T",
+        "action": "T",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "derived_case": "Case 6",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:45.564Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q9": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:32:42.476Z"
+        },
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:46:30.078Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q15": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:33:30.939Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q21": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:34:02.340Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q24": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:34:27.456Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q27": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:34:54.338Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q32": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:35:21.470Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q36": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:36:12.744Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q37": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "incomplete",
+          "completed_units": 0,
+          "updated_at": "2026-09-04T21:36:40.831Z"
+        }
+      },
+      "libero_90-task3-episode0-seed20260904::q3": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:43.622Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q4": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:42.623Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q6": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:39.958Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q7": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "F",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Alignment diagnostics: subtask_not_completed, target_moved_away. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:37.724Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q2": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "High",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. All available alignment claims agree with the executed state change. The action faithfully realizes a locally supported, task-correct next step.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:44:44.521Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q8": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:45:00.127Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q10": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:46:32.896Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q11": {
+        "status": "corrected",
+        "kinematic_alignment": "F",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "No",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Alignment diagnostics: kinematic_opposite. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:46:53.739Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q12": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:47:07.423Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q13": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:47:18.719Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q14": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:47:23.436Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q16": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:49:06.306Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q17": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "N/A",
+        "subtask_alignment": "F",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "Target resolution is ambiguous. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:49:20.030Z"
+      },
+      "libero_90-task3-episode0-seed20260904::q18": {
+        "status": "corrected",
+        "kinematic_alignment": "T",
+        "target_alignment": "T",
+        "subtask_alignment": "T",
+        "faithfulness": "Yes",
+        "confidence": "Low",
+        "evidence": "The stated target is task-relevant and the observable subtask prerequisites are consistent. Available alignment components are incomplete or only partially supportive. Alignment evidence alone cannot decide whether this different action was task-correct; human review is required.",
+        "decisive_error": false,
+        "updated_at": "2026-09-04T21:49:27.250Z"
+      },
+      "libero_90-task18-episode0-seed20260919::q15": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T21:57:27.903Z"
+        }
+      },
+      "libero_90-task18-episode0-seed20260919::q36": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 2,
+          "updated_at": "2026-09-04T22:13:22.892Z"
+        }
+      },
+      "libero_90-task18-episode0-seed20260919::q20": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:13:47.105Z"
+        }
+      },
+      "libero_90-task18-episode0-seed20260919::q23": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:14:18.423Z"
+        }
+      },
+      "libero_90-task18-episode0-seed20260919::q27": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:14:46.822Z"
+        }
+      },
+      "libero_90-task81-episode0-seed20260982::q7": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 2,
+          "updated_at": "2026-09-04T22:28:10.890Z"
+        }
+      },
+      "libero_90-task81-episode0-seed20260982::q20": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:28:57.560Z"
+        }
+      },
+      "libero_90-task81-episode0-seed20260982::q16": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:29:09.086Z"
+        }
+      },
+      "libero_90-task81-episode0-seed20260982::q28": {
+        "subtask_checkpoint": {
+          "rule_version": 3,
+          "judgment": "complete",
+          "completed_units": 1,
+          "updated_at": "2026-09-04T22:29:42.951Z"
+        }
+      }
+    }
+  }
+}

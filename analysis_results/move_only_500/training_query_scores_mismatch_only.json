@@ -1,0 +1,8717 @@
+[
+  {
+    "id": "task0-query6",
+    "cosine": 0.9638775587081909,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task0-query5",
+    "cosine": 0.9827266931533813,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task0-query1",
+    "cosine": 0.9198683500289917,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task0-query3",
+    "cosine": 0.9954127073287964,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task0-query0",
+    "cosine": 0.8153079748153687,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task0-query4",
+    "cosine": 0.7403414249420166,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query6",
+    "cosine": 0.7652965188026428,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query14",
+    "cosine": 0.9798386693000793,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query7",
+    "cosine": 0.6732122898101807,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query1",
+    "cosine": 0.9625027179718018,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query17",
+    "cosine": 0.6819721460342407,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query8",
+    "cosine": 0.9199318289756775,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query0",
+    "cosine": 0.9053296446800232,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query18",
+    "cosine": 0.9987066984176636,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query13",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task1-query9",
+    "cosine": 0.923578143119812,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query3",
+    "cosine": 0.9259088635444641,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query16",
+    "cosine": 0.8834141492843628,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query5",
+    "cosine": 0.8288458585739136,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query4",
+    "cosine": 0.9874725937843323,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task1-query2",
+    "cosine": 0.7167134284973145,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query13",
+    "cosine": 0.9591805338859558,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query4",
+    "cosine": 0.9124138951301575,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query8",
+    "cosine": 0.9336923360824585,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query9",
+    "cosine": 0.9432132840156555,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query12",
+    "cosine": 0.7307660579681396,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query0",
+    "cosine": 0.8714113235473633,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query7",
+    "cosine": 0.8234758377075195,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query14",
+    "cosine": 0.8382945656776428,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query5",
+    "cosine": 0.9900614619255066,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query3",
+    "cosine": 0.8176621198654175,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query10",
+    "cosine": 0.865213930606842,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task2-query11",
+    "cosine": 0.999098539352417,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query10",
+    "cosine": 0.923844575881958,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query3",
+    "cosine": 0.5879758596420288,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query5",
+    "cosine": 0.9262791275978088,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query12",
+    "cosine": 0.8660522699356079,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query15",
+    "cosine": 0.894589364528656,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query11",
+    "cosine": 0.7469370365142822,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query2",
+    "cosine": 0.9242191314697266,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query14",
+    "cosine": 0.8080949783325195,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query6",
+    "cosine": 0.9473382830619812,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query1",
+    "cosine": 0.9975613951683044,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query9",
+    "cosine": 0.7351006865501404,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query13",
+    "cosine": 0.7530725002288818,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query16",
+    "cosine": 0.9994461536407471,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task3-query4",
+    "cosine": 0.969972550868988,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query16",
+    "cosine": 0.8726562261581421,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query17",
+    "cosine": 0.9088345170021057,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query7",
+    "cosine": 0.871476948261261,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query8",
+    "cosine": 0.8655719757080078,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query13",
+    "cosine": 0.7526854872703552,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query15",
+    "cosine": 0.5110281109809875,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query6",
+    "cosine": 0.9503085613250732,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query5",
+    "cosine": 0.7936209440231323,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query9",
+    "cosine": 0.9566980600357056,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query0",
+    "cosine": 0.786807119846344,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query3",
+    "cosine": 0.757910966873169,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query4",
+    "cosine": 0.8908591270446777,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query2",
+    "cosine": 0.990120530128479,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task4-query1",
+    "cosine": 0.997259795665741,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query5",
+    "cosine": 0.801228404045105,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query8",
+    "cosine": 0.9856752753257751,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query0",
+    "cosine": 0.601085364818573,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query13",
+    "cosine": 0.6638336181640625,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query15",
+    "cosine": 0.9408155083656311,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query10",
+    "cosine": 0.7816464304924011,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query3",
+    "cosine": 0.8651441931724548,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query4",
+    "cosine": 0.8304620385169983,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query9",
+    "cosine": 0.8599029183387756,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query11",
+    "cosine": 0.9454725980758667,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query2",
+    "cosine": 0.9247956871986389,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query1",
+    "cosine": 0.9784094095230103,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query14",
+    "cosine": 0.725396990776062,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task5-query12",
+    "cosine": 0.968180775642395,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query11",
+    "cosine": 0.922560453414917,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query10",
+    "cosine": 0.9361448884010315,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query12",
+    "cosine": 0.9717236757278442,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query9",
+    "cosine": 0.6977282166481018,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query0",
+    "cosine": 0.9172369837760925,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query6",
+    "cosine": 0.8813564777374268,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query4",
+    "cosine": 0.9933832883834839,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query3",
+    "cosine": 0.9817014932632446,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query7",
+    "cosine": 0.9727441668510437,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task6-query5",
+    "cosine": 0.5983845591545105,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query5",
+    "cosine": 0.7974840998649597,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query1",
+    "cosine": 0.8572707176208496,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query7",
+    "cosine": 0.9142931699752808,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query3",
+    "cosine": 0.9851996898651123,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query0",
+    "cosine": 0.9143166542053223,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task7-query2",
+    "cosine": 0.9875425100326538,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query4",
+    "cosine": 0.8884621858596802,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query21",
+    "cosine": 0.7241075038909912,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query13",
+    "cosine": 0.837796151638031,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query2",
+    "cosine": 0.9855327010154724,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query24",
+    "cosine": 0.7559691667556763,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query6",
+    "cosine": 0.8473663330078125,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query14",
+    "cosine": 0.6473062038421631,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query8",
+    "cosine": 0.9748199582099915,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query22",
+    "cosine": 0.8662629127502441,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query12",
+    "cosine": 0.8968291878700256,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query7",
+    "cosine": 0.9821735620498657,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query19",
+    "cosine": 0.7247479557991028,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query17",
+    "cosine": 0.9906545877456665,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query23",
+    "cosine": 0.5083765387535095,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query10",
+    "cosine": 0.857631266117096,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query11",
+    "cosine": 0.9113950729370117,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query15",
+    "cosine": 0.6155489087104797,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query18",
+    "cosine": 0.9297987222671509,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query5",
+    "cosine": 0.8567833304405212,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query20",
+    "cosine": 0.9617774486541748,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task8-query9",
+    "cosine": 0.5809945464134216,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query3",
+    "cosine": 0.7649089694023132,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query8",
+    "cosine": 0.9227566123008728,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query0",
+    "cosine": 0.9710133671760559,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query9",
+    "cosine": 0.8709090352058411,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query1",
+    "cosine": 0.8889169096946716,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query11",
+    "cosine": 0.9301508665084839,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query13",
+    "cosine": 0.7333031892776489,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query2",
+    "cosine": 0.8858808875083923,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query5",
+    "cosine": 0.6728283166885376,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query4",
+    "cosine": 0.8839287757873535,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task9-query7",
+    "cosine": 0.8698827028274536,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query2",
+    "cosine": 0.8308521509170532,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query11",
+    "cosine": 0.8702904582023621,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query7",
+    "cosine": 0.9645643830299377,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query9",
+    "cosine": 0.9928139448165894,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query1",
+    "cosine": 0.970029890537262,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query10",
+    "cosine": 0.9078342914581299,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query6",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task10-query12",
+    "cosine": 0.6904734969139099,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query8",
+    "cosine": 0.9973010420799255,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task10-query3",
+    "cosine": 0.9889675378799438,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task11-query4",
+    "cosine": 0.9332888722419739,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task11-query3",
+    "cosine": 0.6987376809120178,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task11-query5",
+    "cosine": 0.9260721802711487,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task11-query0",
+    "cosine": 0.9366628527641296,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task11-query1",
+    "cosine": 0.8449950218200684,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query5",
+    "cosine": 0.9711943864822388,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query0",
+    "cosine": 0.9120490550994873,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query8",
+    "cosine": 0.7666804790496826,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query9",
+    "cosine": 0.9933847188949585,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query4",
+    "cosine": 0.7220243811607361,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query7",
+    "cosine": 0.8202998638153076,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query3",
+    "cosine": 0.8203300833702087,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task12-query1",
+    "cosine": 0.9228336215019226,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query6",
+    "cosine": 0.9533210396766663,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query3",
+    "cosine": 0.9807323217391968,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query10",
+    "cosine": 0.9711864590644836,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query1",
+    "cosine": 0.9970118999481201,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query5",
+    "cosine": 0.9661522507667542,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query2",
+    "cosine": 0.9784448742866516,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query9",
+    "cosine": 0.7609050869941711,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query7",
+    "cosine": 0.546614408493042,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query0",
+    "cosine": 0.8689077496528625,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task13-query4",
+    "cosine": 0.6367223858833313,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query6",
+    "cosine": 0.9344865679740906,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query4",
+    "cosine": 0.9574683308601379,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query2",
+    "cosine": 0.9460759162902832,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query7",
+    "cosine": 0.5642806887626648,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query5",
+    "cosine": 0.9629294276237488,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query8",
+    "cosine": 0.8813443779945374,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task14-query3",
+    "cosine": 0.9993991255760193,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query8",
+    "cosine": 0.979866623878479,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query6",
+    "cosine": 0.9821776151657104,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query1",
+    "cosine": 0.9314445853233337,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query12",
+    "cosine": 0.9999265670776367,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query5",
+    "cosine": 0.95784991979599,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query9",
+    "cosine": 0.9362257122993469,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query10",
+    "cosine": 0.655048668384552,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query3",
+    "cosine": 0.6047202944755554,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query0",
+    "cosine": 0.9376993179321289,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task15-query2",
+    "cosine": 0.9978934526443481,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query4",
+    "cosine": 0.9829144477844238,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query9",
+    "cosine": 0.9318462610244751,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query7",
+    "cosine": 0.7673782706260681,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query6",
+    "cosine": 0.5682491660118103,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query0",
+    "cosine": 0.9545372724533081,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query1",
+    "cosine": 0.9443000555038452,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query5",
+    "cosine": 0.9303901195526123,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task16-query3",
+    "cosine": 0.878489077091217,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query10",
+    "cosine": 0.9857378602027893,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query6",
+    "cosine": 0.6656922698020935,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query9",
+    "cosine": 0.9565155506134033,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query4",
+    "cosine": 0.9467907547950745,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query2",
+    "cosine": 0.9205918908119202,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query0",
+    "cosine": 0.9354460835456848,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query3",
+    "cosine": 0.8756498694419861,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query8",
+    "cosine": 0.794331967830658,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task17-query7",
+    "cosine": 0.8414089679718018,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query8",
+    "cosine": 0.9989370107650757,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query3",
+    "cosine": 0.992013156414032,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query20",
+    "cosine": 0.9142890572547913,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query4",
+    "cosine": 0.9851524233818054,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query19",
+    "cosine": 0.9859234094619751,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query13",
+    "cosine": 0.8969293832778931,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query17",
+    "cosine": 0.9446633458137512,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query1",
+    "cosine": 0.9918428063392639,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query15",
+    "cosine": 0.8335424661636353,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query2",
+    "cosine": 0.9532009363174438,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query11",
+    "cosine": 0.8091117739677429,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query6",
+    "cosine": 0.6855894327163696,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query9",
+    "cosine": 0.881233811378479,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query12",
+    "cosine": 0.9230725169181824,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query16",
+    "cosine": 0.7653270363807678,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query18",
+    "cosine": 0.9923720359802246,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task18-query14",
+    "cosine": 0.8082205057144165,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query14",
+    "cosine": 0.9514755606651306,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query2",
+    "cosine": 0.9918302297592163,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query6",
+    "cosine": 0.9183696508407593,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query8",
+    "cosine": 0.9670018553733826,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query0",
+    "cosine": 0.8932737112045288,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query10",
+    "cosine": 0.9764978885650635,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query13",
+    "cosine": 0.8854395151138306,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query1",
+    "cosine": 0.898665726184845,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query9",
+    "cosine": 0.891533613204956,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query12",
+    "cosine": 0.9925175309181213,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query15",
+    "cosine": 0.9557510614395142,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task19-query4",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task19-query5",
+    "cosine": 0.7957895398139954,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query6",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task20-query0",
+    "cosine": 0.9668670296669006,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query4",
+    "cosine": 0.9791996479034424,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query7",
+    "cosine": 0.8360181450843811,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query5",
+    "cosine": 0.9363659024238586,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query3",
+    "cosine": 0.7496088147163391,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task20-query8",
+    "cosine": 0.9919751882553101,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query22",
+    "cosine": 0.9994342923164368,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query23",
+    "cosine": 0.9899230003356934,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query4",
+    "cosine": 0.9105587005615234,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query6",
+    "cosine": 0.9944774508476257,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query14",
+    "cosine": 0.957138180732727,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query1",
+    "cosine": 0.8965733051300049,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query10",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task21-query0",
+    "cosine": 0.9812607169151306,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query25",
+    "cosine": 0.825446367263794,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query11",
+    "cosine": 0.9577804207801819,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query16",
+    "cosine": 0.8451763987541199,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query12",
+    "cosine": 0.8334006071090698,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query19",
+    "cosine": 0.9745911359786987,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query2",
+    "cosine": 0.7863801717758179,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query17",
+    "cosine": 0.6929093599319458,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query21",
+    "cosine": 0.8924229741096497,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query5",
+    "cosine": 0.9546971917152405,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query15",
+    "cosine": 0.7113714814186096,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query20",
+    "cosine": 0.9438603520393372,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query18",
+    "cosine": 0.9694117903709412,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task21-query24",
+    "cosine": 0.9965779185295105,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query6",
+    "cosine": 0.9953189492225647,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query5",
+    "cosine": 0.9508633613586426,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query3",
+    "cosine": 0.7231882214546204,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query1",
+    "cosine": 0.9606415033340454,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query8",
+    "cosine": 0.9645118713378906,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query7",
+    "cosine": 0.9598050117492676,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query14",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task22-query11",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task22-query0",
+    "cosine": 0.983235776424408,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query10",
+    "cosine": 0.9584490656852722,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query2",
+    "cosine": 0.9795607328414917,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task22-query13",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task23-query31",
+    "cosine": 0.8183260560035706,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query37",
+    "cosine": 0.5982071757316589,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query16",
+    "cosine": 0.9486657977104187,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query10",
+    "cosine": 0.9560264348983765,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query6",
+    "cosine": 0.9528583288192749,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query4",
+    "cosine": 0.7755124568939209,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query27",
+    "cosine": 0.7288858890533447,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query34",
+    "cosine": 0.6851614713668823,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query5",
+    "cosine": 0.6248307824134827,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query30",
+    "cosine": 0.8550347089767456,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query39",
+    "cosine": 0.6438637971878052,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query23",
+    "cosine": 0.8358996510505676,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query26",
+    "cosine": 0.8784891963005066,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query38",
+    "cosine": 0.8974530696868896,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query32",
+    "cosine": 0.6612614393234253,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query1",
+    "cosine": 0.9670514464378357,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query14",
+    "cosine": 0.6892018914222717,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query19",
+    "cosine": 0.9294105172157288,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query9",
+    "cosine": 0.9913033246994019,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query3",
+    "cosine": 0.9739166498184204,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query24",
+    "cosine": 0.7189554572105408,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query36",
+    "cosine": 0.6003484725952148,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query21",
+    "cosine": 0.8975882530212402,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query11",
+    "cosine": 0.9425079226493835,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query25",
+    "cosine": 0.7689633965492249,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query33",
+    "cosine": 0.8306964635848999,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query2",
+    "cosine": 0.9921252131462097,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query15",
+    "cosine": 0.9467211961746216,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query35",
+    "cosine": 0.6116865873336792,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query28",
+    "cosine": 0.7254265546798706,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query20",
+    "cosine": 0.8130031228065491,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task23-query0",
+    "cosine": 0.8309471607208252,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query24",
+    "cosine": 0.7753593921661377,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query36",
+    "cosine": 0.9921160340309143,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query1",
+    "cosine": 0.8774974346160889,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query39",
+    "cosine": 0.895313024520874,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query3",
+    "cosine": 0.509354293346405,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query22",
+    "cosine": 0.9966673254966736,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query9",
+    "cosine": 0.9919303059577942,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query37",
+    "cosine": 0.9499704837799072,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query15",
+    "cosine": 0.9759814143180847,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query31",
+    "cosine": 0.7130727767944336,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query19",
+    "cosine": 0.9800139665603638,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query29",
+    "cosine": 0.6397947072982788,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query21",
+    "cosine": 0.5398234128952026,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query12",
+    "cosine": 0.9640356302261353,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query32",
+    "cosine": 0.7811495661735535,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query34",
+    "cosine": 0.9342813491821289,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query27",
+    "cosine": 0.9876863360404968,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query4",
+    "cosine": 0.9882964491844177,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query25",
+    "cosine": 0.6728784441947937,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query17",
+    "cosine": 0.8823655843734741,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query7",
+    "cosine": 0.9755081534385681,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query11",
+    "cosine": 0.7610478401184082,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query13",
+    "cosine": 0.9988353848457336,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query6",
+    "cosine": 0.9496667385101318,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query35",
+    "cosine": 0.7365027070045471,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query14",
+    "cosine": 0.9547407031059265,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query20",
+    "cosine": 0.9340817332267761,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query18",
+    "cosine": 0.8345783352851868,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query5",
+    "cosine": 0.6446503400802612,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query2",
+    "cosine": 0.8476095795631409,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query28",
+    "cosine": 0.9966298341751099,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task24-query30",
+    "cosine": 0.7363520264625549,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query6",
+    "cosine": 0.9856431484222412,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query1",
+    "cosine": 0.978910505771637,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query3",
+    "cosine": 0.8865917921066284,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query7",
+    "cosine": 0.8449580073356628,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query12",
+    "cosine": 0.8328338861465454,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query2",
+    "cosine": 0.999270498752594,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query8",
+    "cosine": 0.9982169270515442,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query11",
+    "cosine": 0.7577432990074158,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query4",
+    "cosine": 0.517781674861908,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query9",
+    "cosine": 0.8316677808761597,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task25-query0",
+    "cosine": 0.9746813774108887,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query4",
+    "cosine": 0.96156245470047,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query2",
+    "cosine": 0.7765818238258362,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query6",
+    "cosine": 0.9789408445358276,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query3",
+    "cosine": 0.6599054932594299,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query5",
+    "cosine": 0.9906420111656189,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query0",
+    "cosine": 0.9183199405670166,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query9",
+    "cosine": 0.924873411655426,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query1",
+    "cosine": 0.9667561650276184,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task26-query7",
+    "cosine": 0.9672207832336426,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query11",
+    "cosine": 0.8898974061012268,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query4",
+    "cosine": 0.8625454306602478,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query15",
+    "cosine": 0.911527693271637,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query3",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task27-query23",
+    "cosine": 0.993291974067688,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query2",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task27-query7",
+    "cosine": 0.9311224222183228,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query19",
+    "cosine": 0.9965435266494751,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query24",
+    "cosine": 0.9506134986877441,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query10",
+    "cosine": 0.983638346195221,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query6",
+    "cosine": 0.9552359580993652,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query20",
+    "cosine": 0.9012327194213867,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query22",
+    "cosine": 0.8343152403831482,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query12",
+    "cosine": 0.9985813498497009,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query1",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task27-query5",
+    "cosine": 0.708413302898407,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query9",
+    "cosine": 0.8961278796195984,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query21",
+    "cosine": 0.978857696056366,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query13",
+    "cosine": 0.6873502135276794,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task27-query0",
+    "cosine": 0.9970359206199646,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query2",
+    "cosine": 0.856020987033844,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query5",
+    "cosine": 0.9998663067817688,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query0",
+    "cosine": 0.8582004308700562,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query4",
+    "cosine": 0.9779176115989685,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query1",
+    "cosine": 0.9605307579040527,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task28-query6",
+    "cosine": 0.9993759393692017,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query8",
+    "cosine": 0.6401702761650085,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query11",
+    "cosine": 0.9885674715042114,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query4",
+    "cosine": 0.5298264622688293,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query1",
+    "cosine": 0.8579500913619995,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query2",
+    "cosine": 0.7462856769561768,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query3",
+    "cosine": 0.9935563802719116,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query7",
+    "cosine": 0.7985386252403259,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query9",
+    "cosine": 0.8638217449188232,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query6",
+    "cosine": 0.984528660774231,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task29-query12",
+    "cosine": 0.9975690841674805,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query4",
+    "cosine": 0.8582434058189392,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query2",
+    "cosine": 0.9583869576454163,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query9",
+    "cosine": 0.6328231692314148,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query6",
+    "cosine": 0.8740442991256714,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query10",
+    "cosine": 0.8588424324989319,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query7",
+    "cosine": 0.8011725544929504,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query11",
+    "cosine": 0.95313960313797,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query3",
+    "cosine": 0.8119379281997681,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query0",
+    "cosine": 0.969567596912384,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task30-query5",
+    "cosine": 0.8250900506973267,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query14",
+    "cosine": 0.892259418964386,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query13",
+    "cosine": 0.9112898111343384,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query3",
+    "cosine": 0.8931847214698792,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query11",
+    "cosine": 0.6296079158782959,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query7",
+    "cosine": 0.8040937185287476,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query2",
+    "cosine": 0.7174364924430847,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query10",
+    "cosine": 0.9071159958839417,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query0",
+    "cosine": 0.9395211935043335,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query5",
+    "cosine": 0.8659887909889221,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query1",
+    "cosine": 0.9528377652168274,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query12",
+    "cosine": 0.903186023235321,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task31-query4",
+    "cosine": 0.9300028681755066,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query8",
+    "cosine": 0.9128265380859375,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query20",
+    "cosine": 0.9816943407058716,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query17",
+    "cosine": 0.9671154618263245,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query1",
+    "cosine": 0.9685230255126953,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query22",
+    "cosine": 0.889724612236023,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query9",
+    "cosine": 0.9531035423278809,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query2",
+    "cosine": 0.7356087565422058,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query28",
+    "cosine": 0.9385443925857544,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query13",
+    "cosine": 0.9997491836547852,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query4",
+    "cosine": 0.8922303915023804,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query30",
+    "cosine": 0.7674772143363953,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query24",
+    "cosine": 0.9926161766052246,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query25",
+    "cosine": 0.9320656657218933,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query14",
+    "cosine": 0.8256251811981201,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query27",
+    "cosine": 0.8737514019012451,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query23",
+    "cosine": 0.8769084215164185,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query36",
+    "cosine": 0.9262692332267761,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query33",
+    "cosine": 0.8889754414558411,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query39",
+    "cosine": 0.9208546280860901,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query0",
+    "cosine": 0.7826010584831238,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query34",
+    "cosine": 0.8893826007843018,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query5",
+    "cosine": 0.6063447594642639,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query21",
+    "cosine": 0.8508889675140381,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query31",
+    "cosine": 0.9297382831573486,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query15",
+    "cosine": 0.5586697459220886,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query35",
+    "cosine": 0.7553809285163879,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query10",
+    "cosine": 0.8795349597930908,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query12",
+    "cosine": 0.9533140659332275,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query16",
+    "cosine": 0.9597346186637878,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query32",
+    "cosine": 0.8115495443344116,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query37",
+    "cosine": 0.8727324604988098,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task32-query38",
+    "cosine": 0.9474098086357117,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query8",
+    "cosine": 0.850644052028656,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query4",
+    "cosine": 0.9459999203681946,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query1",
+    "cosine": 0.9291588068008423,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query16",
+    "cosine": 0.9503734707832336,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query19",
+    "cosine": 0.9572498202323914,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query7",
+    "cosine": 0.8874381184577942,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query0",
+    "cosine": 0.9981054067611694,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query15",
+    "cosine": 0.9613437056541443,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query18",
+    "cosine": 0.968318521976471,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query11",
+    "cosine": 0.9646866917610168,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query10",
+    "cosine": 0.8666113615036011,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query9",
+    "cosine": 0.9052029252052307,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query5",
+    "cosine": 0.9278194308280945,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query14",
+    "cosine": 0.9208141565322876,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query6",
+    "cosine": 0.9990308880805969,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task33-query12",
+    "cosine": 0.9251676201820374,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query7",
+    "cosine": 0.794123649597168,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query0",
+    "cosine": 0.6595591902732849,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query6",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task34-query5",
+    "cosine": 0.952148973941803,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query9",
+    "cosine": 0.6582562327384949,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query1",
+    "cosine": 0.9408610463142395,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query10",
+    "cosine": 0.9831076860427856,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query3",
+    "cosine": 0.5909920930862427,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task34-query8",
+    "cosine": 0.8981990814208984,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query12",
+    "cosine": 0.9097338318824768,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query13",
+    "cosine": 0.9256205558776855,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query4",
+    "cosine": 0.7457435727119446,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query2",
+    "cosine": 0.9222855567932129,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query3",
+    "cosine": 0.8444145917892456,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query8",
+    "cosine": 0.6667534708976746,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query5",
+    "cosine": 0.7564485669136047,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query11",
+    "cosine": 0.999762237071991,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query6",
+    "cosine": 0.9154019355773926,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query0",
+    "cosine": 0.9318283200263977,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task35-query1",
+    "cosine": 0.8973301649093628,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query8",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task36-query15",
+    "cosine": 0.8399451375007629,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query0",
+    "cosine": 0.7038763165473938,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query13",
+    "cosine": 0.8434486985206604,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query7",
+    "cosine": 0.9541090726852417,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query4",
+    "cosine": 0.7934333682060242,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query2",
+    "cosine": 0.9063955545425415,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query6",
+    "cosine": 0.9649616479873657,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query9",
+    "cosine": 0.7441537976264954,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query10",
+    "cosine": 0.8823327422142029,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query14",
+    "cosine": 0.9972968101501465,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query5",
+    "cosine": 0.9461476802825928,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query11",
+    "cosine": 0.992178201675415,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task36-query17",
+    "cosine": 0.914864718914032,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query6",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task37-query1",
+    "cosine": 0.9272987842559814,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query9",
+    "cosine": 0.9566690921783447,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query11",
+    "cosine": 0.885124683380127,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query5",
+    "cosine": 0.6755764484405518,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query8",
+    "cosine": 0.7692947387695312,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query10",
+    "cosine": 0.858557939529419,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query3",
+    "cosine": 0.9110442399978638,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query0",
+    "cosine": 0.88929682970047,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task37-query4",
+    "cosine": 0.8035188913345337,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query9",
+    "cosine": 0.803737461566925,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query8",
+    "cosine": 0.639484703540802,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query10",
+    "cosine": 0.6367970108985901,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query6",
+    "cosine": 0.9721471071243286,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query11",
+    "cosine": 0.6941593885421753,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query15",
+    "cosine": 0.8310976028442383,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query18",
+    "cosine": 0.8684056997299194,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query13",
+    "cosine": 0.7177214622497559,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query14",
+    "cosine": 0.8912642598152161,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task38-query4",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task38-query12",
+    "cosine": 0.6762938499450684,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query2",
+    "cosine": 0.8834441304206848,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query0",
+    "cosine": 0.9545171856880188,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task38-query17",
+    "cosine": 0.9606744647026062,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query10",
+    "cosine": 0.9957817196846008,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query1",
+    "cosine": 0.9222835302352905,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query8",
+    "cosine": 0.9973480105400085,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query3",
+    "cosine": 0.8496342301368713,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query7",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task39-query9",
+    "cosine": 0.993517279624939,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query6",
+    "cosine": 0.8597062826156616,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query2",
+    "cosine": 0.9073376059532166,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task39-query4",
+    "cosine": 0.9722575545310974,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query5",
+    "cosine": 0.8869414329528809,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query9",
+    "cosine": 0.9698086977005005,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query6",
+    "cosine": 0.5087127089500427,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query14",
+    "cosine": 0.9798153638839722,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query1",
+    "cosine": 0.8711110949516296,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query2",
+    "cosine": 0.9619730114936829,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query8",
+    "cosine": 0.9999179244041443,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query13",
+    "cosine": 0.9819803237915039,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query0",
+    "cosine": 0.9262648820877075,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query15",
+    "cosine": 0.9624330401420593,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query10",
+    "cosine": 0.9693023562431335,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query7",
+    "cosine": 0.9996691346168518,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query16",
+    "cosine": 0.862044095993042,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task40-query17",
+    "cosine": 0.9719629883766174,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query7",
+    "cosine": 0.6286494731903076,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query14",
+    "cosine": 0.9794340133666992,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query4",
+    "cosine": 0.9951532483100891,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query18",
+    "cosine": 0.9972174167633057,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query21",
+    "cosine": 0.9942103028297424,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query10",
+    "cosine": 0.8830810189247131,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query13",
+    "cosine": 0.8987053632736206,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query8",
+    "cosine": 0.6563608646392822,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query26",
+    "cosine": 0.9169826507568359,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query2",
+    "cosine": 0.9753541946411133,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query17",
+    "cosine": 0.8325812220573425,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query1",
+    "cosine": 0.9363371729850769,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query20",
+    "cosine": 0.9484742283821106,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query12",
+    "cosine": 0.9399963021278381,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query0",
+    "cosine": 0.9721719026565552,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query25",
+    "cosine": 0.9091942310333252,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query6",
+    "cosine": 0.9719445705413818,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query22",
+    "cosine": 0.6325232982635498,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query9",
+    "cosine": 0.8842021226882935,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query15",
+    "cosine": 0.9958918690681458,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query24",
+    "cosine": 0.9489523768424988,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task41-query23",
+    "cosine": 0.8709556460380554,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query8",
+    "cosine": 0.9938507080078125,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query1",
+    "cosine": 0.9461230635643005,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query0",
+    "cosine": 0.8880726099014282,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query3",
+    "cosine": 0.9731096625328064,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query5",
+    "cosine": 0.992846667766571,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query12",
+    "cosine": 0.9679086208343506,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query14",
+    "cosine": 0.7386824488639832,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query10",
+    "cosine": 0.809060275554657,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query2",
+    "cosine": 0.9256025552749634,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query11",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task42-query6",
+    "cosine": 0.9049438834190369,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task42-query4",
+    "cosine": 0.9906002283096313,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query11",
+    "cosine": 0.8273270130157471,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query10",
+    "cosine": 0.6834610104560852,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query7",
+    "cosine": 0.9813540577888489,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query0",
+    "cosine": 0.9546723961830139,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query4",
+    "cosine": 0.9517112374305725,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query9",
+    "cosine": 0.9649083018302917,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query3",
+    "cosine": 0.773363471031189,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query6",
+    "cosine": 0.8488927483558655,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query2",
+    "cosine": 0.826782763004303,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task43-query8",
+    "cosine": 0.9459071755409241,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query7",
+    "cosine": 0.9387120604515076,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query9",
+    "cosine": 0.9818488359451294,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query0",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task44-query2",
+    "cosine": 0.9954017996788025,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query4",
+    "cosine": 0.8974689245223999,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query3",
+    "cosine": 0.8448553681373596,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query11",
+    "cosine": 0.9604195952415466,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query5",
+    "cosine": 0.9853854179382324,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query8",
+    "cosine": 0.9483434557914734,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task44-query10",
+    "cosine": 0.9909250736236572,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query1",
+    "cosine": 0.936919093132019,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query6",
+    "cosine": 0.7752031683921814,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query14",
+    "cosine": 0.9571606516838074,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query22",
+    "cosine": 0.9317234754562378,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query7",
+    "cosine": 0.8411257863044739,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query8",
+    "cosine": 0.9982947707176208,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query20",
+    "cosine": 0.9437026977539062,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query10",
+    "cosine": 0.8787527084350586,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query18",
+    "cosine": 0.8743678331375122,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query4",
+    "cosine": 0.8941036462783813,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query15",
+    "cosine": 0.8315035104751587,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query0",
+    "cosine": 0.9219659566879272,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query19",
+    "cosine": 0.9624270796775818,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query11",
+    "cosine": 0.9935141801834106,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query12",
+    "cosine": 0.936457633972168,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query17",
+    "cosine": 0.9819592833518982,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query9",
+    "cosine": 0.9905349612236023,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query21",
+    "cosine": 0.8113881945610046,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task45-query23",
+    "cosine": 0.9283543229103088,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query4",
+    "cosine": 0.720640242099762,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query5",
+    "cosine": 0.9581846594810486,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query7",
+    "cosine": 0.9688465595245361,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query12",
+    "cosine": 0.7298288345336914,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query9",
+    "cosine": 0.7952859401702881,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query10",
+    "cosine": 0.8795818090438843,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query0",
+    "cosine": 0.8486100435256958,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query11",
+    "cosine": 0.8464810252189636,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query8",
+    "cosine": 0.9985321760177612,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query13",
+    "cosine": 0.9371140599250793,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task46-query1",
+    "cosine": 0.9714578986167908,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query11",
+    "cosine": 0.9213252663612366,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query5",
+    "cosine": 0.9427887201309204,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query0",
+    "cosine": 0.5882378220558167,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query1",
+    "cosine": 0.9895719885826111,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query10",
+    "cosine": 0.852386474609375,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query8",
+    "cosine": 0.7197475433349609,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query9",
+    "cosine": 0.729673445224762,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query7",
+    "cosine": 0.9511401653289795,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query6",
+    "cosine": 0.95930415391922,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task47-query3",
+    "cosine": 0.9525618553161621,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query11",
+    "cosine": 0.8140866756439209,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query6",
+    "cosine": 0.9946701526641846,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query15",
+    "cosine": 0.9961869716644287,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query7",
+    "cosine": 0.9608449935913086,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query12",
+    "cosine": 0.8363681435585022,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query4",
+    "cosine": 0.9449684619903564,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query9",
+    "cosine": 0.9443541765213013,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query0",
+    "cosine": 0.9164434671401978,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query2",
+    "cosine": 0.8132287263870239,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query1",
+    "cosine": 0.9573653340339661,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query8",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task48-query13",
+    "cosine": 0.8912846446037292,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task48-query3",
+    "cosine": 0.951377272605896,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query28",
+    "cosine": 0.8161351084709167,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query18",
+    "cosine": 0.8933795094490051,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query26",
+    "cosine": 0.9516148567199707,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query38",
+    "cosine": 0.8020937442779541,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query4",
+    "cosine": 0.9994145035743713,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query37",
+    "cosine": 0.890148937702179,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query10",
+    "cosine": 0.7365235686302185,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query22",
+    "cosine": 0.818849503993988,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query17",
+    "cosine": 0.7423784136772156,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query9",
+    "cosine": 0.9931166172027588,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query35",
+    "cosine": 0.811581015586853,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query7",
+    "cosine": 0.6598665118217468,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query39",
+    "cosine": 0.9387598037719727,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query29",
+    "cosine": 0.8628342151641846,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query0",
+    "cosine": 0.8655723333358765,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query14",
+    "cosine": 0.9746100902557373,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query2",
+    "cosine": 0.8645399212837219,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query32",
+    "cosine": 0.9524555206298828,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query24",
+    "cosine": 0.9591729044914246,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query23",
+    "cosine": 0.9673559665679932,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query21",
+    "cosine": 0.9736534357070923,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query16",
+    "cosine": 0.9845395684242249,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query8",
+    "cosine": 0.8552616834640503,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query12",
+    "cosine": 0.7192588448524475,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query5",
+    "cosine": 0.9430690407752991,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query13",
+    "cosine": 0.753365159034729,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query11",
+    "cosine": 0.9644677639007568,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query25",
+    "cosine": 0.965182363986969,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query31",
+    "cosine": 0.9305469393730164,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query19",
+    "cosine": 0.9235951900482178,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query15",
+    "cosine": 0.9722760319709778,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task49-query1",
+    "cosine": 0.9796189665794373,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query11",
+    "cosine": 0.9863921403884888,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query5",
+    "cosine": 0.8967927694320679,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query9",
+    "cosine": 0.8117583394050598,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query6",
+    "cosine": 0.9212090969085693,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query0",
+    "cosine": 0.9985438585281372,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query7",
+    "cosine": 0.7016342282295227,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query1",
+    "cosine": 0.9738109707832336,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query3",
+    "cosine": 0.9162452220916748,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query2",
+    "cosine": 0.8659407496452332,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task50-query4",
+    "cosine": 0.9806972742080688,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query0",
+    "cosine": 0.8856592774391174,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query7",
+    "cosine": 0.941913902759552,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query4",
+    "cosine": 0.902468204498291,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query3",
+    "cosine": 0.9363518953323364,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query2",
+    "cosine": 0.6522884368896484,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query6",
+    "cosine": 0.9767180681228638,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task51-query1",
+    "cosine": 0.9471468329429626,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query4",
+    "cosine": 0.9369148015975952,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query28",
+    "cosine": 0.8525084853172302,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query36",
+    "cosine": 0.9707774519920349,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query27",
+    "cosine": 0.9872467517852783,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query33",
+    "cosine": 0.9208914637565613,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query1",
+    "cosine": 0.8012194633483887,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query20",
+    "cosine": 0.8825783133506775,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query19",
+    "cosine": 0.9032008647918701,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query37",
+    "cosine": 0.9948455691337585,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query24",
+    "cosine": 0.8294248580932617,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query14",
+    "cosine": 0.9894497990608215,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query26",
+    "cosine": 0.9812542796134949,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query39",
+    "cosine": 0.9440191984176636,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query31",
+    "cosine": 0.9618533849716187,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query34",
+    "cosine": 0.9947585463523865,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query17",
+    "cosine": 0.8999778628349304,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query18",
+    "cosine": 0.8225891590118408,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query0",
+    "cosine": 0.9941955804824829,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query5",
+    "cosine": 0.9513755440711975,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query9",
+    "cosine": 0.955695390701294,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query21",
+    "cosine": 0.8313052654266357,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query12",
+    "cosine": 0.9573314785957336,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query10",
+    "cosine": 0.971216082572937,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query3",
+    "cosine": 0.9248531460762024,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query15",
+    "cosine": 0.9478701949119568,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query29",
+    "cosine": 0.9339718818664551,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query8",
+    "cosine": 0.9716280102729797,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query13",
+    "cosine": 0.9745212197303772,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query2",
+    "cosine": 0.9814156889915466,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query23",
+    "cosine": 0.8868938088417053,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query6",
+    "cosine": 0.9810556769371033,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task52-query38",
+    "cosine": 0.9844470620155334,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query6",
+    "cosine": 0.9926325082778931,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query12",
+    "cosine": 0.9791010022163391,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query8",
+    "cosine": 0.8572227358818054,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query4",
+    "cosine": 0.9820321798324585,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query7",
+    "cosine": 0.8854333758354187,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query10",
+    "cosine": 0.9038317203521729,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query13",
+    "cosine": 0.929410457611084,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query11",
+    "cosine": 0.9983097314834595,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query2",
+    "cosine": 0.9913310408592224,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query0",
+    "cosine": 0.9351637363433838,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query1",
+    "cosine": 0.842230498790741,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task53-query3",
+    "cosine": 0.8854562640190125,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query6",
+    "cosine": 0.9881263971328735,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query7",
+    "cosine": 0.8011572360992432,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query19",
+    "cosine": 0.9966854453086853,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query26",
+    "cosine": 0.9932010173797607,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query33",
+    "cosine": 0.6443417072296143,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query4",
+    "cosine": 0.9975945353507996,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query8",
+    "cosine": 0.9591973423957825,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query12",
+    "cosine": 0.9607295989990234,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query22",
+    "cosine": 0.8587396144866943,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query13",
+    "cosine": 0.9717937707901001,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query17",
+    "cosine": 0.9965713024139404,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query32",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task54-query5",
+    "cosine": 0.9393132328987122,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query25",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task54-query16",
+    "cosine": 0.951744794845581,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query23",
+    "cosine": 0.9965145587921143,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query10",
+    "cosine": 0.8774704337120056,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query3",
+    "cosine": 0.943661093711853,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query15",
+    "cosine": 0.9695044159889221,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query2",
+    "cosine": 0.9950875639915466,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query1",
+    "cosine": 0.6002645492553711,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query11",
+    "cosine": 0.9008608460426331,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query36",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task54-query35",
+    "cosine": 0.9666457176208496,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query29",
+    "cosine": 0.824855625629425,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query31",
+    "cosine": 0.9412954449653625,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query20",
+    "cosine": 0.823678195476532,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query18",
+    "cosine": 0.9951035976409912,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query34",
+    "cosine": 0.7120041251182556,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query28",
+    "cosine": 0.9706305861473083,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query37",
+    "cosine": 0.9497201442718506,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task54-query39",
+    "cosine": 0.8305728435516357,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query8",
+    "cosine": 0.9103315472602844,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query6",
+    "cosine": 0.8149368166923523,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query4",
+    "cosine": 0.9986143112182617,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query0",
+    "cosine": 0.3889318108558655,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task55-query9",
+    "cosine": 0.9657162427902222,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query7",
+    "cosine": 0.9947299361228943,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query3",
+    "cosine": 0.9931127429008484,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task55-query2",
+    "cosine": 0.9334319233894348,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query1",
+    "cosine": 0.8539774417877197,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query8",
+    "cosine": 0.9997766613960266,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query2",
+    "cosine": 0.8504087328910828,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query4",
+    "cosine": 0.9712752103805542,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query5",
+    "cosine": 0.9945801496505737,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query6",
+    "cosine": 0.9045631885528564,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task56-query0",
+    "cosine": 0.8258522748947144,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query13",
+    "cosine": 0.783237099647522,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query3",
+    "cosine": 0.703033447265625,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query15",
+    "cosine": 0.9977871775627136,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query0",
+    "cosine": 0.8914399147033691,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query7",
+    "cosine": 0.9164149761199951,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query8",
+    "cosine": 0.8626716732978821,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query4",
+    "cosine": 0.992061972618103,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query2",
+    "cosine": 0.9608030915260315,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query12",
+    "cosine": 0.8785402178764343,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query10",
+    "cosine": 0.9699962735176086,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query5",
+    "cosine": 0.7440075278282166,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query11",
+    "cosine": 0.72381991147995,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task57-query9",
+    "cosine": 0.8022236227989197,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query7",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task58-query9",
+    "cosine": 0.9803361296653748,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query13",
+    "cosine": 0.813971996307373,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query8",
+    "cosine": 0.8948878645896912,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query12",
+    "cosine": 0.9333086013793945,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query5",
+    "cosine": 0.8272757530212402,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query3",
+    "cosine": 0.7416490316390991,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query0",
+    "cosine": 0.9964494705200195,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query11",
+    "cosine": 0.8230409622192383,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query10",
+    "cosine": 0.8906532526016235,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query14",
+    "cosine": 0.9940923452377319,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task58-query4",
+    "cosine": 0.9964132905006409,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query8",
+    "cosine": 0.9287917613983154,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query3",
+    "cosine": 0.989726185798645,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query5",
+    "cosine": 0.9783156514167786,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query4",
+    "cosine": 0.9984284043312073,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query9",
+    "cosine": 0.8572494387626648,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query1",
+    "cosine": 0.972794771194458,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query2",
+    "cosine": 0.8431294560432434,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task59-query7",
+    "cosine": 0.8294147849082947,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query3",
+    "cosine": 0.766093373298645,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task60-query1",
+    "cosine": 0.7874047160148621,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query0",
+    "cosine": 0.8706682324409485,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query10",
+    "cosine": 0.8795142769813538,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query9",
+    "cosine": 0.822851836681366,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query7",
+    "cosine": 0.8542265295982361,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query4",
+    "cosine": 0.9723225235939026,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task60-query6",
+    "cosine": 0.7806686162948608,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query14",
+    "cosine": 0.9216717481613159,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query10",
+    "cosine": 0.7742155194282532,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query7",
+    "cosine": 0.9953353404998779,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query12",
+    "cosine": 0.9089468717575073,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query6",
+    "cosine": 0.8226677179336548,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query2",
+    "cosine": 0.9940451979637146,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query9",
+    "cosine": 0.7701230645179749,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query0",
+    "cosine": 0.7656772136688232,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query17",
+    "cosine": 0.8102501034736633,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query13",
+    "cosine": 0.8595438599586487,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query5",
+    "cosine": 0.869683563709259,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query4",
+    "cosine": 0.9714299440383911,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query11",
+    "cosine": 0.9699624180793762,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query3",
+    "cosine": 0.7038227319717407,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task61-query16",
+    "cosine": 0.7552199959754944,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query3",
+    "cosine": 0.903615415096283,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query9",
+    "cosine": 0.9975467920303345,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query4",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task62-query6",
+    "cosine": 0.9729690551757812,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query8",
+    "cosine": 0.8308998346328735,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query1",
+    "cosine": 0.9234787821769714,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query0",
+    "cosine": 0.7289450764656067,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task62-query7",
+    "cosine": 0.9753660559654236,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query6",
+    "cosine": 0.9527427554130554,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query12",
+    "cosine": 0.957305908203125,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query9",
+    "cosine": 0.9268901348114014,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query1",
+    "cosine": 0.927764892578125,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query13",
+    "cosine": 0.9666832089424133,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query17",
+    "cosine": 0.7455992698669434,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query0",
+    "cosine": 0.6304606795310974,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query14",
+    "cosine": 0.9875027537345886,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query19",
+    "cosine": 0.9505165219306946,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query3",
+    "cosine": 0.944395899772644,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query10",
+    "cosine": 0.5886026620864868,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query18",
+    "cosine": 0.9909875392913818,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query16",
+    "cosine": 0.9322630167007446,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query8",
+    "cosine": 0.9481896162033081,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task63-query11",
+    "cosine": 0.9908024072647095,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task63-query20",
+    "cosine": 0.7730811834335327,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query3",
+    "cosine": 0.7839673757553101,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query25",
+    "cosine": 0.9929116368293762,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query22",
+    "cosine": 0.8484184741973877,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query16",
+    "cosine": 0.9513763189315796,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query24",
+    "cosine": 0.8309391736984253,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query9",
+    "cosine": 0.8052861094474792,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query21",
+    "cosine": 0.8908282518386841,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query2",
+    "cosine": 0.9987313151359558,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query8",
+    "cosine": 0.6824290156364441,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query10",
+    "cosine": 0.5529177188873291,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query5",
+    "cosine": 0.9698693752288818,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query4",
+    "cosine": 0.9839552640914917,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query20",
+    "cosine": 0.889636218547821,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query12",
+    "cosine": 0.9993234276771545,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query19",
+    "cosine": 0.6585894823074341,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query7",
+    "cosine": 0.9970346689224243,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query15",
+    "cosine": 0.9822849631309509,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query11",
+    "cosine": 0.9401206970214844,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query17",
+    "cosine": 0.8186795115470886,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query0",
+    "cosine": 0.9085714221000671,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task64-query23",
+    "cosine": 0.9856995940208435,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query20",
+    "cosine": 0.9316798448562622,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query21",
+    "cosine": 0.9848318696022034,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query8",
+    "cosine": 0.9423894882202148,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query3",
+    "cosine": 0.9365155696868896,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query7",
+    "cosine": 0.9804272055625916,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query12",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task65-query9",
+    "cosine": 0.8838622570037842,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query17",
+    "cosine": 0.9875512719154358,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query13",
+    "cosine": 0.8181368708610535,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query10",
+    "cosine": 0.7974364161491394,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query4",
+    "cosine": 0.9450572729110718,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query1",
+    "cosine": 0.8204578757286072,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query15",
+    "cosine": 0.7775530219078064,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query14",
+    "cosine": 0.6855378746986389,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query16",
+    "cosine": 0.6345726847648621,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query22",
+    "cosine": 0.9693825840950012,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query11",
+    "cosine": 0.6518378257751465,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query0",
+    "cosine": 0.6454998254776001,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query23",
+    "cosine": 0.668737530708313,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query27",
+    "cosine": 0.9759324789047241,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query5",
+    "cosine": 0.9089205861091614,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query25",
+    "cosine": 0.9874981641769409,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task65-query26",
+    "cosine": 0.9961532354354858,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query3",
+    "cosine": 0.9912169575691223,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query11",
+    "cosine": 0.9242023229598999,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query32",
+    "cosine": 0.9053436517715454,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query35",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task66-query39",
+    "cosine": 0.7756006717681885,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query19",
+    "cosine": 0.8234668374061584,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query30",
+    "cosine": 0.9936264753341675,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query27",
+    "cosine": 0.8610899448394775,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query34",
+    "cosine": 0.7444635629653931,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query26",
+    "cosine": 0.8682304620742798,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query20",
+    "cosine": 0.8135004639625549,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query7",
+    "cosine": 0.9648504257202148,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query4",
+    "cosine": 0.995380699634552,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query29",
+    "cosine": 0.9952629208564758,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query25",
+    "cosine": 0.9698579907417297,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query24",
+    "cosine": 0.8499969840049744,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query13",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task66-query12",
+    "cosine": 0.8726409673690796,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query14",
+    "cosine": 0.6995899081230164,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query18",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task66-query17",
+    "cosine": 0.8416556119918823,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query8",
+    "cosine": 0.9780979752540588,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query23",
+    "cosine": 0.7000587582588196,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query5",
+    "cosine": 0.9015815854072571,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query0",
+    "cosine": 0.7574129104614258,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query16",
+    "cosine": 0.8345890641212463,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query15",
+    "cosine": 0.8427178859710693,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query21",
+    "cosine": 0.8352636694908142,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query37",
+    "cosine": 0.9539708495140076,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query31",
+    "cosine": 0.9032111167907715,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query9",
+    "cosine": 0.9710782766342163,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task66-query1",
+    "cosine": 0.7278395295143127,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query2",
+    "cosine": 0.9631032943725586,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query3",
+    "cosine": 0.9899092316627502,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query0",
+    "cosine": 0.9120874404907227,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query5",
+    "cosine": 0.8471682667732239,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query8",
+    "cosine": 0.8856907486915588,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query6",
+    "cosine": 0.9287155270576477,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query1",
+    "cosine": 0.9627442955970764,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task67-query9",
+    "cosine": 0.7802030444145203,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query3",
+    "cosine": 0.9601425528526306,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query8",
+    "cosine": 0.7383079528808594,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query33",
+    "cosine": 0.5980101227760315,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query38",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task68-query14",
+    "cosine": 0.8940607309341431,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query5",
+    "cosine": 0.801344096660614,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query20",
+    "cosine": 0.9935716390609741,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query6",
+    "cosine": 0.9300461411476135,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query10",
+    "cosine": 0.8973807692527771,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query25",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task68-query18",
+    "cosine": 0.9155651330947876,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query36",
+    "cosine": 0.5915476679801941,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query24",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task68-query35",
+    "cosine": 0.8143290877342224,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query2",
+    "cosine": 0.828702449798584,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query19",
+    "cosine": 0.9956631660461426,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query12",
+    "cosine": 0.9952607154846191,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query7",
+    "cosine": 0.9907859563827515,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query29",
+    "cosine": 0.8400761485099792,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query22",
+    "cosine": 0.8406881093978882,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query9",
+    "cosine": 0.9875177145004272,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query28",
+    "cosine": 0.968710720539093,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query16",
+    "cosine": 0.9019923806190491,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query4",
+    "cosine": 0.7778738141059875,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query32",
+    "cosine": 0.9302762746810913,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query15",
+    "cosine": 0.9695370197296143,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query30",
+    "cosine": 0.9100860357284546,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query0",
+    "cosine": 0.7503993511199951,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query13",
+    "cosine": 0.9842492938041687,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query26",
+    "cosine": 0.926349401473999,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query31",
+    "cosine": 0.8648530840873718,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task68-query34",
+    "cosine": 0.9934955835342407,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query11",
+    "cosine": 0.6131329536437988,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query0",
+    "cosine": 0.7941887378692627,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query8",
+    "cosine": 0.9876134991645813,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query10",
+    "cosine": 0.9116337299346924,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query4",
+    "cosine": 0.8243581652641296,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query5",
+    "cosine": 0.7879778146743774,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query2",
+    "cosine": 0.7058827877044678,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query6",
+    "cosine": 0.9193590879440308,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query9",
+    "cosine": 0.9446976780891418,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task69-query1",
+    "cosine": 0.8783147931098938,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query7",
+    "cosine": 0.9153891801834106,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query3",
+    "cosine": 0.9797531962394714,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query1",
+    "cosine": 0.9316933751106262,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query2",
+    "cosine": 0.9421765804290771,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query4",
+    "cosine": 0.9920446276664734,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task70-query5",
+    "cosine": 0.9654785990715027,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query0",
+    "cosine": 0.8286671042442322,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query4",
+    "cosine": 0.9935353398323059,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query8",
+    "cosine": 0.8546735644340515,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query3",
+    "cosine": 0.9324775338172913,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query2",
+    "cosine": 0.8987209796905518,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query1",
+    "cosine": 0.9388206005096436,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task71-query7",
+    "cosine": 0.8757374882698059,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task71-query9",
+    "cosine": 0.8117983341217041,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query30",
+    "cosine": 0.970833957195282,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query37",
+    "cosine": 0.965564489364624,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query20",
+    "cosine": 0.9761784076690674,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query21",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task72-query39",
+    "cosine": 0.9773231744766235,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query26",
+    "cosine": 0.9914972186088562,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query4",
+    "cosine": 0.9796452522277832,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query32",
+    "cosine": 0.8157976269721985,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query18",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task72-query31",
+    "cosine": 0.9434377551078796,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query10",
+    "cosine": 0.8605841398239136,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query29",
+    "cosine": 0.7750009894371033,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query3",
+    "cosine": 0.9610742330551147,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query22",
+    "cosine": 0.94923335313797,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query13",
+    "cosine": 0.9602391719818115,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query5",
+    "cosine": 0.9017038345336914,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query1",
+    "cosine": 0.9676274657249451,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query19",
+    "cosine": 0.7477319836616516,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query25",
+    "cosine": 0.9677941203117371,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query2",
+    "cosine": 0.9405194520950317,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query11",
+    "cosine": 0.928265392780304,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query0",
+    "cosine": 0.6350530982017517,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query8",
+    "cosine": 0.8798237442970276,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query34",
+    "cosine": 0.9389758706092834,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query16",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task72-query33",
+    "cosine": 0.9389111399650574,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query12",
+    "cosine": 0.9046170711517334,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query7",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task72-query27",
+    "cosine": 0.9760545492172241,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query14",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task72-query35",
+    "cosine": 0.9539213180541992,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task72-query9",
+    "cosine": 0.919574499130249,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query1",
+    "cosine": 0.8895729184150696,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query8",
+    "cosine": 0.6870588064193726,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query14",
+    "cosine": 0.9964046478271484,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query15",
+    "cosine": 0.9891795516014099,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query13",
+    "cosine": 0.9955411553382874,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query0",
+    "cosine": 0.6272379755973816,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query6",
+    "cosine": 0.8578512072563171,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query10",
+    "cosine": 0.9489609003067017,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query12",
+    "cosine": 0.7178091406822205,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query7",
+    "cosine": 0.9225684404373169,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query5",
+    "cosine": 0.8184019327163696,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query11",
+    "cosine": 0.8488748669624329,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task73-query3",
+    "cosine": 0.9979668259620667,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query16",
+    "cosine": 0.8880566954612732,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query6",
+    "cosine": 0.9652140140533447,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query0",
+    "cosine": 0.9895471334457397,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query5",
+    "cosine": 0.9582433700561523,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query8",
+    "cosine": 0.9711741805076599,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query14",
+    "cosine": 0.880592405796051,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query12",
+    "cosine": 0.7739986181259155,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query2",
+    "cosine": 0.8902459740638733,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query1",
+    "cosine": 0.9990487694740295,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query7",
+    "cosine": 0.9952526688575745,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query13",
+    "cosine": 0.9108797311782837,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query17",
+    "cosine": 0.9633459448814392,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query10",
+    "cosine": 0.9594759941101074,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query3",
+    "cosine": 0.7738509774208069,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task74-query18",
+    "cosine": 0.9944359064102173,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query9",
+    "cosine": 0.9533970355987549,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query1",
+    "cosine": 0.9665294289588928,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query4",
+    "cosine": 0.8968907594680786,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query8",
+    "cosine": 0.893177330493927,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query5",
+    "cosine": 0.9202132225036621,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query11",
+    "cosine": 0.9704053401947021,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query7",
+    "cosine": 0.9982349276542664,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query6",
+    "cosine": 0.9081219434738159,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query12",
+    "cosine": 0.7982598543167114,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task75-query10",
+    "cosine": 0.7659647464752197,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query11",
+    "cosine": 0.8405139446258545,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query9",
+    "cosine": 0.8348407745361328,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query4",
+    "cosine": 0.9223849773406982,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query1",
+    "cosine": 0.9830057621002197,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query8",
+    "cosine": 0.9564887881278992,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query6",
+    "cosine": 0.9966161847114563,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query5",
+    "cosine": 0.9440116882324219,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query0",
+    "cosine": 0.9876237511634827,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query2",
+    "cosine": 0.9052844643592834,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task76-query7",
+    "cosine": 0.992255687713623,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query9",
+    "cosine": 0.9406821727752686,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query5",
+    "cosine": 0.973827064037323,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query8",
+    "cosine": 0.8632283210754395,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query6",
+    "cosine": 0.7455927729606628,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query2",
+    "cosine": 0.8384557962417603,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query11",
+    "cosine": 0.9639566540718079,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query7",
+    "cosine": 0.9721383452415466,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query3",
+    "cosine": 0.7559359669685364,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query1",
+    "cosine": 0.9110203981399536,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task77-query0",
+    "cosine": 0.9375142455101013,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query8",
+    "cosine": 0.8262386918067932,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query12",
+    "cosine": 0.9516640305519104,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query3",
+    "cosine": 0.5866788029670715,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query14",
+    "cosine": 0.9858355522155762,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query5",
+    "cosine": 0.9770222902297974,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query6",
+    "cosine": 0.8776894807815552,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query10",
+    "cosine": 0.9968956112861633,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query4",
+    "cosine": 0.9353153705596924,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query13",
+    "cosine": 0.9986257553100586,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query11",
+    "cosine": 0.9903538823127747,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query7",
+    "cosine": 0.9951962828636169,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task78-query0",
+    "cosine": 0.9801971316337585,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query10",
+    "cosine": 0.9277426600456238,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query0",
+    "cosine": 0.9924295544624329,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query11",
+    "cosine": 0.9936323761940002,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query8",
+    "cosine": 0.9929785132408142,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query12",
+    "cosine": 0.9734340310096741,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query6",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task79-query5",
+    "cosine": 0.829459547996521,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query2",
+    "cosine": 0.9161034226417542,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query9",
+    "cosine": 0.5974113345146179,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task79-query7",
+    "cosine": 0.8944627046585083,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query11",
+    "cosine": 0.9723861217498779,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query7",
+    "cosine": 0.5046349167823792,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query3",
+    "cosine": 0.9822837710380554,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query6",
+    "cosine": 0.9810706973075867,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query0",
+    "cosine": 0.9748191833496094,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query8",
+    "cosine": 0.7295742034912109,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query5",
+    "cosine": 0.7562280893325806,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query10",
+    "cosine": 0.9644513726234436,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query1",
+    "cosine": 0.9365061521530151,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task80-query2",
+    "cosine": 0.7935816049575806,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query9",
+    "cosine": 0.9711403250694275,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query4",
+    "cosine": 0.9620621204376221,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query11",
+    "cosine": 0.7587424516677856,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query0",
+    "cosine": 0.7185474634170532,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query8",
+    "cosine": 0.9890974164009094,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query15",
+    "cosine": 0.9886513352394104,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query12",
+    "cosine": 0.8905050754547119,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query13",
+    "cosine": 0.9989411234855652,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query2",
+    "cosine": 0.9885236620903015,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query7",
+    "cosine": 0.9863321185112,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query14",
+    "cosine": 0.9743632674217224,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query10",
+    "cosine": 0.9288634061813354,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task81-query3",
+    "cosine": 0.9857841730117798,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query7",
+    "cosine": 0.7590634822845459,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query0",
+    "cosine": 0.9359645843505859,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query13",
+    "cosine": 0.9942372441291809,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query6",
+    "cosine": 0.9925907254219055,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query2",
+    "cosine": 0.8952382206916809,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query14",
+    "cosine": 0.9732874631881714,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query1",
+    "cosine": 0.9906535744667053,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query8",
+    "cosine": 0.910979151725769,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query4",
+    "cosine": 0.9148063659667969,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query12",
+    "cosine": 0.9327044486999512,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query5",
+    "cosine": 0.9674040675163269,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task82-query9",
+    "cosine": 0.7534545063972473,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query4",
+    "cosine": 0.9397633075714111,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query13",
+    "cosine": 0.937859833240509,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query5",
+    "cosine": 0.9771667718887329,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query7",
+    "cosine": 0.6887105703353882,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query0",
+    "cosine": 0.7605997920036316,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query10",
+    "cosine": 0.800167441368103,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query9",
+    "cosine": 0.9433332681655884,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query12",
+    "cosine": 0.9637854695320129,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query2",
+    "cosine": 0.9254478216171265,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query11",
+    "cosine": 0.9767346382141113,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task83-query8",
+    "cosine": 0.9510303735733032,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query8",
+    "cosine": 0.9656815528869629,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query7",
+    "cosine": 0.9849507212638855,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query6",
+    "cosine": 0.9848182201385498,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query3",
+    "cosine": 0.9818987250328064,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query5",
+    "cosine": 0.9737414717674255,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query2",
+    "cosine": 0.9621642231941223,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query10",
+    "cosine": 0.9989892840385437,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query11",
+    "cosine": 0.9881297945976257,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query1",
+    "cosine": 0.9850673079490662,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task84-query4",
+    "cosine": 0.5404892563819885,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query35",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query37",
+    "cosine": 0.8168137669563293,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query23",
+    "cosine": 0.925619900226593,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query24",
+    "cosine": 0.8812537789344788,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query17",
+    "cosine": 0.9563787579536438,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query29",
+    "cosine": 0.940047025680542,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query11",
+    "cosine": 0.9749173521995544,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query33",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query9",
+    "cosine": 0.9803683161735535,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query2",
+    "cosine": 0.974073588848114,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query20",
+    "cosine": 0.7036687135696411,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query15",
+    "cosine": 0.9783484935760498,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query26",
+    "cosine": 0.9783824682235718,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query34",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query19",
+    "cosine": 0.9953066110610962,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query39",
+    "cosine": 0.9128522872924805,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query0",
+    "cosine": 0.9987782835960388,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query1",
+    "cosine": 0.6398591995239258,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query8",
+    "cosine": 0.9848976135253906,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query32",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query16",
+    "cosine": 0.9760621190071106,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query18",
+    "cosine": 0.9973531365394592,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query14",
+    "cosine": 0.6803064942359924,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query6",
+    "cosine": 0.9608095288276672,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query4",
+    "cosine": 0.993808925151825,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query7",
+    "cosine": 0.9616783261299133,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query3",
+    "cosine": 0.9816592931747437,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query27",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query13",
+    "cosine": 0.9557434916496277,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task85-query28",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query38",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": false,
+    "mismatch": true
+  },
+  {
+    "id": "task85-query5",
+    "cosine": 0.9781545996665955,
+    "directional": true,
+    "episode_success": false,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query4",
+    "cosine": 0.8641712069511414,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query14",
+    "cosine": 0.538264274597168,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query10",
+    "cosine": 0.9689069986343384,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query0",
+    "cosine": 0.9638020992279053,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query11",
+    "cosine": 0.8226383328437805,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query2",
+    "cosine": 0.9772055149078369,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query6",
+    "cosine": 0.9969279170036316,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query7",
+    "cosine": 0.8154471516609192,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query1",
+    "cosine": 0.9482167363166809,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query9",
+    "cosine": 0.8838018774986267,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query8",
+    "cosine": 0.8742993474006653,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task86-query5",
+    "cosine": 0.9878029823303223,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query7",
+    "cosine": 0.9447090029716492,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query10",
+    "cosine": 0.6703322529792786,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query4",
+    "cosine": 0.9973644614219666,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query0",
+    "cosine": 0.919291079044342,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query13",
+    "cosine": 0.7755688428878784,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query1",
+    "cosine": 0.8681753873825073,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query11",
+    "cosine": 0.7913883328437805,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query8",
+    "cosine": 0.9902378916740417,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query15",
+    "cosine": 0.8811184763908386,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query3",
+    "cosine": 0.8037347197532654,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query5",
+    "cosine": 0.9912779927253723,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query14",
+    "cosine": 0.8583788275718689,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task87-query9",
+    "cosine": 0.8957067728042603,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task88-query9",
+    "cosine": 0.5928748250007629,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query7",
+    "cosine": 0.7266867756843567,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query3",
+    "cosine": 0.5938594937324524,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query10",
+    "cosine": 0.6844460964202881,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query1",
+    "cosine": 0.5311201214790344,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query2",
+    "cosine": 0.9559133648872375,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query4",
+    "cosine": 0.9917401671409607,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task88-query8",
+    "cosine": 0.9449926018714905,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query0",
+    "cosine": 0.9749497771263123,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query7",
+    "cosine": 0.7862584590911865,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query1",
+    "cosine": 0.8670671582221985,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query10",
+    "cosine": 0.9467926621437073,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query8",
+    "cosine": 0.925594687461853,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query5",
+    "cosine": 0.0,
+    "directional": false,
+    "episode_success": true,
+    "mismatch": true
+  },
+  {
+    "id": "task89-query3",
+    "cosine": 0.9563645124435425,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query9",
+    "cosine": 0.9672742486000061,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  },
+  {
+    "id": "task89-query2",
+    "cosine": 0.837336540222168,
+    "directional": true,
+    "episode_success": true,
+    "mismatch": false
+  }
+]

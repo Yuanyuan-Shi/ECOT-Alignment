@@ -1,0 +1,324 @@
+{
+  "stop_threshold_m": 0.03,
+  "rules": [
+    "euclidean",
+    "per_axis"
+  ],
+  "test": {
+    "pretrained": {
+      "euclidean": {
+        "successful": {
+          "queries": 2228,
+          "mismatches": 148,
+          "percent": 6.642728904847397,
+          "stop_queries": 3,
+          "stop_mismatches": 3
+        },
+        "failed": {
+          "queries": 942,
+          "mismatches": 115,
+          "percent": 12.208067940552016,
+          "stop_queries": 30,
+          "stop_mismatches": 30
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 2228,
+          "mismatches": 148,
+          "percent": 6.642728904847397,
+          "stop_queries": 3,
+          "stop_mismatches": 3
+        },
+        "failed": {
+          "queries": 942,
+          "mismatches": 115,
+          "percent": 12.208067940552016,
+          "stop_queries": 30,
+          "stop_mismatches": 30
+        }
+      },
+      "other_zero_move_claims": {
+        "close gripper": 50,
+        "open gripper": 8,
+        "rotate clockwise": 7,
+        "move right and rotate down and left": 6,
+        "move right and rotate down and left and counterclockwise": 1,
+        "rotate counterclockwise": 8,
+        "rotate up slowly": 4,
+        "rotate down slowly": 1,
+        "rotate clockwise slowly": 1
+      }
+    },
+    "Round 3 lambda 1, 200 steps": {
+      "euclidean": {
+        "successful": {
+          "queries": 2276,
+          "mismatches": 92,
+          "percent": 4.042179261862917,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 695,
+          "mismatches": 116,
+          "percent": 16.690647482014388,
+          "stop_queries": 52,
+          "stop_mismatches": 52
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 2276,
+          "mismatches": 92,
+          "percent": 4.042179261862917,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 695,
+          "mismatches": 116,
+          "percent": 16.690647482014388,
+          "stop_queries": 52,
+          "stop_mismatches": 52
+        }
+      },
+      "other_zero_move_claims": {
+        "close gripper": 66,
+        "rotate left slowly": 1,
+        "open gripper": 3,
+        "rotate clockwise": 8,
+        "move right and rotate down and left and counterclockwise": 1,
+        "move right and rotate down and left": 4,
+        "move down and rotate clockwise and up": 1,
+        "rotate counterclockwise": 3,
+        "rotate down": 1,
+        "rotate clockwise slowly": 2,
+        "open gripper and move up and rotate clockwise and down": 1,
+        "rotate up slowly": 2,
+        "": 4,
+        "rotate counterclockwise slowly": 2
+      }
+    },
+    "Mismatch only, 500 steps": {
+      "euclidean": {
+        "successful": {
+          "queries": 2264,
+          "mismatches": 85,
+          "percent": 3.754416961130742,
+          "stop_queries": 5,
+          "stop_mismatches": 5
+        },
+        "failed": {
+          "queries": 769,
+          "mismatches": 117,
+          "percent": 15.214564369310793,
+          "stop_queries": 77,
+          "stop_mismatches": 77
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 2264,
+          "mismatches": 85,
+          "percent": 3.754416961130742,
+          "stop_queries": 5,
+          "stop_mismatches": 5
+        },
+        "failed": {
+          "queries": 769,
+          "mismatches": 117,
+          "percent": 15.214564369310793,
+          "stop_queries": 77,
+          "stop_mismatches": 77
+        }
+      },
+      "other_zero_move_claims": {
+        "close gripper": 48,
+        "open gripper": 10,
+        "move right and rotate down and counterclockwise and left": 1,
+        "move right and rotate down and left and counterclockwise": 1,
+        "move right and rotate down and left": 4,
+        "rotate counterclockwise": 5,
+        "rotate up slowly": 6,
+        "rotate clockwise slowly": 9,
+        "rotate clockwise": 5,
+        "rotate down slowly": 3,
+        "": 1,
+        "rotate left": 1
+      }
+    }
+  },
+  "gap": {
+    "pretrained": {
+      "queries": 3137,
+      "raw_mismatches": 230,
+      "prefix_mismatches": 220,
+      "clipped_prefix_mismatches": 220,
+      "real_mismatches": 505,
+      "short_chunks": 143,
+      "clipped_chunks": 35,
+      "command_aligned_real_misaligned": 322,
+      "command_misaligned_real_aligned": 37,
+      "lost_real_motion_under_3cm": 310,
+      "lost_real_motion_under_3mm": 78,
+      "lost_under_3mm_command_over_3cm": 75,
+      "median_command_real_angle_deg": 7.2762745126987465,
+      "lag_fit": {
+        "command_coefficient": 0.052406176971737856,
+        "previous_motion_coefficient": 0.7890084869841651,
+        "no_memory_rmse_m": 0.0055266011279018895,
+        "with_memory_rmse_m": 0.00689203843077628,
+        "heldout_rmse_reduction_percent": -24.70663743002497
+      }
+    },
+    "Round 3 lambda 1, 200 steps": {
+      "queries": 2918,
+      "raw_mismatches": 155,
+      "prefix_mismatches": 147,
+      "clipped_prefix_mismatches": 147,
+      "real_mismatches": 406,
+      "short_chunks": 149,
+      "clipped_chunks": 28,
+      "command_aligned_real_misaligned": 289,
+      "command_misaligned_real_aligned": 30,
+      "lost_real_motion_under_3cm": 273,
+      "lost_real_motion_under_3mm": 73,
+      "lost_under_3mm_command_over_3cm": 71,
+      "median_command_real_angle_deg": 6.805295577501761,
+      "lag_fit": {
+        "command_coefficient": 0.04797875481377258,
+        "previous_motion_coefficient": 0.8083725918521557,
+        "no_memory_rmse_m": 0.005942210760420244,
+        "with_memory_rmse_m": 0.00757482148811622,
+        "heldout_rmse_reduction_percent": -27.474803461540542
+      }
+    },
+    "Mismatch only, 500 steps": {
+      "queries": 2951,
+      "raw_mismatches": 120,
+      "prefix_mismatches": 116,
+      "clipped_prefix_mismatches": 116,
+      "real_mismatches": 475,
+      "short_chunks": 148,
+      "clipped_chunks": 31,
+      "command_aligned_real_misaligned": 393,
+      "command_misaligned_real_aligned": 34,
+      "lost_real_motion_under_3cm": 379,
+      "lost_real_motion_under_3mm": 91,
+      "lost_under_3mm_command_over_3cm": 91,
+      "median_command_real_angle_deg": 7.159816909459686,
+      "lag_fit": {
+        "command_coefficient": 0.04885761487887568,
+        "previous_motion_coefficient": 0.8034927157259588,
+        "no_memory_rmse_m": 0.0019062324700226067,
+        "with_memory_rmse_m": 0.004488961354243731,
+        "heldout_rmse_reduction_percent": -135.48866283819493
+      }
+    }
+  },
+  "training": {
+    "Original MiniVLA": {
+      "euclidean": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 64,
+          "percent": 7.1348940914158305,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 37,
+          "percent": 11.897106109324758,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 64,
+          "percent": 7.1348940914158305,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 37,
+          "percent": 11.897106109324758,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      }
+    },
+    "Round 3 lambda=1": {
+      "euclidean": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 19,
+          "percent": 2.118171683389075,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 17,
+          "percent": 5.466237942122186,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 19,
+          "percent": 2.118171683389075,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 17,
+          "percent": 5.466237942122186,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      }
+    },
+    "Mismatch only": {
+      "euclidean": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 2,
+          "percent": 0.2229654403567447,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 12,
+          "percent": 3.8585209003215435,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      },
+      "per_axis": {
+        "successful": {
+          "queries": 897,
+          "mismatches": 2,
+          "percent": 0.2229654403567447,
+          "stop_queries": 1,
+          "stop_mismatches": 1
+        },
+        "failed": {
+          "queries": 311,
+          "mismatches": 12,
+          "percent": 3.8585209003215435,
+          "stop_queries": 12,
+          "stop_mismatches": 12
+        }
+      }
+    }
+  }
+}

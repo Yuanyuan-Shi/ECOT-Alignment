@@ -22,6 +22,7 @@ import torch.nn as nn
 from torch.distributed.fsdp.wrap import transformer_auto_wrap_policy
 from transformers import AutoConfig, AutoTokenizer, PreTrainedModel, PreTrainedTokenizerBase
 from transformers.modeling_outputs import CausalLMOutputWithPast
+from transformers.utils import is_flash_attn_2_available
 
 from prismatic.models.backbones.llm.prompting import PromptBuilder
 from prismatic.overwatch import initialize_overwatch
@@ -122,7 +123,9 @@ class HFCausalLLMBackbone(LLMBackbone, ABC):
             self.llm = llm_cls.from_pretrained(
                 hf_hub_path,
                 token=hf_token,
-                use_flash_attention_2=use_flash_attention_2 if not self.inference_mode else False,
+                use_flash_attention_2=(
+                    use_flash_attention_2 and not self.inference_mode and is_flash_attn_2_available()
+                ),
                 # The following parameters are set to prevent `UserWarnings` from HF; we want greedy decoding!
                 do_sample=False,
                 temperature=1.0,

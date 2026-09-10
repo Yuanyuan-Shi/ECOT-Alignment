@@ -1,0 +1,264 @@
+{
+  "schema_version": 2,
+  "base_seed": 20261004,
+  "trials_per_task": 3,
+  "move_alignment_threshold": 0.5,
+  "models": {
+    "pretrained": {
+      "name": "Untouched pretrained",
+      "root": "/home/exx/Projects/ECOT-Alignment/experiments/robot/libero/results/move-alignment-eval-pretrained-3trial-seed20261004",
+      "episodes": 27,
+      "successes": 24,
+      "task_success_rate": 0.8888888888888888,
+      "queries": 465,
+      "average_move_cosine": 0.7702266683171973,
+      "move_mismatches": 59,
+      "move_misalignment_rate": 0.12688172043010754,
+      "outcome_move_misalignment": {
+        "successful": {
+          "episodes": 24,
+          "queries": 345,
+          "mismatches": 20,
+          "pooled_rate": 0.057971014492753624,
+          "mean_episode_rate": 0.048007634924825994
+        },
+        "failed": {
+          "episodes": 3,
+          "queries": 120,
+          "mismatches": 39,
+          "pooled_rate": 0.325,
+          "mean_episode_rate": 0.325
+        }
+      },
+      "tasks": [
+        {
+          "task_id": 0,
+          "instruction": "close the top drawer of the cabinet",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 18,
+          "move_reward": 0.8938433680145873,
+          "move_mismatches": 0,
+          "move_misalignment_rate": 0.0
+        },
+        {
+          "task_id": 3,
+          "instruction": "put the butter at the back in the top drawer of the cabinet and close it",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 59,
+          "move_reward": 0.7167325656877731,
+          "move_mismatches": 8,
+          "move_misalignment_rate": 0.13559322033898305
+        },
+        {
+          "task_id": 9,
+          "instruction": "put the black bowl on the plate",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 41,
+          "move_reward": 0.8744815355273254,
+          "move_mismatches": 1,
+          "move_misalignment_rate": 0.024390243902439025
+        },
+        {
+          "task_id": 18,
+          "instruction": "put the frying pan on the stove",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 52,
+          "move_reward": 0.8565241921563427,
+          "move_mismatches": 2,
+          "move_misalignment_rate": 0.038461538461538464
+        },
+        {
+          "task_id": 35,
+          "instruction": "open the microwave",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 43,
+          "move_reward": 0.8577097571044654,
+          "move_mismatches": 2,
+          "move_misalignment_rate": 0.046511627906976744
+        },
+        {
+          "task_id": 46,
+          "instruction": "pick up the alphabet soup and put it in the basket",
+          "successes": 2,
+          "episodes": 3,
+          "success_rate": 0.6666666666666666,
+          "queries": 68,
+          "move_reward": 0.8372656723928082,
+          "move_mismatches": 5,
+          "move_misalignment_rate": 0.07352941176470588
+        },
+        {
+          "task_id": 73,
+          "instruction": "pick up the book and place it in the front compartment of the caddy",
+          "successes": 2,
+          "episodes": 3,
+          "success_rate": 0.6666666666666666,
+          "queries": 70,
+          "move_reward": 0.6155445871899394,
+          "move_mismatches": 18,
+          "move_misalignment_rate": 0.2571428571428571
+        },
+        {
+          "task_id": 81,
+          "instruction": "pick up the book and place it in the front compartment of the caddy",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 50,
+          "move_reward": 0.7926490525433177,
+          "move_mismatches": 5,
+          "move_misalignment_rate": 0.1
+        },
+        {
+          "task_id": 84,
+          "instruction": "pick up the red mug and place it to the right of the caddy",
+          "successes": 2,
+          "episodes": 3,
+          "success_rate": 0.6666666666666666,
+          "queries": 64,
+          "move_reward": 0.6695287314100129,
+          "move_mismatches": 18,
+          "move_misalignment_rate": 0.28125
+        }
+      ]
+    },
+    "fine_tuned": {
+      "name": "Move-alignment fine-tuned",
+      "root": "/home/exx/Projects/ECOT-Alignment/experiments/robot/libero/results/move-alignment-eval-finetuned-3trial-seed20261004",
+      "episodes": 27,
+      "successes": 25,
+      "task_success_rate": 0.9259259259259259,
+      "queries": 454,
+      "average_move_cosine": 0.7953767797682723,
+      "move_mismatches": 54,
+      "move_misalignment_rate": 0.11894273127753303,
+      "outcome_move_misalignment": {
+        "successful": {
+          "episodes": 25,
+          "queries": 374,
+          "mismatches": 30,
+          "pooled_rate": 0.08021390374331551,
+          "mean_episode_rate": 0.06899233274465472
+        },
+        "failed": {
+          "episodes": 2,
+          "queries": 80,
+          "mismatches": 24,
+          "pooled_rate": 0.3,
+          "mean_episode_rate": 0.3
+        }
+      },
+      "tasks": [
+        {
+          "task_id": 0,
+          "instruction": "close the top drawer of the cabinet",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 20,
+          "move_reward": 0.912805097270998,
+          "move_mismatches": 0,
+          "move_misalignment_rate": 0.0
+        },
+        {
+          "task_id": 3,
+          "instruction": "put the butter at the back in the top drawer of the cabinet and close it",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 59,
+          "move_reward": 0.7693973681119523,
+          "move_mismatches": 6,
+          "move_misalignment_rate": 0.1016949152542373
+        },
+        {
+          "task_id": 9,
+          "instruction": "put the black bowl on the plate",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 46,
+          "move_reward": 0.8502480750332139,
+          "move_mismatches": 2,
+          "move_misalignment_rate": 0.043478260869565216
+        },
+        {
+          "task_id": 18,
+          "instruction": "put the frying pan on the stove",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 57,
+          "move_reward": 0.8154314688177241,
+          "move_mismatches": 5,
+          "move_misalignment_rate": 0.08771929824561403
+        },
+        {
+          "task_id": 35,
+          "instruction": "open the microwave",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 43,
+          "move_reward": 0.8762980282458012,
+          "move_mismatches": 4,
+          "move_misalignment_rate": 0.09302325581395349
+        },
+        {
+          "task_id": 46,
+          "instruction": "pick up the alphabet soup and put it in the basket",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 41,
+          "move_reward": 0.8039177024847656,
+          "move_mismatches": 4,
+          "move_misalignment_rate": 0.0975609756097561
+        },
+        {
+          "task_id": 73,
+          "instruction": "pick up the book and place it in the front compartment of the caddy",
+          "successes": 3,
+          "episodes": 3,
+          "success_rate": 1.0,
+          "queries": 48,
+          "move_reward": 0.8885599340006479,
+          "move_mismatches": 2,
+          "move_misalignment_rate": 0.041666666666666664
+        },
+        {
+          "task_id": 81,
+          "instruction": "pick up the book and place it in the front compartment of the caddy",
+          "successes": 2,
+          "episodes": 3,
+          "success_rate": 0.6666666666666666,
+          "queries": 77,
+          "move_reward": 0.6183739772852094,
+          "move_mismatches": 23,
+          "move_misalignment_rate": 0.2987012987012987
+        },
+        {
+          "task_id": 84,
+          "instruction": "pick up the red mug and place it to the right of the caddy",
+          "successes": 2,
+          "episodes": 3,
+          "success_rate": 0.6666666666666666,
+          "queries": 63,
+          "move_reward": 0.808768128209449,
+          "move_mismatches": 8,
+          "move_misalignment_rate": 0.12698412698412698
+        }
+      ]
+    }
+  }
+}

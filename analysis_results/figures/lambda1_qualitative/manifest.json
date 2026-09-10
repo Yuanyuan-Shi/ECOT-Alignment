@@ -1,0 +1,211 @@
+{
+  "checkpoint": "Round 3 lambda=1.0",
+  "examples": [
+    {
+      "task_id": 81,
+      "trial_index": 1,
+      "policy_query_index": 15,
+      "episode_id": "libero_90-task81-episode1-seed20261364",
+      "seed": 20261364,
+      "episode_success": true,
+      "paired_baseline_success": true,
+      "reasoning_raw": "PLAN: 1. move to the black book, 2. grasp the black book, 3. move the black book to the desk caddy, 4. release the black book into the front compartment of the desk caddy VISIBLE OBJECTS: black book 1 [67, 53, 103, 88], red coffee mug 1 [156, 142, 206, 188], porcelain mug 1 [123, 87, 160, 124], desk caddy 1 [72, 17, 127, 129] SUBTASK REASONING: The robot has successfully grasped the black book and moved it to the desk caddy, so the next logical step is to release it into the front compartment. SUBTASK: release the black book into the front compartment of the desk caddy MOVE REASONING: The caddy is positioned further back on the table, so moving down and forward allows the robot to approach the correct compartment for releasing the book. MOVE: move down and forward GRIPPER POSITION: [65, 60]",
+      "reasoning_vector": [
+        -1,
+        0,
+        -1
+      ],
+      "realized_displacement_mm": [
+        -24.94806934463878,
+        -0.11923076135880728,
+        -38.057766602654475
+      ],
+      "cosine": 0.9790281263443833,
+      "executed_horizon": 7,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=28--success=True--task=pick_up_the_book_and_place_it_in_the_front_compart.mp4",
+      "source_video_sha256": "f586ffd5070752b59ecd9128977780dd8fe504b22720246f2fc19b6b65d2e4aa",
+      "video_frame_index": 150,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Book placement: same task as the teaser",
+      "explanation": "The reasoning specifies forward and down during the book-release subtask. The measured end-effector motion follows both directions, and the episode succeeds.",
+      "comparison": "Same task and placement subtask as the Task 81 teaser, but a different query and evaluation trial. The paired pretrained episode also succeeds; this is an aligned placement example, not evidence of task recovery.",
+      "figure_stem": "lambda1_aligned_01_task81_trial1_q15",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    },
+    {
+      "task_id": 4,
+      "trial_index": 0,
+      "policy_query_index": 3,
+      "episode_id": "libero_90-task4-episode0-seed20261209",
+      "seed": 20261209,
+      "episode_success": true,
+      "paired_baseline_success": true,
+      "reasoning_raw": "PLAN: 1. move to the butter, 2. grasp the butter, 3. move the butter to the cabinet, 4. open the cabinet, 5. place the butter in the top drawer, 6. close the cabinet VISIBLE OBJECTS: akita black bowl 1 [113, 91, 136, 120], butter 1 [136, 155, 153, 168], butter 2 [118, 157, 133, 169], chocolate pudding 1 [137, 125, 158, 139], wooden cabinet 1 [75, 0, 174, 96] SUBTASK REASONING: The butter is located to the left of the robot, so it must move to reach it before performing the subsequent tasks. SUBTASK: move to the butter MOVE REASONING: The butter is on the floor in front of the cabinet, so the robot should move down and back to reach it easily. MOVE: move down and back GRIPPER POSITION: [88, 167]",
+      "reasoning_vector": [
+        1,
+        0,
+        -1
+      ],
+      "realized_displacement_mm": [
+        35.36427125482581,
+        5.319401852803162,
+        -105.61522288535718
+      ],
+      "cosine": 0.8940136925074514,
+      "executed_horizon": 10,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=1--success=True--task=put_the_butter_at_the_front_in_the_top_drawer_of_t.mp4",
+      "source_video_sha256": "6306170aa7096fbf35901066bef26f293ce7c7da12e1cc0589b572b670d3cd59",
+      "video_frame_index": 30,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Butter approach: analogous to the grasping teaser",
+      "explanation": "The end effector moves back and down during the approach to the butter. This query precedes grasping in a successful butter-placement episode.",
+      "comparison": "Task 4 targets the front butter; the teaser is Task 3, which targets the back butter. Both saved Task 3 lambda=1 trials fail, so this analogous successful task is not presented as a Task 3 recovery.",
+      "figure_stem": "lambda1_aligned_02_task4_trial0_q3",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    },
+    {
+      "task_id": 17,
+      "trial_index": 1,
+      "policy_query_index": 3,
+      "episode_id": "libero_90-task17-episode1-seed20261236",
+      "seed": 20261236,
+      "episode_success": true,
+      "paired_baseline_success": false,
+      "reasoning_raw": "PLAN: 1. move to the middle black bowl, 2. grasp the middle black bowl, 3. move the middle black bowl to the back black bowl, 4. release the middle black bowl onto the back black bowl VISIBLE OBJECTS: akita black bowl 1 [152, 143, 181, 179], akita black bowl 2 [119, 156, 142, 187], akita black bowl 3 [107, 112, 128, 140], plate 1 [131, 98, 158, 136], wooden cabinet 1 [77, 0, 176, 55] SUBTASK REASONING: The robot needs to move to the middle black bowl because it's the closest and most direct path to reach its target object for stacking. SUBTASK: move to the middle black bowl MOVE REASONING: The robot needs to lower itself to align with the middle black bowl, as it's currently positioned too high for precise manipulation, thus the robot should move down. MOVE: move down GRIPPER POSITION: [97, 159]",
+      "reasoning_vector": [
+        0,
+        0,
+        -1
+      ],
+      "realized_displacement_mm": [
+        -23.723437600026863,
+        17.634943633389188,
+        -81.63536811523642
+      ],
+      "cosine": 0.9402570698630649,
+      "executed_horizon": 10,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=6--success=True--task=stack_the_middle_black_bowl_on_the_back_black_bowl.mp4",
+      "source_video_sha256": "024d7bbd6be94385d7cf1098611b49c10112c9dd46d50d00645ba41c61233482",
+      "video_frame_index": 30,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Descending toward the middle bowl",
+      "explanation": "The reasoning requests DOWN to approach the middle bowl. The measured motion is predominantly downward, and the episode eventually completes the stacking task.",
+      "comparison": "Paired pretrained episode failed; lambda=1 episode succeeded. This outcome comparison uses the same task, trial, seed and initial-state index, but does not establish that this particular query caused recovery.",
+      "figure_stem": "lambda1_aligned_03_task17_trial1_q3",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    },
+    {
+      "task_id": 38,
+      "trial_index": 0,
+      "policy_query_index": 22,
+      "episode_id": "libero_90-task38-episode0-seed20261277",
+      "seed": 20261277,
+      "episode_success": true,
+      "paired_baseline_success": false,
+      "reasoning_raw": "PLAN: 1. move to the moka pots, 2. identify the right moka pot, 3. grasp the right moka pot, 4. move the right moka pot to the stove, 5. release the right moka pot onto the stove VISIBLE OBJECTS: moka pot 1 [67, 55, 112, 102], moka pot 2 [124, 99, 167, 144], flat stove 1 [98, 23, 159, 83] SUBTASK REASONING: The robot is currently moving the right moka pot to the stove because it is positioned closest to the stove among the two moka pots. SUBTASK: move the right moka pot to the stove MOVE REASONING: The moka pot is positioned too far to the right of the stove, so moving left and down will align it with the cooking surface. MOVE: move left and down GRIPPER POSITION: [66, 46]",
+      "reasoning_vector": [
+        0,
+        -1,
+        -1
+      ],
+      "realized_displacement_mm": [
+        0.503605640791379,
+        -72.2508000561044,
+        -60.962161163626405
+      ],
+      "cosine": 0.9964144659388331,
+      "executed_horizon": 10,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=13--success=True--task=put_the_right_moka_pot_on_the_stove.mp4",
+      "source_video_sha256": "533be6ee25eca969768d6aa607de105b8515e40da4b134da713f9b6897750e72",
+      "video_frame_index": 220,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Moving the moka pot toward the stove",
+      "explanation": "The reasoning requests LEFT + DOWN while transporting the moka pot to the stove. The measured trajectory follows that direction in a successful placement episode.",
+      "comparison": "Paired pretrained episode failed; lambda=1 episode succeeded. The selected query illustrates aligned transport, not a causal attribution of the outcome change.",
+      "figure_stem": "lambda1_aligned_04_task38_trial0_q22",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    },
+    {
+      "task_id": 50,
+      "trial_index": 1,
+      "policy_query_index": 8,
+      "episode_id": "libero_90-task50-episode1-seed20261302",
+      "seed": 20261302,
+      "episode_success": true,
+      "paired_baseline_success": false,
+      "reasoning_raw": "PLAN: 1. move to the alphabet soup, 2. grasp the alphabet soup, 3. move the alphabet soup to the basket, 4. release the alphabet soup into the basket VISIBLE OBJECTS: alphabet soup 1 [55, 125, 85, 152], cream cheese 1 [170, 11, 198, 36], tomato sauce 1 [105, 112, 137, 134], ketchup 1 [69, 66, 109, 83], orange juice 1 [115, 3, 162, 33], milk 1 [119, 65, 166, 88], butter 1 [150, 123, 172, 138], basket 1 [100, 170, 172, 223] SUBTASK REASONING: The robot needs to move the alphabet soup to the basket because it's currently positioned to the left of the soup, while the basket is on the right side of the table. SUBTASK: move the alphabet soup to the basket MOVE REASONING: The basket is positioned to the right of the alphabet soup can, so the robot should move right to align with the basket's location. MOVE: move right GRIPPER POSITION: [44, 142]",
+      "reasoning_vector": [
+        0,
+        1,
+        0
+      ],
+      "realized_displacement_mm": [
+        2.530354823296027,
+        106.60609643851348,
+        2.7068828524979827
+      ],
+      "cosine": 0.9993964020558286,
+      "executed_horizon": 10,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=18--success=True--task=pick_up_the_alphabet_soup_and_put_it_in_the_basket.mp4",
+      "source_video_sha256": "8f7e88594f5ca7a48b12cf24f81897b314c36b8cef1aa7b9ef10e6a48e316bbd",
+      "video_frame_index": 80,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Transporting the soup can toward the basket",
+      "explanation": "The reasoning requests RIGHT while carrying the alphabet-soup can toward the basket. The measured motion is predominantly rightward, and the episode succeeds.",
+      "comparison": "Paired pretrained episode failed; lambda=1 episode succeeded under the same evaluation conditions.",
+      "figure_stem": "lambda1_aligned_05_task50_trial1_q8",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    },
+    {
+      "task_id": 54,
+      "trial_index": 0,
+      "policy_query_index": 2,
+      "episode_id": "libero_90-task54-episode0-seed20261309",
+      "seed": 20261309,
+      "episode_success": true,
+      "paired_baseline_success": false,
+      "reasoning_raw": "PLAN: 1. move to the tomato sauce, 2. grasp the tomato sauce, 3. move the tomato sauce to the basket, 4. release the tomato sauce into the basket VISIBLE OBJECTS: alphabet soup 1 [105, 59, 135, 81], cream cheese 1 [169, 0, 198, 34], tomato sauce 1 [106, 119, 138, 141], ketchup 1 [74, 60, 109, 78], orange juice 1 [115, 24, 150, 52], milk 1 [126, 65, 174, 88], butter 1 [157, 130, 180, 146], basket 1 [98, 169, 169, 223] SUBTASK REASONING: The robot needs to move to the tomato sauce because it is the closest and most accessible item among the scattered objects on the table. SUBTASK: move to the tomato sauce MOVE REASONING: The basket is positioned lower than the tomato sauce, so the robot should move down to align its gripper with the sauce's level. MOVE: move down GRIPPER POSITION: [59, 141]",
+      "reasoning_vector": [
+        0,
+        0,
+        -1
+      ],
+      "realized_displacement_mm": [
+        -10.538610465140819,
+        -0.018125572639721144,
+        -95.0835485482041
+      ],
+      "cosine": 0.9939136673804428,
+      "executed_horizon": 10,
+      "source_video": "experiments/robot/libero/results/round3-move-eval-lambda10-90task-2trial-seed20261201/rollouts/2026_09_06/2026_09_06-21_55_59--episode=19--success=True--task=pick_up_the_tomato_sauce_and_put_it_in_the_basket.mp4",
+      "source_video_sha256": "e1f222c2edf08968fa5b3932074a1c9c74137fa2ea82081162dea2935b76042d",
+      "video_frame_index": 20,
+      "source_image_resolution": [
+        224,
+        224
+      ],
+      "title": "Descending toward the tomato-sauce can",
+      "explanation": "The reasoning requests DOWN during the approach to the tomato-sauce can. The measured motion is downward, followed later by successful basket placement.",
+      "comparison": "Paired pretrained episode failed; lambda=1 episode succeeded under the same evaluation conditions.",
+      "figure_stem": "lambda1_aligned_06_task54_trial0_q2",
+      "arrow_note": "solid green reasoning arrow: 58 px; solid red realized-motion arrow: 40 px; lengths normalized for visibility; red trace uses logged projected positions"
+    }
+  ],
+  "selection": "Six aligned queries from successful episodes; selected qualitative examples, not an unbiased sample",
+  "task3_limitation": "Both saved Task 3 lambda=1 episodes failed; Task 4 is explicitly an analogous task."
+}
