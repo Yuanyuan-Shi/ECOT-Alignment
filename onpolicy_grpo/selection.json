@@ -1,0 +1,8 @@
+{
+  "source": "runs/on-policy-ppo/selection.json",
+  "selection_seed": 7,
+  "failure_prone": [17, 23, 27, 65, 72, 86],
+  "stable_success": [4, 28, 41, 70],
+  "selected": [4, 17, 23, 27, 28, 41, 65, 70, 72, 86],
+  "note": "Exact frozen targeted ten-task subset from the PPO pilot; copied so GRPO outputs are self-contained."
+}

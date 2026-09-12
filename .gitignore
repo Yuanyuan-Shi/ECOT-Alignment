@@ -154,6 +154,8 @@ vq
 rollouts/
 wandb/
 out/
+/onpolicy_grpo/outputs/
+/onpolicy_grpo/config_cluster_smoke.runtime.json
 libero_90 rollouts/
 experiments/logs/
 experiments/robot/libero/analysis/

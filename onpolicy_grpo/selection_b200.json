@@ -1,0 +1,11 @@
+{
+  "source": "runs/on-policy-ppo/selection.json with requested throughput substitution",
+  "selected": [4, 17, 23, 28, 41, 65, 70, 72, 84, 86],
+  "failure_prone": [17, 23, 65, 72, 84, 86],
+  "stable_success": [4, 28, 41, 70],
+  "substitution": {
+    "removed": 27,
+    "added": 84,
+    "reason": "task 27 repeatedly formed the slow rollout tail; task 84 retains a challenging alignment profile"
+  }
+}
