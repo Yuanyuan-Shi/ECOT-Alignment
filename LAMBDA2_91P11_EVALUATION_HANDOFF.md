@@ -22,6 +22,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Artifact hash manifest | [`SHA256SUMS`](lambda2_91p11_reproduction_artifacts/SHA256SUMS) |
 | Task 24/state 14/seed 80 trace | [`task24_state14_seed80_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_trace/) |
 | Task 24/state 14/seed 80 query-1 trace | [`task24_state14_seed80_query1_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_query1_trace/) |
+| Task 24 attention-kernel profile and vision/projector outputs | [`task24_state14_seed80_attention_profile/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_attention_profile/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -272,6 +273,23 @@ The requested capture coordinates and acceptance checks are recorded explicitly 
 | Requested fifth-token comparison | reference `151785`: `24.375`; AWS math-SDPA `151746`: `24.000` |
 
 The trace directory contains the lossless RGB image after the normal 10 settling steps, exact prompt IDs, exact BF16 DINO and SigLIP tensors, complete generated token IDs, decoded 10×7 action chunk, top-two scores at every action-token position, `state_before`, `state_after`, executed end-effector trajectory, runtime/source fingerprints, SHA256 manifest, and the capture script. It preserves the earlier first-query trace in its separate directory.
+
+### Selected attention-kernel profile
+
+The enabled-backend flags in the earlier traces were insufficient to identify the kernel that PyTorch actually dispatched. The requested [workstation profiler record](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_attention_profile/) therefore replayed the same two state-14 queries under unchanged BF16, greedy-decoding, default-SDPA settings and captured the selected operator separately for the vision encoders, language prefill, and cached decoding.
+
+| Query | Phase | Actual selected operator | Calls |
+|---:|---|---|---:|
+| 0 | DINO/SigLIP vision encoders | `aten::_scaled_dot_product_flash_attention` | 51 |
+| 0 | Qwen language prefill | `aten::_scaled_dot_product_flash_attention` | 24 |
+| 0 | Qwen cached decoding | `aten::_scaled_dot_product_flash_attention` | 6,288 |
+| 1 | DINO/SigLIP vision encoders | `aten::_scaled_dot_product_flash_attention` | 51 |
+| 1 | Qwen language prefill | `aten::_scaled_dot_product_flash_attention` | 24 |
+| 1 | Qwen cached decoding | `aten::_scaled_dot_product_flash_attention` | 6,768 |
+
+The RTX PRO 6000 workstation selected PyTorch **Flash SDPA in all three phases** for both queries. Neither `aten::_scaled_dot_product_efficient_attention`, `aten::_scaled_dot_product_cudnn_attention`, nor `aten::_scaled_dot_product_attention_math` appeared as the selected implementation. The JSON profiler records retain the individual selected-operator events and input shapes.
+
+The same artifact directory includes exact CPU copies of the BF16 vision and projector outputs for direct AWS comparison. Query 0 produced vision output shape `1×256×2176` with raw-tensor SHA256 `8a0c8e7869866f94929a57666b3050386b250924bd6dbe50fa050d2e7896ef41` and projector output shape `1×256×896` with SHA256 `bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33`. Query 1 produced corresponding hashes `707a20ea79285f9544e3f60ccf75df032b70c95766aafe9dd029133268bfccc6` and `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a`.
 
 ## Mismatch definition used in the paper table
 

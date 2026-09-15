@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "0b0ef328c8d4f5478e6da25fde7639c688fdd1ac3b041c60ea06476424b52b1d",
+  "profiled_generation_calls": [
+    40,
+    41
+  ],
+  "profiled_policy_query_indices": [
+    0,
+    1
+  ],
+  "per_trial_query_counts": [
+    40,
+    13,
+    11
+  ]
+}
