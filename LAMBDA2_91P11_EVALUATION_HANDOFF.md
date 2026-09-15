@@ -16,6 +16,8 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Checkpoint `dataset_statistics.json` SHA256 | `cca56a3704ee47672153415a658daaa7199edf295638604ecc08d3ed1d5c28c4` |
 | Case schedule | [`libero90_matched_evaluation_manifest.csv`](libero90_matched_evaluation_manifest.csv) |
 | Case-schedule SHA256 | `8c2fcb9c3c5d92be38b9ed787f55d212b2a8aba19065f499585a775351ded564` |
+| Reference episode outcomes | [`lambda2_91p11_episode_outcomes.csv`](lambda2_91p11_episode_outcomes.csv) |
+| Episode-outcomes SHA256 | `5db476b16dc3947c4dbae1a364d7935116569de988db330b11c08dc342e1b6d5` |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -168,6 +170,58 @@ cd "$REPO/pi05_policy_training/data/minivla_reference"
 For every episode, the evaluator calls `env.seed(episode_seed)`, resets the environment, and then applies `task_suite.get_task_init_states(task_id)[initial_state_index]`. Verify each initial-state byte hash against the case manifest.
 
 The MiniVLA VQ decoder returns a `10 × 7` action chunk. The evaluator takes `actions[0]`, executes all 10 rows before replanning, maps the gripper from `[0,1]` to `[-1,+1]`, binarizes it, and then inverts its sign for LIBERO. Changing any of these details changes task success.
+
+## Reference episode outcomes and successful state IDs
+
+The reference outcome CSV contains one row for every one of the 270 cases. Each row records the case ID, task ID and name, trial, episode seed, initial-state index, initial-state SHA256, success label, policy-query count, all-query mismatch count, and refined eligible-query diagnostics. Use `episode_success` and `initial_state_sha256` for case-level comparison with another machine.
+
+For the following 72 task IDs, all three initial-state indices `13, 14, 15` succeeded:
+
+```text
+0, 1, 2, 3, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18,
+19, 20, 21, 22, 26, 28, 29, 30, 31, 33, 34, 35, 36, 37, 39, 40,
+41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 52, 53, 54, 55, 56, 57,
+58, 60, 61, 62, 63, 64, 66, 67, 68, 69, 70, 73, 74, 76, 77, 79,
+80, 81, 82, 84, 85, 87, 88, 89
+```
+
+The remaining tasks had these outcomes:
+
+| Task ID | Successful initial-state indices | Failed initial-state indices |
+|---:|---|---|
+| 4 | 13, 15 | 14 |
+| 6 | 14, 15 | 13 |
+| 12 | 13, 15 | 14 |
+| 23 | 15 | 13, 14 |
+| 24 | 14, 15 | 13 |
+| 25 | 14, 15 | 13 |
+| 27 | 13, 15 | 14 |
+| 32 | 15 | 13, 14 |
+| 38 | 14, 15 | 13 |
+| 51 | 13, 14 | 15 |
+| 59 | 13, 14 | 15 |
+| 65 | 14 | 13, 15 |
+| 71 | 13, 15 | 14 |
+| 72 | 13 | 14, 15 |
+| 75 | 14 | 13, 15 |
+| 78 | 13, 14 | 15 |
+| 83 | 15 | 13, 14 |
+| 86 | 13, 14 | 15 |
+
+This table and the CSV fully specify the 246 successful episodes and 24 failed episodes. The `trial` values `0, 1, 2` correspond to initial-state indices `13, 14, 15` and seeds `7 + task_id × 3 + trial`.
+
+## Execution details for cross-machine diagnosis
+
+- The camera input is the fixed third-person `agentview_image`. The evaluator applies one vertical flip, resizes with Pillow LANCZOS to the model resolution, converts to RGB, and passes one image with no history beyond the current frame. Wrist images, center cropping, and proprioceptive policy input are disabled.
+- Each episode calls `env.seed(episode_seed)`, then `env.reset()`, then `env.set_init_state()` with the recorded LIBERO state. It executes 10 dummy no-op actions before policy control. The LIBERO-90 loop permits 400 policy-control steps and stops immediately when the environment reports success.
+- Inference uses greedy generation, `do_sample=False`, BF16 autocast, no 4-bit or 8-bit quantization, and no FlashAttention-specific CLI override in the native Prismatic loader.
+- The policy emits seven VQ action tokens. The original VQ decoder maps them to a `10 × 7` continuous chunk, and the controller executes all 10 actions before the next policy query.
+- The reference run made 4,463 policy queries. Per-episode query totals are in the outcome CSV; query-count differences show that closed-loop trajectories or stopping times have diverged.
+- The six local workers processed 45 episodes each and reported success totals `[39, 44, 41, 41, 44, 37]`. Worker count changes scheduling and throughput, while task/state/seed assignment remains defined by the manifest.
+- The checked-in evaluator does not enable `torch.use_deterministic_algorithms`, set deterministic cuDNN/CUBLAS controls, or globally reseed PyTorch during policy loading; the old `set_seed(cfg.seed)` call is commented out. Greedy decoding removes sampling but does not guarantee bit-identical BF16 logits across GPU architectures. A token argmax change can select a different VQ code and cause a discontinuous action-chunk change.
+- The original report's `experiment_metadata.json` contains legacy descriptive strings saying “one trial per task” and a one-trial seed schedule. Those strings are stale and were not used by execution. The effective config, case manifest, outcome CSV, and evaluator formula in this handoff are authoritative.
+
+For the fastest diagnosis, compare the reference and new runs in this order for the same case: initial-state SHA256, first preprocessed image bytes, first generated token IDs, first decoded `10 × 7` action chunk, then later query tokens. If the initial image matches but the first tokens differ, focus on model/runtime numerics. If initial tokens match and later tokens diverge, compare MuJoCo/robosuite state evolution and CPU-side dependencies.
 
 ## Mismatch definition used in the paper table
 
