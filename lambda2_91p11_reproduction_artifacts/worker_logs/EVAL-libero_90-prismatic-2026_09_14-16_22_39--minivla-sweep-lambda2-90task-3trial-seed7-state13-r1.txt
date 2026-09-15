@@ -1,0 +1,347 @@
+Task suite: libero_90
+Explicit task IDs: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89]
+
+Task: close the top drawer of the cabinet and put the black bowl on top of it
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=1--success=True--task=close_the_top_drawer_of_the_cabinet_and_put_the_bl.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+
+Task: close the top drawer of the cabinet and put the black bowl on top of it
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=2--success=True--task=close_the_top_drawer_of_the_cabinet_and_put_the_bl.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+
+Task: close the top drawer of the cabinet and put the black bowl on top of it
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=3--success=True--task=close_the_top_drawer_of_the_cabinet_and_put_the_bl.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+
+Task: open the top drawer of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=4--success=True--task=open_the_top_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+
+Task: open the top drawer of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=5--success=True--task=open_the_top_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+
+Task: open the top drawer of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=6--success=True--task=open_the_top_drawer_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+
+Task: put the black bowl at the front on the plate
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=7--success=True--task=put_the_black_bowl_at_the_front_on_the_plate.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+
+Task: put the black bowl at the front on the plate
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=8--success=True--task=put_the_black_bowl_at_the_front_on_the_plate.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+
+Task: put the black bowl at the front on the plate
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=9--success=True--task=put_the_black_bowl_at_the_front_on_the_plate.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+
+Task: put the moka pot on the stove
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=10--success=True--task=put_the_moka_pot_on_the_stove.mp4
+Success: True
+# episodes completed so far: 10
+# successes: 10 (100.0%)
+
+Task: put the moka pot on the stove
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=11--success=True--task=put_the_moka_pot_on_the_stove.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 11 (100.0%)
+
+Task: put the moka pot on the stove
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=12--success=True--task=put_the_moka_pot_on_the_stove.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 12 (100.0%)
+Current task success rate: 1.0
+Current total success rate: 1.0
+
+Task: put the black bowl on top of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=13--success=False--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: False
+# episodes completed so far: 13
+# successes: 12 (92.3%)
+
+Task: put the black bowl on top of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=14--success=True--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 13 (92.9%)
+
+Task: put the black bowl on top of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=15--success=True--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 14 (93.3%)
+Current task success rate: 0.6666666666666666
+Current total success rate: 0.9333333333333333
+
+Task: put the black bowl on top of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=16--success=True--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 15 (93.8%)
+
+Task: put the black bowl on top of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=17--success=True--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 16 (94.1%)
+
+Task: put the black bowl on top of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=18--success=True--task=put_the_black_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 17 (94.4%)
+Current task success rate: 1.0
+Current total success rate: 0.9444444444444444
+
+Task: put the white bowl to the right of the plate
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=19--success=True--task=put_the_white_bowl_to_the_right_of_the_plate.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 18 (94.7%)
+
+Task: put the white bowl to the right of the plate
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=20--success=True--task=put_the_white_bowl_to_the_right_of_the_plate.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 19 (95.0%)
+
+Task: put the white bowl to the right of the plate
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=21--success=True--task=put_the_white_bowl_to_the_right_of_the_plate.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 20 (95.2%)
+Current task success rate: 1.0
+Current total success rate: 0.9523809523809523
+
+Task: put the white bowl on top of the cabinet
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=22--success=True--task=put_the_white_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 21 (95.5%)
+
+Task: put the white bowl on top of the cabinet
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=23--success=True--task=put_the_white_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 22 (95.7%)
+
+Task: put the white bowl on top of the cabinet
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=24--success=True--task=put_the_white_bowl_on_top_of_the_cabinet.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 23 (95.8%)
+Current task success rate: 1.0
+Current total success rate: 0.9583333333333334
+
+Task: pick up the tomato sauce and put it in the basket
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=25--success=True--task=pick_up_the_tomato_sauce_and_put_it_in_the_basket.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 24 (96.0%)
+
+Task: pick up the tomato sauce and put it in the basket
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=26--success=True--task=pick_up_the_tomato_sauce_and_put_it_in_the_basket.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 25 (96.2%)
+
+Task: pick up the tomato sauce and put it in the basket
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=27--success=True--task=pick_up_the_tomato_sauce_and_put_it_in_the_basket.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 26 (96.3%)
+Current task success rate: 1.0
+Current total success rate: 0.9629629629629629
+
+Task: pick up the alphabet soup and put it in the tray
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=28--success=True--task=pick_up_the_alphabet_soup_and_put_it_in_the_tray.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 27 (96.4%)
+
+Task: pick up the alphabet soup and put it in the tray
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=29--success=True--task=pick_up_the_alphabet_soup_and_put_it_in_the_tray.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 28 (96.6%)
+
+Task: pick up the alphabet soup and put it in the tray
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=30--success=True--task=pick_up_the_alphabet_soup_and_put_it_in_the_tray.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 29 (96.7%)
+Current task success rate: 1.0
+Current total success rate: 0.9666666666666667
+
+Task: pick up the chocolate pudding and put it in the tray
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=31--success=True--task=pick_up_the_chocolate_pudding_and_put_it_in_the_tr.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 30 (96.8%)
+
+Task: pick up the chocolate pudding and put it in the tray
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=32--success=True--task=pick_up_the_chocolate_pudding_and_put_it_in_the_tr.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 31 (96.9%)
+
+Task: pick up the chocolate pudding and put it in the tray
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=33--success=True--task=pick_up_the_chocolate_pudding_and_put_it_in_the_tr.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 32 (97.0%)
+Current task success rate: 1.0
+Current total success rate: 0.9696969696969697
+
+Task: put the white mug on the left plate
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=34--success=True--task=put_the_white_mug_on_the_left_plate.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 33 (97.1%)
+
+Task: put the white mug on the left plate
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=35--success=True--task=put_the_white_mug_on_the_left_plate.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 34 (97.1%)
+
+Task: put the white mug on the left plate
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=36--success=True--task=put_the_white_mug_on_the_left_plate.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 35 (97.2%)
+Current task success rate: 1.0
+Current total success rate: 0.9722222222222222
+
+Task: pick up the book and place it in the front compartment of the caddy
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=37--success=True--task=pick_up_the_book_and_place_it_in_the_front_compart.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 36 (97.3%)
+
+Task: pick up the book and place it in the front compartment of the caddy
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=38--success=True--task=pick_up_the_book_and_place_it_in_the_front_compart.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 37 (97.4%)
+
+Task: pick up the book and place it in the front compartment of the caddy
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=39--success=True--task=pick_up_the_book_and_place_it_in_the_front_compart.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 38 (97.4%)
+Current task success rate: 1.0
+Current total success rate: 0.9743589743589743
+
+Task: pick up the book and place it in the left compartment of the caddy
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=40--success=True--task=pick_up_the_book_and_place_it_in_the_left_compartm.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 39 (97.5%)
+
+Task: pick up the book and place it in the left compartment of the caddy
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=41--success=True--task=pick_up_the_book_and_place_it_in_the_left_compartm.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 40 (97.6%)
+
+Task: pick up the book and place it in the left compartment of the caddy
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=42--success=True--task=pick_up_the_book_and_place_it_in_the_left_compartm.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 41 (97.6%)
+Current task success rate: 1.0
+Current total success rate: 0.9761904761904762
+
+Task: pick up the white mug and place it to the right of the caddy
+Starting episode 1...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=43--success=True--task=pick_up_the_white_mug_and_place_it_to_the_right_of.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 42 (97.7%)
+
+Task: pick up the white mug and place it to the right of the caddy
+Starting episode 2...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=44--success=True--task=pick_up_the_white_mug_and_place_it_to_the_right_of.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 43 (97.7%)
+
+Task: pick up the white mug and place it to the right of the caddy
+Starting episode 3...
+Saved rollout MP4 at path experiments/robot/libero/results/minivla-sweep-lambda2-90task-3trial-seed7-state13/rollouts/2026_09_14/2026_09_14-16_22_39--episode=45--success=True--task=pick_up_the_white_mug_and_place_it_to_the_right_of.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 44 (97.8%)
+Current task success rate: 1.0
+Current total success rate: 0.9777777777777777

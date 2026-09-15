@@ -1,0 +1,3788 @@
+{
+  "aggregate_score": {
+    "count": 4438,
+    "coverage": 0.9943983867353798,
+    "mean": 0.32595904902231976,
+    "std": 0.4340901622012911
+  },
+  "alignment_for_failed_episodes": {
+    "aggregate_score": {
+      "count": 955,
+      "coverage": 0.9947916666666666,
+      "mean": 0.11771657110899138,
+      "std": 0.47896648775330686
+    },
+    "kinematic_score": {
+      "count": 881,
+      "coverage": 0.9177083333333333,
+      "mean": -0.05978055240257284,
+      "std": 0.6893295162768606
+    },
+    "num_policy_queries": 960,
+    "subtask_score": {
+      "count": 722,
+      "coverage": 0.7520833333333333,
+      "mean": 0.45264997700041776,
+      "std": 0.4773729148806959
+    },
+    "target_score": {
+      "count": 724,
+      "coverage": 0.7541666666666667,
+      "mean": 0.06960237488547967,
+      "std": 0.416277183059608
+    }
+  },
+  "alignment_for_successful_episodes": {
+    "aggregate_score": {
+      "count": 3483,
+      "coverage": 0.9942906080502426,
+      "mean": 0.38305682863966933,
+      "std": 0.40255327674305985
+    },
+    "kinematic_score": {
+      "count": 3395,
+      "coverage": 0.9691692834713103,
+      "mean": 0.3124202258222877,
+      "std": 0.5750395466909772
+    },
+    "num_policy_queries": 3503,
+    "subtask_score": {
+      "count": 2955,
+      "coverage": 0.8435626605766486,
+      "mean": 0.5906117514983668,
+      "std": 0.48039067665125085
+    },
+    "target_score": {
+      "count": 2977,
+      "coverage": 0.8498429917213817,
+      "mean": 0.2831064258913159,
+      "std": 0.4829820615908698
+    }
+  },
+  "kinematic_score": {
+    "count": 4276,
+    "coverage": 0.9580999327806409,
+    "mean": 0.23573433115060805,
+    "std": 0.6189548759336125
+  },
+  "mismatch_counts": {
+    "kinematic_no_motion": 263,
+    "kinematic_opposite": 352,
+    "no_verifiable_claim": 25,
+    "subtask_not_completed": 1709,
+    "target_moved_away": 1423,
+    "target_unresolved": 645,
+    "unsupported_subtask": 139,
+    "wrong_object_interaction": 18
+  },
+  "num_episodes": 270,
+  "num_policy_queries": 4463,
+  "num_successful_episodes": 246,
+  "parse_warning_count": 98,
+  "parse_warning_rate": 0.021958323997311225,
+  "per_task": {
+    "0": {
+      "aggregate_score": {
+        "count": 20,
+        "coverage": 1.0,
+        "mean": 0.5603001504327694,
+        "std": 0.48583591848857766
+      },
+      "kinematic_score": {
+        "count": 20,
+        "coverage": 1.0,
+        "mean": 0.55,
+        "std": 0.48619840486049404
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 6,
+        "target_moved_away": 6,
+        "unsupported_subtask": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 20,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 19,
+        "coverage": 0.95,
+        "mean": 0.6842105263157895,
+        "std": 0.464829519280413
+      },
+      "target_resolution_attempt_count": 19,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 19,
+        "coverage": 0.95,
+        "mean": 0.4009478434719032,
+        "std": 0.6782400748491223
+      },
+      "task_instruction": "close the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "1": {
+      "aggregate_score": {
+        "count": 58,
+        "coverage": 1.0,
+        "mean": 0.22876505036907122,
+        "std": 0.4090049616357461
+      },
+      "kinematic_score": {
+        "count": 58,
+        "coverage": 1.0,
+        "mean": 0.43103448275862066,
+        "std": 0.5215972400265136
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 37,
+        "target_moved_away": 37,
+        "unsupported_subtask": 5,
+        "wrong_object_interaction": 2
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 58,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 53,
+        "coverage": 0.9137931034482759,
+        "mean": 0.3042306407357596,
+        "std": 0.4576192591363463
+      },
+      "target_resolution_attempt_count": 58,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 58,
+        "coverage": 1.0,
+        "mean": -0.01809579877817198,
+        "std": 0.6213339417610138
+      },
+      "task_instruction": "close the top drawer of the cabinet and put the black bowl on top of it",
+      "task_success_rate": 1.0
+    },
+    "10": {
+      "aggregate_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.5176773468730179,
+        "std": 0.2924858392998029
+      },
+      "kinematic_score": {
+        "count": 38,
+        "coverage": 0.9743589743589743,
+        "mean": 0.43859649122807015,
+        "std": 0.48428679795937757
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 10,
+        "target_moved_away": 14
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 39,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.7693749000062128,
+        "std": 0.40733835787115147
+      },
+      "target_resolution_attempt_count": 39,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.3455689480974952,
+        "std": 0.44358899132969726
+      },
+      "task_instruction": "put the black bowl on top of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "11": {
+      "aggregate_score": {
+        "count": 33,
+        "coverage": 1.0,
+        "mean": 0.1386831658413676,
+        "std": 0.4957147546273418
+      },
+      "kinematic_score": {
+        "count": 33,
+        "coverage": 1.0,
+        "mean": -0.16161616161616163,
+        "std": 0.620205310424596
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 6,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 19,
+        "target_moved_away": 16
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 33,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 33,
+        "coverage": 1.0,
+        "mean": 0.4401694800902174,
+        "std": 0.48745558533898575
+      },
+      "target_resolution_attempt_count": 33,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 33,
+        "coverage": 1.0,
+        "mean": 0.1374961790500471,
+        "std": 0.6598363493388438
+      },
+      "task_instruction": "open the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "12": {
+      "aggregate_score": {
+        "count": 59,
+        "coverage": 1.0,
+        "mean": 0.25192782168873845,
+        "std": 0.5280821801137008
+      },
+      "kinematic_score": {
+        "count": 59,
+        "coverage": 1.0,
+        "mean": 0.2542372881355932,
+        "std": 0.5534993388273268
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 4,
+        "target_moved_away": 4,
+        "target_unresolved": 39,
+        "unsupported_subtask": 14
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 59,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 6,
+        "coverage": 0.1016949152542373,
+        "mean": 0.3333333333333333,
+        "std": 0.4714045207910317
+      },
+      "target_resolution_attempt_count": 45,
+      "target_resolution_failure_count": 39,
+      "target_resolution_failure_rate": 0.8666666666666667,
+      "target_score": {
+        "count": 6,
+        "coverage": 0.1016949152542373,
+        "mean": -0.06812926018221542,
+        "std": 0.3057010907579247
+      },
+      "task_instruction": "put the black bowl at the back on the plate",
+      "task_success_rate": 0.6666666666666666
+    },
+    "13": {
+      "aggregate_score": {
+        "count": 30,
+        "coverage": 0.967741935483871,
+        "mean": 0.5444444444444444,
+        "std": 0.5054029073575181
+      },
+      "kinematic_score": {
+        "count": 30,
+        "coverage": 0.967741935483871,
+        "mean": 0.5444444444444444,
+        "std": 0.5054029073575181
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "no_verifiable_claim": 1,
+        "target_unresolved": 20,
+        "unsupported_subtask": 11
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 31,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "target_resolution_attempt_count": 20,
+      "target_resolution_failure_count": 20,
+      "target_resolution_failure_rate": 1.0,
+      "target_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "task_instruction": "put the black bowl at the front on the plate",
+      "task_success_rate": 1.0
+    },
+    "14": {
+      "aggregate_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.5149838487473289,
+        "std": 0.36347280878033056
+      },
+      "kinematic_score": {
+        "count": 28,
+        "coverage": 0.9333333333333333,
+        "mean": 0.4166666666666667,
+        "std": 0.5009910812500193
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 9,
+        "target_moved_away": 4,
+        "target_unresolved": 5,
+        "wrong_object_interaction": 2
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 30,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 25,
+        "coverage": 0.8333333333333334,
+        "mean": 0.7074112947096048,
+        "std": 0.4257619616997051
+      },
+      "target_resolution_attempt_count": 30,
+      "target_resolution_failure_count": 5,
+      "target_resolution_failure_rate": 0.16666666666666666,
+      "target_score": {
+        "count": 25,
+        "coverage": 0.8333333333333334,
+        "mean": 0.5436965625478671,
+        "std": 0.4452205270993172
+      },
+      "task_instruction": "put the middle black bowl on the plate",
+      "task_success_rate": 1.0
+    },
+    "15": {
+      "aggregate_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.4038431511441973,
+        "std": 0.4722877539422737
+      },
+      "kinematic_score": {
+        "count": 37,
+        "coverage": 0.9736842105263158,
+        "mean": 0.36036036036036034,
+        "std": 0.5554987390799278
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 17,
+        "target_moved_away": 11,
+        "target_unresolved": 6,
+        "wrong_object_interaction": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 38,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 32,
+        "coverage": 0.8421052631578947,
+        "mean": 0.5116406863021179,
+        "std": 0.47793539829095455
+      },
+      "target_resolution_attempt_count": 38,
+      "target_resolution_failure_count": 6,
+      "target_resolution_failure_rate": 0.15789473684210525,
+      "target_score": {
+        "count": 32,
+        "coverage": 0.8421052631578947,
+        "mean": 0.21438668981949402,
+        "std": 0.6754488503008194
+      },
+      "task_instruction": "put the middle black bowl on top of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "16": {
+      "aggregate_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.5302709081907729,
+        "std": 0.3622811654654211
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.3904761904761905,
+        "std": 0.5007024544036158
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 12,
+        "target_moved_away": 10,
+        "target_unresolved": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 35,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 32,
+        "coverage": 0.9142857142857143,
+        "mean": 0.6302863083918542,
+        "std": 0.4781279371294282
+      },
+      "target_resolution_attempt_count": 35,
+      "target_resolution_failure_count": 3,
+      "target_resolution_failure_rate": 0.08571428571428572,
+      "target_score": {
+        "count": 32,
+        "coverage": 0.9142857142857143,
+        "mean": 0.5575817757757863,
+        "std": 0.4697603686058826
+      },
+      "task_instruction": "stack the black bowl at the front on the black bowl in the middle",
+      "task_success_rate": 1.0
+    },
+    "17": {
+      "aggregate_score": {
+        "count": 31,
+        "coverage": 1.0,
+        "mean": 0.44132409470389694,
+        "std": 0.39941012910960577
+      },
+      "kinematic_score": {
+        "count": 30,
+        "coverage": 0.967741935483871,
+        "mean": 0.3333333333333333,
+        "std": 0.4791968589521739
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 11,
+        "target_moved_away": 10,
+        "target_unresolved": 5,
+        "wrong_object_interaction": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 31,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 26,
+        "coverage": 0.8387096774193549,
+        "mean": 0.5946622545133469,
+        "std": 0.4811252632540074
+      },
+      "target_resolution_attempt_count": 31,
+      "target_resolution_failure_count": 5,
+      "target_resolution_failure_rate": 0.16129032258064516,
+      "target_score": {
+        "count": 26,
+        "coverage": 0.8387096774193549,
+        "mean": 0.37335745370621903,
+        "std": 0.6092649362274735
+      },
+      "task_instruction": "stack the middle black bowl on the back black bowl",
+      "task_success_rate": 1.0
+    },
+    "18": {
+      "aggregate_score": {
+        "count": 71,
+        "coverage": 1.0,
+        "mean": 0.25861089416610117,
+        "std": 0.3776089033673853
+      },
+      "kinematic_score": {
+        "count": 70,
+        "coverage": 0.9859154929577465,
+        "mean": 0.09523809523809523,
+        "std": 0.659828879073858
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 9,
+        "kinematic_opposite": 5,
+        "subtask_not_completed": 41,
+        "target_moved_away": 22
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 71,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 71,
+        "coverage": 1.0,
+        "mean": 0.45743961808792055,
+        "std": 0.48472135540578526
+      },
+      "target_resolution_attempt_count": 71,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 71,
+        "coverage": 1.0,
+        "mean": 0.21792273807353904,
+        "std": 0.3712100033011011
+      },
+      "task_instruction": "put the frying pan on the stove",
+      "task_success_rate": 1.0
+    },
+    "19": {
+      "aggregate_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.5291139893837622,
+        "std": 0.26586585059021106
+      },
+      "kinematic_score": {
+        "count": 40,
+        "coverage": 0.975609756097561,
+        "mean": 0.43333333333333335,
+        "std": 0.4606758320361751
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 11,
+        "target_moved_away": 7
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 41,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.024390243902439025,
+      "subtask_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.7815039063924383,
+        "std": 0.37942648593870065
+      },
+      "target_resolution_attempt_count": 41,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.37792585868342254,
+        "std": 0.3487046017115129
+      },
+      "task_instruction": "put the moka pot on the stove",
+      "task_success_rate": 1.0
+    },
+    "2": {
+      "aggregate_score": {
+        "count": 34,
+        "coverage": 1.0,
+        "mean": 0.45605265278429297,
+        "std": 0.31802481084764295
+      },
+      "kinematic_score": {
+        "count": 32,
+        "coverage": 0.9411764705882353,
+        "mean": 0.53125,
+        "std": 0.48490674217947427
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 17,
+        "target_moved_away": 14,
+        "unsupported_subtask": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 34,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.029411764705882353,
+      "subtask_score": {
+        "count": 33,
+        "coverage": 0.9705882352941176,
+        "mean": 0.5133496254471096,
+        "std": 0.49610548749171635
+      },
+      "target_resolution_attempt_count": 34,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 34,
+        "coverage": 1.0,
+        "mean": 0.336566489768352,
+        "std": 0.4459978586579472
+      },
+      "task_instruction": "put the black bowl in the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "20": {
+      "aggregate_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.2929423426115364,
+        "std": 0.45204125062830386
+      },
+      "kinematic_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": -0.1794871794871795,
+        "std": 0.6285974703657058
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 8,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 11,
+        "target_moved_away": 6
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 26,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.6384492038229607,
+        "std": 0.45438977541529657
+      },
+      "target_resolution_attempt_count": 26,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.41986500349882805,
+        "std": 0.4611989000563736
+      },
+      "task_instruction": "turn on the stove",
+      "task_success_rate": 1.0
+    },
+    "21": {
+      "aggregate_score": {
+        "count": 80,
+        "coverage": 1.0,
+        "mean": 0.3779165188817423,
+        "std": 0.4111130450939721
+      },
+      "kinematic_score": {
+        "count": 78,
+        "coverage": 0.975,
+        "mean": 0.14529914529914528,
+        "std": 0.6076195756299563
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 9,
+        "kinematic_opposite": 4,
+        "subtask_not_completed": 35,
+        "target_moved_away": 19,
+        "wrong_object_interaction": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 80,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 80,
+        "coverage": 1.0,
+        "mean": 0.6023026966902718,
+        "std": 0.4696963045260964
+      },
+      "target_resolution_attempt_count": 80,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 80,
+        "coverage": 1.0,
+        "mean": 0.37722566683977865,
+        "std": 0.45166608732258723
+      },
+      "task_instruction": "turn on the stove and put the frying pan on it",
+      "task_success_rate": 1.0
+    },
+    "22": {
+      "aggregate_score": {
+        "count": 35,
+        "coverage": 0.8974358974358975,
+        "mean": 0.3401283516220525,
+        "std": 0.49986431669481945
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 0.8974358974358975,
+        "mean": 0.2761904761904762,
+        "std": 0.5314592925068078
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 2,
+        "no_verifiable_claim": 4,
+        "subtask_not_completed": 3,
+        "target_moved_away": 2,
+        "target_unresolved": 22
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 39,
+      "parse_warning_count": 5,
+      "parse_warning_rate": 0.1282051282051282,
+      "subtask_score": {
+        "count": 17,
+        "coverage": 0.4358974358974359,
+        "mean": 0.8741714066026854,
+        "std": 0.3208615925019344
+      },
+      "target_resolution_attempt_count": 39,
+      "target_resolution_failure_count": 22,
+      "target_resolution_failure_rate": 0.5641025641025641,
+      "target_score": {
+        "count": 17,
+        "coverage": 0.4358974358974359,
+        "mean": 0.461915471062933,
+        "std": 0.34693252747091663
+      },
+      "task_instruction": "close the bottom drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "23": {
+      "aggregate_score": {
+        "count": 101,
+        "coverage": 1.0,
+        "mean": -0.08862943304302133,
+        "std": 0.7472971215491555
+      },
+      "kinematic_score": {
+        "count": 101,
+        "coverage": 1.0,
+        "mean": -0.12211221122112212,
+        "std": 0.7367797387606732
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 32,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 3,
+        "target_moved_away": 1,
+        "target_unresolved": 92
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 101,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 9,
+        "coverage": 0.0891089108910891,
+        "mean": 0.7952281089632659,
+        "std": 0.3369154962700563
+      },
+      "target_resolution_attempt_count": 101,
+      "target_resolution_failure_count": 92,
+      "target_resolution_failure_rate": 0.9108910891089109,
+      "target_score": {
+        "count": 9,
+        "coverage": 0.0891089108910891,
+        "mean": 0.332025423032794,
+        "std": 0.24894651713058938
+      },
+      "task_instruction": "close the bottom drawer of the cabinet and open the top drawer",
+      "task_success_rate": 0.3333333333333333
+    },
+    "24": {
+      "aggregate_score": {
+        "count": 64,
+        "coverage": 1.0,
+        "mean": 0.2803772712722628,
+        "std": 0.36925670510895486
+      },
+      "kinematic_score": {
+        "count": 64,
+        "coverage": 1.0,
+        "mean": 0.05208333333333333,
+        "std": 0.687736701676836
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 11,
+        "kinematic_opposite": 4,
+        "subtask_not_completed": 31,
+        "target_moved_away": 22
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 64,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 64,
+        "coverage": 1.0,
+        "mean": 0.5912243164405631,
+        "std": 0.4526132880580969
+      },
+      "target_resolution_attempt_count": 64,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 64,
+        "coverage": 1.0,
+        "mean": 0.1978241640428921,
+        "std": 0.38950718484048774
+      },
+      "task_instruction": "put the black bowl in the bottom drawer of the cabinet",
+      "task_success_rate": 0.6666666666666666
+    },
+    "25": {
+      "aggregate_score": {
+        "count": 92,
+        "coverage": 1.0,
+        "mean": 0.15296221462507414,
+        "std": 0.41649497320111645
+      },
+      "kinematic_score": {
+        "count": 91,
+        "coverage": 0.9891304347826086,
+        "mean": 0.20512820512820512,
+        "std": 0.5106179807538938
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 2,
+        "kinematic_opposite": 11,
+        "subtask_not_completed": 42,
+        "target_moved_away": 34,
+        "unsupported_subtask": 30
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 92,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 62,
+        "coverage": 0.6739130434782609,
+        "mean": 0.4036396341467479,
+        "std": 0.4691589450526405
+      },
+      "target_resolution_attempt_count": 62,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 62,
+        "coverage": 0.6739130434782609,
+        "mean": -0.12901666104572632,
+        "std": 0.5443746781610558
+      },
+      "task_instruction": "put the black bowl on top of the cabinet",
+      "task_success_rate": 0.6666666666666666
+    },
+    "26": {
+      "aggregate_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.4868513200654997,
+        "std": 0.29141065147990897
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 0.9722222222222222,
+        "mean": 0.38095238095238093,
+        "std": 0.47903909866511585
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 6,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 36,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.8603425480496353,
+        "std": 0.34555166012346283
+      },
+      "target_resolution_attempt_count": 36,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.2172699571478284,
+        "std": 0.43316945117447386
+      },
+      "task_instruction": "put the wine bottle in the bottom drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "27": {
+      "aggregate_score": {
+        "count": 82,
+        "coverage": 1.0,
+        "mean": 0.2910219368280223,
+        "std": 0.30107525534957136
+      },
+      "kinematic_score": {
+        "count": 73,
+        "coverage": 0.8902439024390244,
+        "mean": 0.1643835616438356,
+        "std": 0.5894126469677924
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 4,
+        "kinematic_opposite": 4,
+        "subtask_not_completed": 41,
+        "target_moved_away": 26
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 82,
+      "parse_warning_count": 9,
+      "parse_warning_rate": 0.10975609756097561,
+      "subtask_score": {
+        "count": 82,
+        "coverage": 1.0,
+        "mean": 0.5603720951982993,
+        "std": 0.4761319870638513
+      },
+      "target_resolution_attempt_count": 82,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 82,
+        "coverage": 1.0,
+        "mean": 0.12909658408984215,
+        "std": 0.3490123728109606
+      },
+      "task_instruction": "put the wine bottle on the wine rack",
+      "task_success_rate": 0.6666666666666666
+    },
+    "28": {
+      "aggregate_score": {
+        "count": 22,
+        "coverage": 1.0,
+        "mean": 0.36878010403494815,
+        "std": 0.4367491214883282
+      },
+      "kinematic_score": {
+        "count": 22,
+        "coverage": 1.0,
+        "mean": 0.3181818181818182,
+        "std": 0.5638725474523756
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 7,
+        "target_moved_away": 5,
+        "target_unresolved": 9
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 22,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 13,
+        "coverage": 0.5909090909090909,
+        "mean": 0.5526107048047811,
+        "std": 0.47633339889755427
+      },
+      "target_resolution_attempt_count": 22,
+      "target_resolution_failure_count": 9,
+      "target_resolution_failure_rate": 0.4090909090909091,
+      "target_score": {
+        "count": 13,
+        "coverage": 0.5909090909090909,
+        "mean": 0.3196575156803402,
+        "std": 0.4942008219804402
+      },
+      "task_instruction": "close the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "29": {
+      "aggregate_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.534676555121396,
+        "std": 0.3062265526448346
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 0.9722222222222222,
+        "mean": 0.4666666666666667,
+        "std": 0.40785929724502584
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 12,
+        "target_moved_away": 10,
+        "unsupported_subtask": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 36,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 33,
+        "coverage": 0.9166666666666666,
+        "mean": 0.643118127299584,
+        "std": 0.47297607246318096
+      },
+      "target_resolution_attempt_count": 36,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.47727183416315605,
+        "std": 0.4619325180827005
+      },
+      "task_instruction": "put the black bowl in the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "3": {
+      "aggregate_score": {
+        "count": 57,
+        "coverage": 1.0,
+        "mean": 0.4460625360944215,
+        "std": 0.5245812512205952
+      },
+      "kinematic_score": {
+        "count": 57,
+        "coverage": 1.0,
+        "mean": 0.3391812865497076,
+        "std": 0.5425060184004266
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 10,
+        "subtask_not_completed": 3,
+        "target_moved_away": 1,
+        "target_unresolved": 36,
+        "unsupported_subtask": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 57,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 20,
+        "coverage": 0.3508771929824561,
+        "mean": 0.8715519711555091,
+        "std": 0.3157323404225557
+      },
+      "target_resolution_attempt_count": 57,
+      "target_resolution_failure_count": 36,
+      "target_resolution_failure_rate": 0.631578947368421,
+      "target_score": {
+        "count": 21,
+        "coverage": 0.3684210526315789,
+        "mean": 0.6910629007477412,
+        "std": 0.4907111981965941
+      },
+      "task_instruction": "put the butter at the back in the top drawer of the cabinet and close it",
+      "task_success_rate": 1.0
+    },
+    "30": {
+      "aggregate_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.5078113331817466,
+        "std": 0.30711324820807967
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.4666666666666667,
+        "std": 0.4924831799561103
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 12,
+        "target_moved_away": 13
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 35,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.6586283565466491,
+        "std": 0.4726281545922243
+      },
+      "target_resolution_attempt_count": 35,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.3981389763319243,
+        "std": 0.4696839283485784
+      },
+      "task_instruction": "put the black bowl on the plate",
+      "task_success_rate": 1.0
+    },
+    "31": {
+      "aggregate_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.4485603075353564,
+        "std": 0.35215635186462835
+      },
+      "kinematic_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.38636363636363635,
+        "std": 0.5456123509100255
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "subtask_not_completed": 18,
+        "target_moved_away": 16
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 44,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.604453444201783,
+        "std": 0.4777551140290696
+      },
+      "target_resolution_attempt_count": 44,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.35486384204064997,
+        "std": 0.4351476138585493
+      },
+      "task_instruction": "put the black bowl on top of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "32": {
+      "aggregate_score": {
+        "count": 100,
+        "coverage": 1.0,
+        "mean": 0.2073053598798797,
+        "std": 0.3844839779682327
+      },
+      "kinematic_score": {
+        "count": 93,
+        "coverage": 0.93,
+        "mean": -0.04301075268817204,
+        "std": 0.645221024713739
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 16,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 49,
+        "target_moved_away": 33
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 100,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 100,
+        "coverage": 1.0,
+        "mean": 0.5629879086318663,
+        "std": 0.47459958394625995
+      },
+      "target_resolution_attempt_count": 100,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 100,
+        "coverage": 1.0,
+        "mean": 0.10831549918969595,
+        "std": 0.3919154707618534
+      },
+      "task_instruction": "put the ketchup in the top drawer of the cabinet",
+      "task_success_rate": 0.3333333333333333
+    },
+    "33": {
+      "aggregate_score": {
+        "count": 57,
+        "coverage": 0.9827586206896551,
+        "mean": 0.4947142815594619,
+        "std": 0.45056245364547276
+      },
+      "kinematic_score": {
+        "count": 57,
+        "coverage": 0.9827586206896551,
+        "mean": 0.47368421052631576,
+        "std": 0.49930699897395464
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 4,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 3,
+        "target_unresolved": 41
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 58,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 17,
+        "coverage": 0.29310344827586204,
+        "mean": 0.8862555019391188,
+        "std": 0.24835828646260608
+      },
+      "target_resolution_attempt_count": 58,
+      "target_resolution_failure_count": 41,
+      "target_resolution_failure_rate": 0.7068965517241379,
+      "target_score": {
+        "count": 17,
+        "coverage": 0.29310344827586204,
+        "mean": 0.344890114531547,
+        "std": 0.25523155098295586
+      },
+      "task_instruction": "close the microwave",
+      "task_success_rate": 1.0
+    },
+    "34": {
+      "aggregate_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.45215314391008127,
+        "std": 0.35563048236301226
+      },
+      "kinematic_score": {
+        "count": 34,
+        "coverage": 0.9714285714285714,
+        "mean": 0.4117647058823529,
+        "std": 0.5604551344296648
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 15,
+        "target_moved_away": 10
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 35,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.5750791798216314,
+        "std": 0.49085164525184105
+      },
+      "target_resolution_attempt_count": 35,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 35,
+        "coverage": 1.0,
+        "mean": 0.3710009001875587,
+        "std": 0.43409326351179695
+      },
+      "task_instruction": "put the yellow and white mug to the front of the white mug",
+      "task_success_rate": 1.0
+    },
+    "35": {
+      "aggregate_score": {
+        "count": 41,
+        "coverage": 0.9761904761904762,
+        "mean": 0.3650537350327063,
+        "std": 0.44037673808996686
+      },
+      "kinematic_score": {
+        "count": 41,
+        "coverage": 0.9761904761904762,
+        "mean": 0.3089430894308943,
+        "std": 0.43796922280180917
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 12,
+        "target_moved_away": 11,
+        "target_unresolved": 10
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 42,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.023809523809523808,
+      "subtask_score": {
+        "count": 32,
+        "coverage": 0.7619047619047619,
+        "mean": 0.6284861757975475,
+        "std": 0.47999378779886226
+      },
+      "target_resolution_attempt_count": 42,
+      "target_resolution_failure_count": 10,
+      "target_resolution_failure_rate": 0.23809523809523808,
+      "target_score": {
+        "count": 32,
+        "coverage": 0.7619047619047619,
+        "mean": 0.191355784901084,
+        "std": 0.7292425282949699
+      },
+      "task_instruction": "open the microwave",
+      "task_success_rate": 1.0
+    },
+    "36": {
+      "aggregate_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.3395569304284331,
+        "std": 0.3504186734916225
+      },
+      "kinematic_score": {
+        "count": 51,
+        "coverage": 0.9272727272727272,
+        "mean": 0.3137254901960784,
+        "std": 0.5214850785704234
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 32,
+        "target_moved_away": 25
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 55,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.4366810094529413,
+        "std": 0.4855767079754047
+      },
+      "target_resolution_attempt_count": 55,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.2739533528932636,
+        "std": 0.4508417718683626
+      },
+      "task_instruction": "put the white bowl on the plate",
+      "task_success_rate": 1.0
+    },
+    "37": {
+      "aggregate_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.2693807227959807,
+        "std": 0.23408554912038493
+      },
+      "kinematic_score": {
+        "count": 34,
+        "coverage": 0.9444444444444444,
+        "mean": 0.35294117647058826,
+        "std": 0.48467478801208924
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 24,
+        "target_moved_away": 22,
+        "wrong_object_interaction": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 36,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.38004802144399724,
+        "std": 0.47690497997777215
+      },
+      "target_resolution_attempt_count": 36,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.06493579944638325,
+        "std": 0.18872609295745235
+      },
+      "task_instruction": "put the white bowl to the right of the plate",
+      "task_success_rate": 1.0
+    },
+    "38": {
+      "aggregate_score": {
+        "count": 76,
+        "coverage": 0.9620253164556962,
+        "mean": 0.09040277608088367,
+        "std": 0.5865650928397506
+      },
+      "kinematic_score": {
+        "count": 74,
+        "coverage": 0.9367088607594937,
+        "mean": 0.14414414414414414,
+        "std": 0.6369057168336446
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 8,
+        "kinematic_opposite": 6,
+        "no_verifiable_claim": 3,
+        "subtask_not_completed": 16,
+        "target_moved_away": 12,
+        "target_unresolved": 6,
+        "unsupported_subtask": 54
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 79,
+      "parse_warning_count": 4,
+      "parse_warning_rate": 0.05063291139240506,
+      "subtask_score": {
+        "count": 19,
+        "coverage": 0.24050632911392406,
+        "mean": 0.17271808767942257,
+        "std": 0.36116417921334115
+      },
+      "target_resolution_attempt_count": 25,
+      "target_resolution_failure_count": 6,
+      "target_resolution_failure_rate": 0.24,
+      "target_score": {
+        "count": 19,
+        "coverage": 0.24050632911392406,
+        "mean": -0.26449464815904766,
+        "std": 0.365459909253528
+      },
+      "task_instruction": "put the right moka pot on the stove",
+      "task_success_rate": 0.6666666666666666
+    },
+    "39": {
+      "aggregate_score": {
+        "count": 33,
+        "coverage": 0.8918918918918919,
+        "mean": 0.21592735375741803,
+        "std": 0.748022404927654
+      },
+      "kinematic_score": {
+        "count": 33,
+        "coverage": 0.8918918918918919,
+        "mean": 0.09090909090909091,
+        "std": 0.7753471136321409
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 9,
+        "no_verifiable_claim": 4,
+        "subtask_not_completed": 6,
+        "target_unresolved": 12
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 37,
+      "parse_warning_count": 4,
+      "parse_warning_rate": 0.10810810810810811,
+      "subtask_score": {
+        "count": 25,
+        "coverage": 0.6756756756756757,
+        "mean": 0.7977183305772046,
+        "std": 0.37465121465578943
+      },
+      "target_resolution_attempt_count": 37,
+      "target_resolution_failure_count": 12,
+      "target_resolution_failure_rate": 0.32432432432432434,
+      "target_score": {
+        "count": 25,
+        "coverage": 0.6756756756756757,
+        "mean": 0.5773539903021707,
+        "std": 0.35682130273939594
+      },
+      "task_instruction": "turn off the stove",
+      "task_success_rate": 1.0
+    },
+    "4": {
+      "aggregate_score": {
+        "count": 74,
+        "coverage": 0.9866666666666667,
+        "mean": 0.24964497489635099,
+        "std": 0.5317741346992658
+      },
+      "kinematic_score": {
+        "count": 74,
+        "coverage": 0.9866666666666667,
+        "mean": 0.2972972972972973,
+        "std": 0.5412907706594523
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 13,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 3,
+        "target_moved_away": 6,
+        "target_unresolved": 65,
+        "unsupported_subtask": 7
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 75,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 3,
+        "coverage": 0.04,
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "target_resolution_attempt_count": 75,
+      "target_resolution_failure_count": 65,
+      "target_resolution_failure_rate": 0.8666666666666667,
+      "target_score": {
+        "count": 10,
+        "coverage": 0.13333333333333333,
+        "mean": -0.40021289966673135,
+        "std": 0.7561624120416969
+      },
+      "task_instruction": "put the butter at the front in the top drawer of the cabinet and close it",
+      "task_success_rate": 0.6666666666666666
+    },
+    "40": {
+      "aggregate_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.3998764688888383,
+        "std": 0.30605901188478035
+      },
+      "kinematic_score": {
+        "count": 52,
+        "coverage": 0.9811320754716981,
+        "mean": 0.3782051282051282,
+        "std": 0.49798245152312703
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 26,
+        "target_moved_away": 16
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 53,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.018867924528301886,
+      "subtask_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.5642285113688045,
+        "std": 0.4806815942839711
+      },
+      "target_resolution_attempt_count": 53,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.26440751081585234,
+        "std": 0.31809003834830224
+      },
+      "task_instruction": "put the frying pan on the cabinet shelf",
+      "task_success_rate": 1.0
+    },
+    "41": {
+      "aggregate_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.4415560001613057,
+        "std": 0.3153592265927224
+      },
+      "kinematic_score": {
+        "count": 47,
+        "coverage": 0.9791666666666666,
+        "mean": 0.2907801418439716,
+        "std": 0.5778292355196788
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 4,
+        "subtask_not_completed": 13,
+        "target_moved_away": 11
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 48,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.7333174864239899,
+        "std": 0.43777483866232053
+      },
+      "target_resolution_attempt_count": 48,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.296132345385414,
+        "std": 0.3508905284251226
+      },
+      "task_instruction": "put the frying pan on top of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "42": {
+      "aggregate_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.4997192477923809,
+        "std": 0.3107583141892846
+      },
+      "kinematic_score": {
+        "count": 44,
+        "coverage": 1.0,
+        "mean": 0.3484848484848485,
+        "std": 0.5593762103628707
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 11,
+        "target_moved_away": 4,
+        "unsupported_subtask": 2
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 44,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 42,
+        "coverage": 0.9545454545454546,
+        "mean": 0.7735812306951046,
+        "std": 0.40626897872147893
+      },
+      "target_resolution_attempt_count": 42,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 42,
+        "coverage": 0.9545454545454546,
+        "mean": 0.33664751633491796,
+        "std": 0.28279011986264097
+      },
+      "task_instruction": "put the frying pan under the cabinet shelf",
+      "task_success_rate": 1.0
+    },
+    "43": {
+      "aggregate_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.4021031248224043,
+        "std": 0.36563496407050944
+      },
+      "kinematic_score": {
+        "count": 51,
+        "coverage": 0.9807692307692307,
+        "mean": 0.1764705882352941,
+        "std": 0.677535393849843
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 8,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 14,
+        "target_moved_away": 23
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 52,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.7782741303364817,
+        "std": 0.3986996879159507
+      },
+      "target_resolution_attempt_count": 52,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.2455521267659104,
+        "std": 0.3957040250274722
+      },
+      "task_instruction": "put the white bowl on top of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "44": {
+      "aggregate_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.5092048720912705,
+        "std": 0.3753915674323221
+      },
+      "kinematic_score": {
+        "count": 28,
+        "coverage": 0.875,
+        "mean": 0.14285714285714285,
+        "std": 0.5150787536377128
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "subtask_not_completed": 8,
+        "target_moved_away": 2
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 32,
+      "parse_warning_count": 2,
+      "parse_warning_rate": 0.0625,
+      "subtask_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.7843568447365751,
+        "std": 0.3910395873230324
+      },
+      "target_resolution_attempt_count": 32,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.600623191056384,
+        "std": 0.42013169670144773
+      },
+      "task_instruction": "turn on the stove",
+      "task_success_rate": 1.0
+    },
+    "45": {
+      "aggregate_score": {
+        "count": 78,
+        "coverage": 1.0,
+        "mean": 0.43597256028575265,
+        "std": 0.376780818461246
+      },
+      "kinematic_score": {
+        "count": 76,
+        "coverage": 0.9743589743589743,
+        "mean": 0.19736842105263158,
+        "std": 0.67359911286367
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 12,
+        "kinematic_opposite": 5,
+        "subtask_not_completed": 25,
+        "target_moved_away": 15,
+        "wrong_object_interaction": 2
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 78,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 78,
+        "coverage": 1.0,
+        "mean": 0.6990509508540779,
+        "std": 0.4517005634952519
+      },
+      "target_resolution_attempt_count": 78,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 78,
+        "coverage": 1.0,
+        "mean": 0.40961730970025056,
+        "std": 0.42696975002150467
+      },
+      "task_instruction": "turn on the stove and put the frying pan on it",
+      "task_success_rate": 1.0
+    },
+    "46": {
+      "aggregate_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.3046595858048559,
+        "std": 0.4020350402196445
+      },
+      "kinematic_score": {
+        "count": 53,
+        "coverage": 0.9636363636363636,
+        "mean": 0.1509433962264151,
+        "std": 0.6653006058670636
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 5,
+        "kinematic_opposite": 6,
+        "subtask_not_completed": 29,
+        "target_moved_away": 18
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 55,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.5410362453609548,
+        "std": 0.45295425804050393
+      },
+      "target_resolution_attempt_count": 55,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 55,
+        "coverage": 1.0,
+        "mean": 0.2163845662927203,
+        "std": 0.5263491474718578
+      },
+      "task_instruction": "pick up the alphabet soup and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "47": {
+      "aggregate_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.3451041593667678,
+        "std": 0.357479169147801
+      },
+      "kinematic_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.2569444444444444,
+        "std": 0.6427645129717434
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 20,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 48,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.5937250734503065,
+        "std": 0.481957370925402
+      },
+      "target_resolution_attempt_count": 48,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 48,
+        "coverage": 1.0,
+        "mean": 0.18464296020555257,
+        "std": 0.4815604140347639
+      },
+      "task_instruction": "pick up the cream cheese box and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "48": {
+      "aggregate_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.3470534547878536,
+        "std": 0.37466840028313697
+      },
+      "kinematic_score": {
+        "count": 49,
+        "coverage": 0.98,
+        "mean": 0.3129251700680272,
+        "std": 0.6473674695711739
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 26,
+        "target_moved_away": 25
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 50,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.495580653857776,
+        "std": 0.4897761445895203
+      },
+      "target_resolution_attempt_count": 50,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.2289668261442867,
+        "std": 0.39211617768181734
+      },
+      "task_instruction": "pick up the ketchup and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "49": {
+      "aggregate_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.39596258525841854,
+        "std": 0.3566176357698724
+      },
+      "kinematic_score": {
+        "count": 49,
+        "coverage": 0.98,
+        "mean": 0.2789115646258503,
+        "std": 0.5728036580958064
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 20,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 50,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.6188422332848086,
+        "std": 0.47147405931537456
+      },
+      "target_resolution_attempt_count": 50,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 50,
+        "coverage": 1.0,
+        "mean": 0.29571218915711367,
+        "std": 0.5714538621050939
+      },
+      "task_instruction": "pick up the tomato sauce and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "5": {
+      "aggregate_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": 0.38227644707764963,
+        "std": 0.41927391659745195
+      },
+      "kinematic_score": {
+        "count": 62,
+        "coverage": 0.9538461538461539,
+        "mean": 0.3333333333333333,
+        "std": 0.5896356933701159
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 9,
+        "subtask_not_completed": 21,
+        "target_moved_away": 29,
+        "unsupported_subtask": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 65,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.015384615384615385,
+      "subtask_score": {
+        "count": 62,
+        "coverage": 0.9538461538461539,
+        "mean": 0.7026936142759715,
+        "std": 0.441211496018825
+      },
+      "target_resolution_attempt_count": 65,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": 0.14027400376616345,
+        "std": 0.631955732643074
+      },
+      "task_instruction": "put the chocolate pudding in the top drawer of the cabinet and close it",
+      "task_success_rate": 1.0
+    },
+    "50": {
+      "aggregate_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.4449211086083327,
+        "std": 0.3133162753808697
+      },
+      "kinematic_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.42342342342342343,
+        "std": 0.5676390631359771
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 14,
+        "target_moved_away": 14
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 37,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.6320880530659804,
+        "std": 0.473765746777013
+      },
+      "target_resolution_attempt_count": 37,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.2792518493355944,
+        "std": 0.49416361097630945
+      },
+      "task_instruction": "pick up the alphabet soup and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "51": {
+      "aggregate_score": {
+        "count": 58,
+        "coverage": 0.9830508474576272,
+        "mean": 0.2974919197678411,
+        "std": 0.3905823908885984
+      },
+      "kinematic_score": {
+        "count": 56,
+        "coverage": 0.9491525423728814,
+        "mean": 0.05952380952380953,
+        "std": 0.5567306167185677
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 18,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 21,
+        "target_moved_away": 22,
+        "target_unresolved": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 59,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 58,
+        "coverage": 0.9830508474576272,
+        "mean": 0.6480442417094651,
+        "std": 0.4726345359573593
+      },
+      "target_resolution_attempt_count": 59,
+      "target_resolution_failure_count": 1,
+      "target_resolution_failure_rate": 0.01694915254237288,
+      "target_score": {
+        "count": 58,
+        "coverage": 0.9830508474576272,
+        "mean": 0.1705365342488292,
+        "std": 0.6021384364912357
+      },
+      "task_instruction": "pick up the butter and put it in the basket",
+      "task_success_rate": 0.6666666666666666
+    },
+    "52": {
+      "aggregate_score": {
+        "count": 46,
+        "coverage": 1.0,
+        "mean": 0.36688600679681393,
+        "std": 0.403533433773337
+      },
+      "kinematic_score": {
+        "count": 45,
+        "coverage": 0.9782608695652174,
+        "mean": 0.3037037037037037,
+        "std": 0.5297202719638852
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 21,
+        "target_moved_away": 16
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 46,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.021739130434782608,
+      "subtask_score": {
+        "count": 46,
+        "coverage": 1.0,
+        "mean": 0.5453838749362586,
+        "std": 0.4960528390450465
+      },
+      "target_resolution_attempt_count": 46,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 46,
+        "coverage": 1.0,
+        "mean": 0.24280106234603266,
+        "std": 0.5911291301712072
+      },
+      "task_instruction": "pick up the milk and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "53": {
+      "aggregate_score": {
+        "count": 43,
+        "coverage": 1.0,
+        "mean": 0.38257161992102945,
+        "std": 0.3362049907740557
+      },
+      "kinematic_score": {
+        "count": 43,
+        "coverage": 1.0,
+        "mean": 0.32558139534883723,
+        "std": 0.5728047504468579
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 23,
+        "target_moved_away": 15
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 43,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 43,
+        "coverage": 1.0,
+        "mean": 0.46867909148596054,
+        "std": 0.4955974692120483
+      },
+      "target_resolution_attempt_count": 43,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 43,
+        "coverage": 1.0,
+        "mean": 0.35345437292829057,
+        "std": 0.43713595178725495
+      },
+      "task_instruction": "pick up the orange juice and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "54": {
+      "aggregate_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.44066999029132287,
+        "std": 0.29196708906582997
+      },
+      "kinematic_score": {
+        "count": 28,
+        "coverage": 0.9333333333333333,
+        "mean": 0.39285714285714285,
+        "std": 0.5422877130443035
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 11,
+        "target_moved_away": 12
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 30,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.6676196387746983,
+        "std": 0.4648014435324039
+      },
+      "target_resolution_attempt_count": 30,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.2713254445569481,
+        "std": 0.43596028987896923
+      },
+      "task_instruction": "pick up the tomato sauce and put it in the basket",
+      "task_success_rate": 1.0
+    },
+    "55": {
+      "aggregate_score": {
+        "count": 42,
+        "coverage": 1.0,
+        "mean": 0.39037571476119415,
+        "std": 0.32402681486212237
+      },
+      "kinematic_score": {
+        "count": 42,
+        "coverage": 1.0,
+        "mean": 0.3253968253968254,
+        "std": 0.5369327706534237
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 19,
+        "target_moved_away": 18
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 42,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 42,
+        "coverage": 1.0,
+        "mean": 0.5641678959581645,
+        "std": 0.4874946516398751
+      },
+      "target_resolution_attempt_count": 42,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 42,
+        "coverage": 1.0,
+        "mean": 0.2815624229285926,
+        "std": 0.513185937939909
+      },
+      "task_instruction": "pick up the alphabet soup and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "56": {
+      "aggregate_score": {
+        "count": 29,
+        "coverage": 1.0,
+        "mean": 0.31001539253700744,
+        "std": 0.4124744177925504
+      },
+      "kinematic_score": {
+        "count": 26,
+        "coverage": 0.896551724137931,
+        "mean": 0.14102564102564102,
+        "std": 0.5404420232912306
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 2,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 15,
+        "target_moved_away": 10
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 29,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 29,
+        "coverage": 1.0,
+        "mean": 0.5015636719067277,
+        "std": 0.48818124269924545
+      },
+      "target_resolution_attempt_count": 29,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 29,
+        "coverage": 1.0,
+        "mean": 0.29293901327115396,
+        "std": 0.5038182783892067
+      },
+      "task_instruction": "pick up the butter and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "57": {
+      "aggregate_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.41013962281885685,
+        "std": 0.40022937264776715
+      },
+      "kinematic_score": {
+        "count": 51,
+        "coverage": 0.9807692307692307,
+        "mean": 0.27450980392156865,
+        "std": 0.596671531556978
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 2,
+        "kinematic_opposite": 5,
+        "subtask_not_completed": 19,
+        "target_moved_away": 11
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 52,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.6524200184934366,
+        "std": 0.46619709032475837
+      },
+      "target_resolution_attempt_count": 52,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 52,
+        "coverage": 1.0,
+        "mean": 0.2991346503087692,
+        "std": 0.5677221994210605
+      },
+      "task_instruction": "pick up the cream cheese and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "58": {
+      "aggregate_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.45303241421255624,
+        "std": 0.33996085945029125
+      },
+      "kinematic_score": {
+        "count": 39,
+        "coverage": 0.9512195121951219,
+        "mean": 0.5811965811965812,
+        "std": 0.5159448982149255
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 23,
+        "target_moved_away": 18
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 41,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.47987432883040726,
+        "std": 0.4832436903488384
+      },
+      "target_resolution_attempt_count": 41,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 41,
+        "coverage": 1.0,
+        "mean": 0.3148933763767632,
+        "std": 0.4144903826710154
+      },
+      "task_instruction": "pick up the ketchup and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "59": {
+      "aggregate_score": {
+        "count": 59,
+        "coverage": 1.0,
+        "mean": 0.3510920534113161,
+        "std": 0.27525661888672265
+      },
+      "kinematic_score": {
+        "count": 49,
+        "coverage": 0.8305084745762712,
+        "mean": 0.25170068027210885,
+        "std": 0.5195960939844438
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 22,
+        "target_moved_away": 32
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 59,
+      "parse_warning_count": 6,
+      "parse_warning_rate": 0.1016949152542373,
+      "subtask_score": {
+        "count": 59,
+        "coverage": 1.0,
+        "mean": 0.6573996530966048,
+        "std": 0.46120124138924024
+      },
+      "target_resolution_attempt_count": 59,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 59,
+        "coverage": 1.0,
+        "mean": 0.11481891680381626,
+        "std": 0.3956072783078396
+      },
+      "task_instruction": "pick up the tomato sauce and put it in the tray",
+      "task_success_rate": 0.6666666666666666
+    },
+    "6": {
+      "aggregate_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": 0.18745661983184753,
+        "std": 0.4363059918879919
+      },
+      "kinematic_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": -0.02564102564102564,
+        "std": 0.6597271964240311
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 4,
+        "kinematic_opposite": 12,
+        "subtask_not_completed": 42,
+        "target_moved_away": 26
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 65,
+      "parse_warning_count": 2,
+      "parse_warning_rate": 0.03076923076923077,
+      "subtask_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": 0.35923994210785337,
+        "std": 0.4751197043568948
+      },
+      "target_resolution_attempt_count": 65,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 65,
+        "coverage": 1.0,
+        "mean": 0.2287709430287148,
+        "std": 0.5609944753424314
+      },
+      "task_instruction": "open the bottom drawer of the cabinet",
+      "task_success_rate": 0.6666666666666666
+    },
+    "60": {
+      "aggregate_score": {
+        "count": 35,
+        "coverage": 0.9459459459459459,
+        "mean": 0.41904761904761906,
+        "std": 0.48036267477784733
+      },
+      "kinematic_score": {
+        "count": 35,
+        "coverage": 0.9459459459459459,
+        "mean": 0.41904761904761906,
+        "std": 0.48036267477784733
+      },
+      "mismatch_counts": {
+        "no_verifiable_claim": 2,
+        "target_unresolved": 32,
+        "unsupported_subtask": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 37,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "target_resolution_attempt_count": 32,
+      "target_resolution_failure_count": 32,
+      "target_resolution_failure_rate": 1.0,
+      "target_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "task_instruction": "pick up the black bowl on the left and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "61": {
+      "aggregate_score": {
+        "count": 47,
+        "coverage": 1.0,
+        "mean": 0.47345968125713594,
+        "std": 0.31324438267147775
+      },
+      "kinematic_score": {
+        "count": 46,
+        "coverage": 0.9787234042553191,
+        "mean": 0.43478260869565216,
+        "std": 0.4908317165761188
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 14,
+        "target_moved_away": 12
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 47,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 47,
+        "coverage": 1.0,
+        "mean": 0.7057544327434007,
+        "std": 0.451895406586272
+      },
+      "target_resolution_attempt_count": 47,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 47,
+        "coverage": 1.0,
+        "mean": 0.2783778672764871,
+        "std": 0.5547959849799874
+      },
+      "task_instruction": "pick up the chocolate pudding and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "62": {
+      "aggregate_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.4285767460577425,
+        "std": 0.33864620578102844
+      },
+      "kinematic_score": {
+        "count": 30,
+        "coverage": 0.9375,
+        "mean": 0.5222222222222223,
+        "std": 0.6066503864319421
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 17,
+        "target_moved_away": 15
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 32,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.48144602070271314,
+        "std": 0.49147851802912257
+      },
+      "target_resolution_attempt_count": 32,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.2925080209308238,
+        "std": 0.4261019126324299
+      },
+      "task_instruction": "pick up the salad dressing and put it in the tray",
+      "task_success_rate": 1.0
+    },
+    "63": {
+      "aggregate_score": {
+        "count": 59,
+        "coverage": 0.9833333333333333,
+        "mean": 0.3417019982978023,
+        "std": 0.4483494449393537
+      },
+      "kinematic_score": {
+        "count": 56,
+        "coverage": 0.9333333333333333,
+        "mean": 0.20238095238095238,
+        "std": 0.5066172102607908
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 2,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 9,
+        "target_moved_away": 10,
+        "target_unresolved": 32
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 60,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.016666666666666666,
+      "subtask_score": {
+        "count": 28,
+        "coverage": 0.4666666666666667,
+        "mean": 0.6787902340762884,
+        "std": 0.4667082463572473
+      },
+      "target_resolution_attempt_count": 60,
+      "target_resolution_failure_count": 32,
+      "target_resolution_failure_rate": 0.5333333333333333,
+      "target_score": {
+        "count": 28,
+        "coverage": 0.4666666666666667,
+        "mean": 0.44419588010717315,
+        "std": 0.434837181879137
+      },
+      "task_instruction": "stack the left bowl on the right bowl and place them in the tray",
+      "task_success_rate": 1.0
+    },
+    "64": {
+      "aggregate_score": {
+        "count": 73,
+        "coverage": 0.9864864864864865,
+        "mean": 0.2973187551415532,
+        "std": 0.49179697369145414
+      },
+      "kinematic_score": {
+        "count": 67,
+        "coverage": 0.9054054054054054,
+        "mean": 0.31840796019900497,
+        "std": 0.5969320008744534
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 5,
+        "no_verifiable_claim": 1,
+        "subtask_not_completed": 22,
+        "target_moved_away": 18,
+        "target_unresolved": 40,
+        "wrong_object_interaction": 3
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 74,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 34,
+        "coverage": 0.4594594594594595,
+        "mean": 0.3846479549235388,
+        "std": 0.47132907719508377
+      },
+      "target_resolution_attempt_count": 74,
+      "target_resolution_failure_count": 40,
+      "target_resolution_failure_rate": 0.5405405405405406,
+      "target_score": {
+        "count": 34,
+        "coverage": 0.4594594594594595,
+        "mean": 0.20433538044837063,
+        "std": 0.43028071803819357
+      },
+      "task_instruction": "stack the right bowl on the left bowl and place them in the tray",
+      "task_success_rate": 1.0
+    },
+    "65": {
+      "aggregate_score": {
+        "count": 92,
+        "coverage": 1.0,
+        "mean": 0.3529379551639744,
+        "std": 0.31269082617320576
+      },
+      "kinematic_score": {
+        "count": 55,
+        "coverage": 0.5978260869565217,
+        "mean": 0.2,
+        "std": 0.6893123494842633
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 6,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 30,
+        "target_moved_away": 56
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 92,
+      "parse_warning_count": 34,
+      "parse_warning_rate": 0.3695652173913043,
+      "subtask_score": {
+        "count": 92,
+        "coverage": 1.0,
+        "mean": 0.6987260406512398,
+        "std": 0.4481298785363715
+      },
+      "target_resolution_attempt_count": 92,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 92,
+        "coverage": 1.0,
+        "mean": 0.07588257110486486,
+        "std": 0.2934724930696936
+      },
+      "task_instruction": "put the red mug on the left plate",
+      "task_success_rate": 0.3333333333333333
+    },
+    "66": {
+      "aggregate_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.5147565055457384,
+        "std": 0.3014360794269268
+      },
+      "kinematic_score": {
+        "count": 34,
+        "coverage": 0.9444444444444444,
+        "mean": 0.49019607843137253,
+        "std": 0.5497194419167132
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 9,
+        "target_moved_away": 11
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 36,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.7916366822828926,
+        "std": 0.3744827196429762
+      },
+      "target_resolution_attempt_count": 36,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.2615893195715664,
+        "std": 0.38118277723140087
+      },
+      "task_instruction": "put the red mug on the right plate",
+      "task_success_rate": 1.0
+    },
+    "67": {
+      "aggregate_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.42131324075966914,
+        "std": 0.3367301692354051
+      },
+      "kinematic_score": {
+        "count": 25,
+        "coverage": 0.9615384615384616,
+        "mean": 0.41333333333333333,
+        "std": 0.4645667037382492
+      },
+      "mismatch_counts": {
+        "subtask_not_completed": 14,
+        "target_moved_away": 10
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 26,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.48365326113509244,
+        "std": 0.48169024722105097
+      },
+      "target_resolution_attempt_count": 26,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.36456897564260926,
+        "std": 0.45435332006848217
+      },
+      "task_instruction": "put the white mug on the left plate",
+      "task_success_rate": 1.0
+    },
+    "68": {
+      "aggregate_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.44551613951716024,
+        "std": 0.34437855799550193
+      },
+      "kinematic_score": {
+        "count": 24,
+        "coverage": 0.96,
+        "mean": 0.4861111111111111,
+        "std": 0.5268632427330738
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 12,
+        "target_moved_away": 11
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 25,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.5461266502287278,
+        "std": 0.47758531620360056
+      },
+      "target_resolution_attempt_count": 25,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.30787300617000385,
+        "std": 0.4401761536276697
+      },
+      "task_instruction": "put the yellow and white mug on the right plate",
+      "task_success_rate": 1.0
+    },
+    "69": {
+      "aggregate_score": {
+        "count": 31,
+        "coverage": 1.0,
+        "mean": 0.3115928505581385,
+        "std": 0.2811658067247783
+      },
+      "kinematic_score": {
+        "count": 29,
+        "coverage": 0.9354838709677419,
+        "mean": 0.3103448275862069,
+        "std": 0.6546680857884203
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 2,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 18,
+        "target_moved_away": 13
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 31,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 31,
+        "coverage": 1.0,
+        "mean": 0.4774427269777438,
+        "std": 0.46708525093554026
+      },
+      "target_resolution_attempt_count": 31,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 31,
+        "coverage": 1.0,
+        "mean": 0.16734501346662659,
+        "std": 0.3312556184437821
+      },
+      "task_instruction": "put the chocolate pudding to the left of the plate",
+      "task_success_rate": 1.0
+    },
+    "7": {
+      "aggregate_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.2975880993850103,
+        "std": 0.5081823663220304
+      },
+      "kinematic_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.08,
+        "std": 0.5438954147832303
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 11,
+        "target_moved_away": 10
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 25,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.5991918519750257,
+        "std": 0.48925367250287144
+      },
+      "target_resolution_attempt_count": 25,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 25,
+        "coverage": 1.0,
+        "mean": 0.2135724461800052,
+        "std": 0.7478089317095127
+      },
+      "task_instruction": "open the top drawer of the cabinet",
+      "task_success_rate": 1.0
+    },
+    "70": {
+      "aggregate_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.3852098331928966,
+        "std": 0.30189858186193247
+      },
+      "kinematic_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.34615384615384615,
+        "std": 0.6823837631882699
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 11,
+        "target_moved_away": 8
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 26,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.6185717481883871,
+        "std": 0.4709893003537978
+      },
+      "target_resolution_attempt_count": 26,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 26,
+        "coverage": 1.0,
+        "mean": 0.19090390523645648,
+        "std": 0.39500884308214296
+      },
+      "task_instruction": "put the chocolate pudding to the right of the plate",
+      "task_success_rate": 1.0
+    },
+    "71": {
+      "aggregate_score": {
+        "count": 61,
+        "coverage": 1.0,
+        "mean": 0.2653890974828265,
+        "std": 0.3707161108738311
+      },
+      "kinematic_score": {
+        "count": 50,
+        "coverage": 0.819672131147541,
+        "mean": 0.12,
+        "std": 0.7079234107977752
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 10,
+        "subtask_not_completed": 28,
+        "target_moved_away": 36
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 61,
+      "parse_warning_count": 9,
+      "parse_warning_rate": 0.14754098360655737,
+      "subtask_score": {
+        "count": 61,
+        "coverage": 1.0,
+        "mean": 0.5907210857172358,
+        "std": 0.47884847452421014
+      },
+      "target_resolution_attempt_count": 61,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 61,
+        "coverage": 1.0,
+        "mean": 0.06050024558741565,
+        "std": 0.4347578454110474
+      },
+      "task_instruction": "put the red mug on the plate",
+      "task_success_rate": 0.6666666666666666
+    },
+    "72": {
+      "aggregate_score": {
+        "count": 94,
+        "coverage": 1.0,
+        "mean": 0.07799853419427372,
+        "std": 0.41391791026548275
+      },
+      "kinematic_score": {
+        "count": 88,
+        "coverage": 0.9361702127659575,
+        "mean": -0.1856060606060606,
+        "std": 0.8100660194841314
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 30,
+        "kinematic_opposite": 9,
+        "subtask_not_completed": 73,
+        "target_moved_away": 25
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 94,
+      "parse_warning_count": 5,
+      "parse_warning_rate": 0.05319148936170213,
+      "subtask_score": {
+        "count": 94,
+        "coverage": 1.0,
+        "mean": 0.26020846198040254,
+        "std": 0.40101636993269013
+      },
+      "target_resolution_attempt_count": 94,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 94,
+        "coverage": 1.0,
+        "mean": 0.13121007513603314,
+        "std": 0.28446854441937114
+      },
+      "task_instruction": "put the white mug on the plate",
+      "task_success_rate": 0.3333333333333333
+    },
+    "73": {
+      "aggregate_score": {
+        "count": 62,
+        "coverage": 1.0,
+        "mean": 0.35158483566467524,
+        "std": 0.34891224744632887
+      },
+      "kinematic_score": {
+        "count": 61,
+        "coverage": 0.9838709677419355,
+        "mean": 0.3224043715846994,
+        "std": 0.5881873396306966
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 10,
+        "subtask_not_completed": 30,
+        "target_moved_away": 30
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 62,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 62,
+        "coverage": 1.0,
+        "mean": 0.5361577815329179,
+        "std": 0.48861166069943235
+      },
+      "target_resolution_attempt_count": 62,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 62,
+        "coverage": 1.0,
+        "mean": 0.2004066467745686,
+        "std": 0.3547310935575043
+      },
+      "task_instruction": "pick up the book and place it in the front compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "74": {
+      "aggregate_score": {
+        "count": 45,
+        "coverage": 1.0,
+        "mean": 0.37666821924039595,
+        "std": 0.3185890375208051
+      },
+      "kinematic_score": {
+        "count": 45,
+        "coverage": 1.0,
+        "mean": 0.42962962962962964,
+        "std": 0.4478878950468437
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 24,
+        "target_moved_away": 24
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 45,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 45,
+        "coverage": 1.0,
+        "mean": 0.4682717207290853,
+        "std": 0.4974866519836879
+      },
+      "target_resolution_attempt_count": 45,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 45,
+        "coverage": 1.0,
+        "mean": 0.2321033073624729,
+        "std": 0.425365321831577
+      },
+      "task_instruction": "pick up the book and place it in the left compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "75": {
+      "aggregate_score": {
+        "count": 97,
+        "coverage": 1.0,
+        "mean": 0.17302984520356574,
+        "std": 0.37614475387851587
+      },
+      "kinematic_score": {
+        "count": 97,
+        "coverage": 1.0,
+        "mean": 0.024054982817869414,
+        "std": 0.7135530102704407
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 37,
+        "subtask_not_completed": 65,
+        "target_moved_away": 49
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 97,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.010309278350515464,
+      "subtask_score": {
+        "count": 97,
+        "coverage": 1.0,
+        "mean": 0.35687966561367246,
+        "std": 0.46430871621897957
+      },
+      "target_resolution_attempt_count": 97,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 97,
+        "coverage": 1.0,
+        "mean": 0.13815488717915533,
+        "std": 0.35420957422812216
+      },
+      "task_instruction": "pick up the book and place it in the right compartment of the caddy",
+      "task_success_rate": 0.3333333333333333
+    },
+    "76": {
+      "aggregate_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.3892098995867908,
+        "std": 0.31654655539785426
+      },
+      "kinematic_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.42735042735042733,
+        "std": 0.5226969179972873
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 23,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 39,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.4161361847839718,
+        "std": 0.4875167275108136
+      },
+      "target_resolution_attempt_count": 39,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 39,
+        "coverage": 1.0,
+        "mean": 0.32414308662597335,
+        "std": 0.4264837334640282
+      },
+      "task_instruction": "pick up the yellow and white mug and place it to the right of the caddy",
+      "task_success_rate": 1.0
+    },
+    "77": {
+      "aggregate_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.3254016034720665,
+        "std": 0.3192879117512723
+      },
+      "kinematic_score": {
+        "count": 37,
+        "coverage": 0.9736842105263158,
+        "mean": 0.2972972972972973,
+        "std": 0.5243831427335225
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 23,
+        "target_moved_away": 18
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 38,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.3959879334307977,
+        "std": 0.48783162892013027
+      },
+      "target_resolution_attempt_count": 38,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.290896602986315,
+        "std": 0.39963368457044707
+      },
+      "task_instruction": "pick up the book and place it in the back compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "78": {
+      "aggregate_score": {
+        "count": 68,
+        "coverage": 1.0,
+        "mean": 0.26087787366631215,
+        "std": 0.42782041855094577
+      },
+      "kinematic_score": {
+        "count": 65,
+        "coverage": 0.9558823529411765,
+        "mean": 0.09230769230769231,
+        "std": 0.7291434907559475
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 7,
+        "kinematic_opposite": 12,
+        "subtask_not_completed": 38,
+        "target_moved_away": 30
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 68,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.014705882352941176,
+      "subtask_score": {
+        "count": 68,
+        "coverage": 1.0,
+        "mean": 0.475641297625579,
+        "std": 0.48049126884510845
+      },
+      "target_resolution_attempt_count": 68,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 68,
+        "coverage": 1.0,
+        "mean": 0.21340539119244753,
+        "std": 0.5301376954250039
+      },
+      "task_instruction": "pick up the book and place it in the front compartment of the caddy",
+      "task_success_rate": 0.6666666666666666
+    },
+    "79": {
+      "aggregate_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.3694368886292754,
+        "std": 0.3225515318145306
+      },
+      "kinematic_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.3333333333333333,
+        "std": 0.6478835438717
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 18,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 36,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.5044352858245037,
+        "std": 0.4958120246240991
+      },
+      "target_resolution_attempt_count": 36,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 36,
+        "coverage": 1.0,
+        "mean": 0.27054204672998916,
+        "std": 0.40115428823305876
+      },
+      "task_instruction": "pick up the book and place it in the left compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "8": {
+      "aggregate_score": {
+        "count": 58,
+        "coverage": 1.0,
+        "mean": 0.28497253682215073,
+        "std": 0.4366057364793031
+      },
+      "kinematic_score": {
+        "count": 56,
+        "coverage": 0.9655172413793104,
+        "mean": 0.2976190476190476,
+        "std": 0.48664127228499277
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 5,
+        "subtask_not_completed": 28,
+        "target_moved_away": 27,
+        "unsupported_subtask": 4,
+        "wrong_object_interaction": 1
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 58,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 54,
+        "coverage": 0.9310344827586207,
+        "mean": 0.48193225772114334,
+        "std": 0.4992331651714138
+      },
+      "target_resolution_attempt_count": 58,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 58,
+        "coverage": 1.0,
+        "mean": 0.11457804379870445,
+        "std": 0.671919122664456
+      },
+      "task_instruction": "open the top drawer of the cabinet and put the bowl in it",
+      "task_success_rate": 1.0
+    },
+    "80": {
+      "aggregate_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.36043280268961186,
+        "std": 0.32474443385599977
+      },
+      "kinematic_score": {
+        "count": 37,
+        "coverage": 0.9736842105263158,
+        "mean": 0.2882882882882883,
+        "std": 0.4849826606736854
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 1,
+        "subtask_not_completed": 18,
+        "target_moved_away": 18
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 38,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.5270138720571247,
+        "std": 0.49858627073166245
+      },
+      "target_resolution_attempt_count": 38,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.2604815171839075,
+        "std": 0.3726584051677412
+      },
+      "task_instruction": "pick up the book and place it in the right compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "81": {
+      "aggregate_score": {
+        "count": 57,
+        "coverage": 1.0,
+        "mean": 0.26679866425261445,
+        "std": 0.3660557114798954
+      },
+      "kinematic_score": {
+        "count": 55,
+        "coverage": 0.9649122807017544,
+        "mean": 0.006060606060606063,
+        "std": 0.6046650599387596
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 12,
+        "subtask_not_completed": 27,
+        "target_moved_away": 28
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 57,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.017543859649122806,
+      "subtask_score": {
+        "count": 57,
+        "coverage": 1.0,
+        "mean": 0.5641723863782352,
+        "std": 0.47996319656107195
+      },
+      "target_resolution_attempt_count": 57,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 57,
+        "coverage": 1.0,
+        "mean": 0.22170850476449486,
+        "std": 0.4259455715742322
+      },
+      "task_instruction": "pick up the book and place it in the front compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "82": {
+      "aggregate_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.4527407875448034,
+        "std": 0.3270326509597303
+      },
+      "kinematic_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.35964912280701755,
+        "std": 0.5534663703279774
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 2,
+        "subtask_not_completed": 13,
+        "target_moved_away": 16
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 38,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.6642802723362363,
+        "std": 0.46649404528614036
+      },
+      "target_resolution_attempt_count": 38,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 38,
+        "coverage": 1.0,
+        "mean": 0.33429296749115633,
+        "std": 0.4174604299228278
+      },
+      "task_instruction": "pick up the book and place it in the left compartment of the caddy",
+      "task_success_rate": 1.0
+    },
+    "83": {
+      "aggregate_score": {
+        "count": 93,
+        "coverage": 1.0,
+        "mean": 0.14649334284340498,
+        "std": 0.3847348597383871
+      },
+      "kinematic_score": {
+        "count": 93,
+        "coverage": 1.0,
+        "mean": -0.08243727598566308,
+        "std": 0.6993014332691369
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 6,
+        "kinematic_opposite": 32,
+        "subtask_not_completed": 61,
+        "target_moved_away": 53
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 93,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 93,
+        "coverage": 1.0,
+        "mean": 0.3887100944474297,
+        "std": 0.46165499542458355
+      },
+      "target_resolution_attempt_count": 93,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 93,
+        "coverage": 1.0,
+        "mean": 0.13320721006844838,
+        "std": 0.307568008139454
+      },
+      "task_instruction": "pick up the book and place it in the right compartment of the caddy",
+      "task_success_rate": 0.3333333333333333
+    },
+    "84": {
+      "aggregate_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.341566315781946,
+        "std": 0.4324661814795068
+      },
+      "kinematic_score": {
+        "count": 52,
+        "coverage": 0.9811320754716981,
+        "mean": 0.1923076923076923,
+        "std": 0.749205145317281
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 3,
+        "kinematic_opposite": 9,
+        "subtask_not_completed": 26,
+        "target_moved_away": 17
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 53,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.018867924528301886,
+      "subtask_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.5231177514996963,
+        "std": 0.4893705366501649
+      },
+      "target_resolution_attempt_count": 53,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 53,
+        "coverage": 1.0,
+        "mean": 0.3022831320012503,
+        "std": 0.46218202620997934
+      },
+      "task_instruction": "pick up the red mug and place it to the right of the caddy",
+      "task_success_rate": 1.0
+    },
+    "85": {
+      "aggregate_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.31298274539845944,
+        "std": 0.33669129769950124
+      },
+      "kinematic_score": {
+        "count": 28,
+        "coverage": 0.9333333333333333,
+        "mean": 0.20238095238095238,
+        "std": 0.5066172102607908
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 3,
+        "subtask_not_completed": 17,
+        "target_moved_away": 12
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 30,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.43698268953311165,
+        "std": 0.4925706803433483
+      },
+      "target_resolution_attempt_count": 30,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 30,
+        "coverage": 1.0,
+        "mean": 0.31462809619948323,
+        "std": 0.41218141581759615
+      },
+      "task_instruction": "pick up the white mug and place it to the right of the caddy",
+      "task_success_rate": 1.0
+    },
+    "86": {
+      "aggregate_score": {
+        "count": 68,
+        "coverage": 0.9577464788732394,
+        "mean": 0.19465619293614278,
+        "std": 0.6645980080351637
+      },
+      "kinematic_score": {
+        "count": 68,
+        "coverage": 0.9577464788732394,
+        "mean": 0.18627450980392157,
+        "std": 0.667603148479734
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 10,
+        "kinematic_opposite": 4,
+        "no_verifiable_claim": 3,
+        "target_unresolved": 70
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 71,
+      "parse_warning_count": 4,
+      "parse_warning_rate": 0.056338028169014086,
+      "subtask_score": {
+        "count": 1,
+        "coverage": 0.014084507042253521,
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "target_resolution_attempt_count": 71,
+      "target_resolution_failure_count": 70,
+      "target_resolution_failure_rate": 0.9859154929577465,
+      "target_score": {
+        "count": 1,
+        "coverage": 0.014084507042253521,
+        "mean": 0.04319669230645973,
+        "std": 0.0
+      },
+      "task_instruction": "pick up the book in the middle and place it on the cabinet shelf",
+      "task_success_rate": 0.6666666666666666
+    },
+    "87": {
+      "aggregate_score": {
+        "count": 44,
+        "coverage": 0.9777777777777777,
+        "mean": 0.3717629354273276,
+        "std": 0.46896343241791205
+      },
+      "kinematic_score": {
+        "count": 44,
+        "coverage": 0.9777777777777777,
+        "mean": 0.30303030303030304,
+        "std": 0.49654453358102846
+      },
+      "mismatch_counts": {
+        "kinematic_opposite": 4,
+        "no_verifiable_claim": 1,
+        "target_unresolved": 36
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 45,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.022222222222222223,
+      "subtask_score": {
+        "count": 9,
+        "coverage": 0.2,
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "target_resolution_attempt_count": 45,
+      "target_resolution_failure_count": 36,
+      "target_resolution_failure_rate": 0.8,
+      "target_score": {
+        "count": 9,
+        "coverage": 0.2,
+        "mean": 0.822893423304508,
+        "std": 0.21264009845837017
+      },
+      "task_instruction": "pick up the book on the left and place it on top of the shelf",
+      "task_success_rate": 1.0
+    },
+    "88": {
+      "aggregate_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.20833333333333331,
+        "std": 0.6277716322216401
+      },
+      "kinematic_score": {
+        "count": 32,
+        "coverage": 1.0,
+        "mean": 0.20833333333333331,
+        "std": 0.6277716322216401
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "kinematic_opposite": 4,
+        "target_unresolved": 32
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 32,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.03125,
+      "subtask_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "target_resolution_attempt_count": 32,
+      "target_resolution_failure_count": 32,
+      "target_resolution_failure_rate": 1.0,
+      "target_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "task_instruction": "pick up the book on the right and place it on the cabinet shelf",
+      "task_success_rate": 1.0
+    },
+    "89": {
+      "aggregate_score": {
+        "count": 30,
+        "coverage": 0.967741935483871,
+        "mean": 0.13333333333333333,
+        "std": 0.4268749491621899
+      },
+      "kinematic_score": {
+        "count": 30,
+        "coverage": 0.967741935483871,
+        "mean": 0.13333333333333333,
+        "std": 0.4268749491621899
+      },
+      "mismatch_counts": {
+        "no_verifiable_claim": 1,
+        "target_unresolved": 31
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 31,
+      "parse_warning_count": 1,
+      "parse_warning_rate": 0.03225806451612903,
+      "subtask_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "target_resolution_attempt_count": 31,
+      "target_resolution_failure_count": 31,
+      "target_resolution_failure_rate": 1.0,
+      "target_score": {
+        "count": 0,
+        "coverage": 0.0,
+        "mean": null,
+        "std": null
+      },
+      "task_instruction": "pick up the book on the right and place it under the cabinet shelf",
+      "task_success_rate": 1.0
+    },
+    "9": {
+      "aggregate_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.5077371734092555,
+        "std": 0.30904580790836395
+      },
+      "kinematic_score": {
+        "count": 36,
+        "coverage": 0.972972972972973,
+        "mean": 0.4074074074074074,
+        "std": 0.5037581669902016
+      },
+      "mismatch_counts": {
+        "kinematic_no_motion": 1,
+        "subtask_not_completed": 9,
+        "target_moved_away": 15
+      },
+      "num_episodes": 3,
+      "num_policy_queries": 37,
+      "parse_warning_count": 0,
+      "parse_warning_rate": 0.0,
+      "subtask_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.7576761717640728,
+        "std": 0.4274419888899769
+      },
+      "target_resolution_attempt_count": 37,
+      "target_resolution_failure_count": 0,
+      "target_resolution_failure_rate": 0.0,
+      "target_score": {
+        "count": 37,
+        "coverage": 1.0,
+        "mean": 0.37011552204275316,
+        "std": 0.4511748106390344
+      },
+      "task_instruction": "put the black bowl on the plate",
+      "task_success_rate": 1.0
+    }
+  },
+  "subtask_score": {
+    "count": 3677,
+    "coverage": 0.8238852789603406,
+    "mean": 0.5635221672754896,
+    "std": 0.482919409774321
+  },
+  "target_resolution_attempt_count": 4346,
+  "target_resolution_failure_count": 645,
+  "target_resolution_failure_rate": 0.14841233317993557,
+  "target_score": {
+    "count": 3701,
+    "coverage": 0.829262827694376,
+    "mean": 0.24134016462997426,
+    "std": 0.47823643467106436
+  },
+  "task_success_rate": 0.9111111111111111
+}

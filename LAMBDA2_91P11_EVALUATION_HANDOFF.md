@@ -18,6 +18,8 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Case-schedule SHA256 | `8c2fcb9c3c5d92be38b9ed787f55d212b2a8aba19065f499585a775351ded564` |
 | Reference episode outcomes | [`lambda2_91p11_episode_outcomes.csv`](lambda2_91p11_episode_outcomes.csv) |
 | Episode-outcomes SHA256 | `5db476b16dc3947c4dbae1a364d7935116569de988db330b11c08dc342e1b6d5` |
+| Original-run diagnostic artifacts | [`lambda2_91p11_reproduction_artifacts/`](lambda2_91p11_reproduction_artifacts/) |
+| Artifact hash manifest | [`SHA256SUMS`](lambda2_91p11_reproduction_artifacts/SHA256SUMS) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -222,6 +224,22 @@ This table and the CSV fully specify the 246 successful episodes and 24 failed e
 - The original report's `experiment_metadata.json` contains legacy descriptive strings saying “one trial per task” and a one-trial seed schedule. Those strings are stale and were not used by execution. The effective config, case manifest, outcome CSV, and evaluator formula in this handoff are authoritative.
 
 For the fastest diagnosis, compare the reference and new runs in this order for the same case: initial-state SHA256, first preprocessed image bytes, first generated token IDs, first decoded `10 × 7` action chunk, then later query tokens. If the initial image matches but the first tokens differ, focus on model/runtime numerics. If initial tokens match and later tokens diverge, compare MuJoCo/robosuite state evolution and CPU-side dependencies.
+
+## Attached original-run diagnostics
+
+The [diagnostic artifact directory](lambda2_91p11_reproduction_artifacts/) supplies the additional files needed for an AWS comparison:
+
+- [`episode_summary.json`](lambda2_91p11_reproduction_artifacts/episode_summary.json) contains all 270 reference outcomes and policy-query counts.
+- [`first_query_fingerprints.csv`](lambda2_91p11_reproduction_artifacts/first_query_fingerprints.csv) contains the original first-query VQ token IDs and complete decoded action chunk for every case, plus hashes of the generated reasoning and pre-action simulator state.
+- [`alignment_queries.jsonl.gz`](lambda2_91p11_reproduction_artifacts/alignment_queries.jsonl.gz) contains all 4,463 policy queries, decoded actions, executed end-effector trajectories, reasoning, and simulator states. Its compressed SHA256 is `b9fa977167de81bf812ecbf513cc7de49eff3fa44e9dd0f43a60d08311036cea`; the decompressed JSONL SHA256 is `ebcae6aec77750e31e7ec91c596bddc4570a5281fb863748edff45d25aa83254`.
+- [`all_query_scores.jsonl`](lambda2_91p11_reproduction_artifacts/all_query_scores.jsonl) contains the exact all-query and eligible-query mismatch decisions.
+- [`experiment_metadata.json`](lambda2_91p11_reproduction_artifacts/experiment_metadata.json), [`run_summary.json`](lambda2_91p11_reproduction_artifacts/run_summary.json), and [`native_eval_results.jsonl`](lambda2_91p11_reproduction_artifacts/native_eval_results.jsonl) preserve the saved evaluator outputs.
+- [`worker_logs/`](lambda2_91p11_reproduction_artifacts/worker_logs/) contains the six original worker logs.
+- [`pip_freeze.txt`](lambda2_91p11_reproduction_artifacts/pip_freeze.txt), [`torch_collect_env.txt`](lambda2_91p11_reproduction_artifacts/torch_collect_env.txt), and [`robosuite_macros.py`](lambda2_91p11_reproduction_artifacts/robosuite_macros.py) record the environment and simulator macros. No `macros_private.py` existed, so the published default macro file was effective.
+- [`checkpoint_config.json`](lambda2_91p11_reproduction_artifacts/checkpoint_config.json), [`dataset_statistics.json`](lambda2_91p11_reproduction_artifacts/dataset_statistics.json), and [`training_config.json`](lambda2_91p11_reproduction_artifacts/training_config.json) preserve the local configuration files.
+- [`original_lambda_sweep_launcher.py`](lambda2_91p11_reproduction_artifacts/original_lambda_sweep_launcher.py) is the actual orchestration script that launched the original run. The cleaned portable command earlier in this handoff remains the recommended command for another machine.
+
+The original run did not save lossless camera frames because `alignment_save_frames=False`. The available rollout videos are lossy and cannot serve as byte-level image fingerprints. To isolate the H100 gap without rerunning the workstation evaluation, first compare the AWS outcome file with `lambda2_91p11_episode_outcomes.csv`, then compare first-query token IDs with `first_query_fingerprints.csv` for the changed cases.
 
 ## Mismatch definition used in the paper table
 
