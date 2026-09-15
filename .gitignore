@@ -184,6 +184,9 @@ MUJOCO_LOG.TXT
 .env.*
 !.env.example
 
+# Private paper manuscript; never commit this file to this repository.
+ICRA_2027___ECOT_Alignment.pdf
+
 # Browser storage backups and report locks
 *.sqlite
 /analysis_results/.*.lock
