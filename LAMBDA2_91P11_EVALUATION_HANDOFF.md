@@ -257,6 +257,22 @@ The follow-up [task 24, state 14, seed 80, policy-query-1 trace](lambda2_91p11_r
 
 At action-token position 4, the workstation BF16 score for reference token `151785` is `24.375`; the score for AWS math-SDPA token `151746` is `24.000`. They are the top two candidates, separated by only `0.375`. The trace includes the lossless query-1 image, exact input tensors, full generation, all seven top-two comparisons, both requested candidate scores, live runtime settings, and source hashes.
 
+The requested capture coordinates and acceptance checks are recorded explicitly here:
+
+| Field | Recorded value |
+|---|---|
+| Task / initial state / seed | `24 / 14 / 80` |
+| Episode ID | `libero_90-task24-episode1-seed80` |
+| Policy query index | `1` (the second policy query) |
+| Global generation call | `41` when counted from zero: 40 calls in state 13, then query 0 in state 14 |
+| Original trial order | state `13 → 14 → 15` |
+| Replayed outcomes | `failure, success, success` |
+| Replayed query counts | `40, 13, 11` |
+| Exact action tokens | `[151723, 151869, 151763, 151796, 151785, 151673, 151895]` |
+| Requested fifth-token comparison | reference `151785`: `24.375`; AWS math-SDPA `151746`: `24.000` |
+
+The trace directory contains the lossless RGB image after the normal 10 settling steps, exact prompt IDs, exact BF16 DINO and SigLIP tensors, complete generated token IDs, decoded 10×7 action chunk, top-two scores at every action-token position, `state_before`, `state_after`, executed end-effector trajectory, runtime/source fingerprints, SHA256 manifest, and the capture script. It preserves the earlier first-query trace in its separate directory.
+
 ## Mismatch definition used in the paper table
 
 The paper table pools **all policy queries**. For directional MOVE commands, mismatch means commanded-translation cosine similarity below `0.5`. Gripper-only, rotation-only, missing, or empty XYZ MOVE commands are assigned expected translation `[0,0,0]` and included as implicit-stop mismatches. Do not remove these queries from the denominator.
