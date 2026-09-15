@@ -44,6 +44,49 @@ Closed-loop comparisons use matched LIBERO-90 task–initial-state cases. Report
 
 Exact settings, seeds, checkpoint provenance, and current portability limitations are recorded with each experiment under `runs/` and in [`REPOSITORY_SNAPSHOT.md`](REPOSITORY_SNAPSHOT.md).
 
+### Reusing the matched 270-case evaluation
+
+[`libero90_matched_evaluation_manifest.csv`](libero90_matched_evaluation_manifest.csv) is the authoritative case index used for the reported closed-loop comparison. It fixes three rollouts for each of the 90 tasks in the LIBERO `libero_90` suite. Use the same row for every policy being compared.
+
+Each row records:
+
+- `task_id`: the zero-based task index in the installed `libero_90` benchmark;
+- `trial`: the zero-based trial number for that task;
+- `episode_seed`: the seed passed to `env.seed(...)` before reset;
+- `initial_state_index`: the zero-based index into `task_suite.get_task_init_states(task_id)`;
+- `initial_state_sha256`: a checksum for detecting a different LIBERO task/state version;
+- `case_id` and `task_name`: stable identifiers for joining evaluation outputs.
+
+For this schedule, trials 0–2 use initial-state indices 13–15. Episode seeds follow `7 + task_id * 3 + trial`, giving seeds 7–276. The evaluation predicts and executes 10 actions per policy query and allows at most 400 post-settle action steps per episode.
+
+The corresponding selection arguments for `experiments/robot/libero/run_libero_eval.py` are:
+
+```bash
+TASK_IDS=$(python -c 'print(",".join(map(str, range(90))))')
+
+python experiments/robot/libero/run_libero_eval.py \
+  --task_suite_name libero_90 \
+  --task_ids "$TASK_IDS" \
+  --num_trials_per_task 3 \
+  --episodes_per_task 3 \
+  --initial_state_offset 13 \
+  --seed 7 \
+  --num_open_loop_steps 10 \
+  <policy-specific arguments>
+```
+
+When integrating another evaluator, read each CSV row, select `task_suite.get_task(task_id)`, seed the environment with `episode_seed`, reset it, and then call `env.set_init_state(task_suite.get_task_init_states(task_id)[initial_state_index])`. Validate the selected state before rollout:
+
+```python
+import hashlib
+import numpy as np
+
+digest = hashlib.sha256(np.asarray(initial_state).tobytes()).hexdigest()
+assert digest == row["initial_state_sha256"]
+```
+
+Keep the task-suite version and simulator settings fixed across policies. Store `case_id` in each episode result so outcomes and query-level mismatch records can be compared case by case without rerunning reference policies.
+
 ## Installation
 
 This codebase extends MiniVLA/OpenVLA and uses Python, PyTorch, MuJoCo, and LIBERO. Environment requirements vary across archived experiment rounds. Consult the relevant run configuration and snapshot notes before reproducing an experiment.
