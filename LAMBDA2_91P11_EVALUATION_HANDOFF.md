@@ -24,6 +24,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Task 24/state 14/seed 80 query-1 trace | [`task24_state14_seed80_query1_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_query1_trace/) |
 | Task 24 attention-kernel profile and vision/projector outputs | [`task24_state14_seed80_attention_profile/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_attention_profile/) |
 | Task 24 projector five-layer outputs and parameter hashes | [`task24_state14_seed80_projector_layers/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_projector_layers/) |
+| Projector BF16 reduction and CUDA GEMM-kernel probe | [`projector-bf16-kernels-20260915T110324/`](lambda2_91p11_reproduction_artifacts/projector-bf16-kernels-20260915T110324/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -308,6 +309,25 @@ The combined live-projector parameter hash is `fe13bd8f3745da1088fc1ac4d32bc6243
 | 1 | `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a` | `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a` | Yes | `0.0` |
 
 The two saved `.pt` artifacts contain the vision input, outputs after each of the five layers, and the archived final output. The result shows no unexpected difference inside the workstation projector replay.
+
+### Projector BF16 reduction and CUDA GEMM kernels
+
+The follow-up [BF16 CUDA-kernel probe](lambda2_91p11_reproduction_artifacts/projector-bf16-kernels-20260915T110324/) used only the saved projector inputs and the original checkpoint. The workstation default is:
+
+```text
+torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = True
+```
+
+Under that default, both query outputs matched the archived projector tensors byte-for-byte. Disabling reduced-precision BF16 reduction changed both outputs, with maximum absolute difference `0.0625` in each query.
+
+| Query | BF16 reduced reduction | Exact archive match | Maximum absolute difference |
+|---:|---|---|---:|
+| 0 | `True` (default) | Yes | `0.0` |
+| 1 | `True` (default) | Yes | `0.0` |
+| 0 | `False` | No | `0.0625` |
+| 1 | `False` | No | `0.0625` |
+
+With the default enabled, the profiler observed three CUTLASS BF16 GEMM kernels ending in `128x64_32x6_tn_align8`, `64x256_32x4_tn_align8`, and `32x32_128x2_tn_align8`. With the flag disabled, the `128x64_32x6` kernel changed to `64x64_64x6`; the other two remained unchanged. The artifact report contains the full profiler kernel names and event records. The reusable capture program is also available at repository root as [`projector_bf16_kernel_probe.py`](projector_bf16_kernel_probe.py).
 
 ## Mismatch definition used in the paper table
 

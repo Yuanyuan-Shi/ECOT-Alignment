@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "default_allow_bf16_reduced_precision_reduction": true,
+  "runs": [
+    {
+      "query": 0,
+      "allow_bf16_reduced_precision_reduction": true,
+      "exact_match_to_archive": true,
+      "max_abs_difference_float32": 0.0,
+      "matrix_multiplication_cuda_kernels": [
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "query": 1,
+      "allow_bf16_reduced_precision_reduction": true,
+      "exact_match_to_archive": true,
+      "max_abs_difference_float32": 0.0,
+      "matrix_multiplication_cuda_kernels": [
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "query": 0,
+      "allow_bf16_reduced_precision_reduction": false,
+      "exact_match_to_archive": false,
+      "max_abs_difference_float32": 0.0625,
+      "matrix_multiplication_cuda_kernels": [
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_64x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_64x6_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params)",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "query": 1,
+      "allow_bf16_reduced_precision_reduction": false,
+      "exact_match_to_archive": false,
+      "max_abs_difference_float32": 0.0625,
+      "matrix_multiplication_cuda_kernels": [
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x256_32x4_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_64x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_64x64_64x6_tn_align8::Params)",
+          "count": 1
+        },
+        {
+          "kernel": "void cutlass::Kernel2<cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8>(cutlass_80_wmma_tensorop_bf16_s161616gemm_bf16_32x32_128x2_tn_align8::Params)",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
