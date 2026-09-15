@@ -12,6 +12,8 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Checkpoint filename | `step-002000-move-lora.pt` |
 | Checkpoint size | `5,554,852,935` bytes |
 | Checkpoint SHA256 | `0b0ef328c8d4f5478e6da25fde7639c688fdd1ac3b041c60ea06476424b52b1d` |
+| Checkpoint `config.json` SHA256 | `b214e101d5d4bbb2d5ea804e6fa762be938551a4a527ee1eda5e21b5a82c71e0` |
+| Checkpoint `dataset_statistics.json` SHA256 | `cca56a3704ee47672153415a658daaa7199edf295638604ecc08d3ed1d5c28c4` |
 | Case schedule | [`libero90_matched_evaluation_manifest.csv`](libero90_matched_evaluation_manifest.csv) |
 | Case-schedule SHA256 | `8c2fcb9c3c5d92be38b9ed787f55d212b2a8aba19065f499585a775351ded564` |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
@@ -27,6 +29,47 @@ The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_
 ```
 
 Do not load a LoRA adapter on top of this checkpoint. It is the complete native model with the LoRA weights already merged.
+
+## VQ action-tokenizer assets
+
+The evaluator resolves the original VQ-VAE through the working directory shown in the launch script. Use this exact relative layout under `pi05_policy_training/data/minivla_reference`:
+
+```text
+vq/pretrain_vq+mx-libero_lm_90+fach-9+ng-7+nemb-256+nlatent-512/
+├── config.json
+└── checkpoints/
+    └── model.pt
+```
+
+| Asset | Size | SHA256 |
+|---|---:|---|
+| VQ `config.json` | 243 bytes | `cc6f6b25a7a2941d7b18f936b3f70eddd22151864f4bfdf38c30f3e4fef0af16` |
+| VQ `checkpoints/model.pt` | 9,562,450 bytes | `cf36b5f1534f16ad4bd160d64023bb7707897277dbfc06f68a68b2e26ce9eac9` |
+| VQ-BET source commit | — | `09d4851288ca5deaaa1ab367a208e520f8ee9a84` |
+
+The VQ files are required even though the policy checkpoint is otherwise self-contained. A different VQ codebook or configuration changes the decoded continuous action chunks.
+
+## Cached model, tokenizer, and configuration assets
+
+The launch script points `HF_HOME` to `pi05_policy_training/data/minivla_reference/hf_cache` and enables offline mode. The language model cache is `Qwen/Qwen2.5-0.5B`, snapshot revision `060db6499f32faf8b98477b0a26969ef7d8b9987`.
+
+| Cached Qwen file | Size | SHA256 |
+|---|---:|---|
+| `config.json` | 681 bytes | `479dcf0c5286339e41ad3992cd08ae88a467c4187587936248e2b7c96283484b` |
+| `generation_config.json` | 138 bytes | `8c970692323e3ea0e9b8b0a4dca79388d31226e41f83c9fd6014804280ebf6e8` |
+| `merges.txt` | 1,671,839 bytes | `599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3` |
+| `tokenizer.json` | 7,031,645 bytes | `c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539` |
+| `tokenizer_config.json` | 7,228 bytes | `c91efca15ceff6e9ee9424db58a6f59cd41294e550a86cbd07e3c1fb500b34f9` |
+| `vocab.json` | 2,776,833 bytes | `ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910` |
+
+The cached vision backbones used by the `dinosiglip` encoder are:
+
+| Backbone and snapshot | Cached weights | Size | SHA256 |
+|---|---|---:|---|
+| `timm/vit_large_patch14_reg4_dinov2.lvd142m` at `f3c408e77602bb412aa65fb03dfa0d5f95cb3832` | `model.safetensors` | 1,217,515,128 bytes | `c893d72294d4c327e631ff92f428dbc14c4f93cb5581b6c5f9d89bb5d17def27` |
+| `timm/ViT-SO400M-14-SigLIP` at `9179d15177ece40964c50492136eda2f3e0c9f61` | `open_clip_model.safetensors` | 3,509,517,656 bytes | `0a04a48b797e187a568335ab67e57a8958c32cee5a707a3feb6d4c97149dcd9c` |
+
+The complete MiniVLA checkpoint already contains the learned model parameters. These cache fingerprints identify the exact tokenizer/config inputs and the backbone assets available to the native loader.
 
 ## Exact launch script
 
@@ -151,4 +194,45 @@ Both runs on the original workstation produced the same case-level outcomes:
 
 The six worker success totals must be `[39, 44, 41, 41, 44, 37]`, with 45 episodes per worker. If these differ, compare checkpoint SHA256, initial-state hashes, image preprocessing, `unnorm_key`, greedy decoding, action-chunk extraction, gripper processing, and the predict-10/execute-10 controller before comparing aggregate rates.
 
-The environment used for the reproduced run included Python 3.10, PyTorch `2.8.0+cu128`, Transformers `4.40.1`, NumPy `1.26.4`, MuJoCo `3.2.3`, robosuite `1.4.1`, LIBERO `0.1.0`, PEFT `0.11.1`, and timm `0.9.10`.
+## Workstation, driver, and dependency fingerprint
+
+| Component | Reproduced-run value |
+|---|---|
+| GPU | NVIDIA RTX PRO 6000 Blackwell Workstation Edition |
+| GPU UUID | `GPU-59541196-bb6d-d1c9-22af-24ff7b0d2c92` |
+| GPU memory | 97,887 MiB |
+| VBIOS | `98.02.81.00.07` |
+| NVIDIA driver | `575.64.05` |
+| Driver CUDA compatibility | CUDA 12.9 |
+| PyTorch | `2.8.0+cu128` (CUDA 12.8 build) |
+| Local `nvcc` toolkit | CUDA 11.6, build `11.6.55` |
+| Python | 3.10 |
+
+The local `nvcc` version differs from the PyTorch CUDA build. Evaluation used the prebuilt PyTorch `cu128` runtime with driver `575.64.05`; it did not compile a custom CUDA extension.
+
+| Image, model, and simulator dependency | Version |
+|---|---:|
+| Pillow | `12.3.0` |
+| torchvision | `0.23.0+cu128` |
+| timm | `0.9.10` |
+| OpenCV (`opencv-python`) | `4.6.0.66` |
+| TensorFlow | `2.15.0` |
+| einops | `0.8.2` |
+| NumPy | `1.26.4` |
+| SciPy | `1.10.1` |
+| Transformers | `4.40.1` |
+| tokenizers | `0.19.1` |
+| safetensors | `0.8.0` |
+| huggingface-hub | `0.36.2` |
+| MuJoCo | `3.2.3` |
+| robosuite | `1.4.1` |
+| LIBERO | `0.1.0` |
+| PEFT | `0.11.1` |
+
+The preprocessing behavior is fixed by the pinned evaluator commit and `center_crop=False`, `use_wrist_image=False`, and `obs_history=1` in the saved configuration. For an additional integrity check, the evaluator source fingerprints at that checkout are:
+
+| Source file | SHA256 |
+|---|---|
+| `experiments/robot/libero/run_libero_eval.py` | `47502933b361790829030b033dc3a2ad74a8f3c2e19fe28b5d2e9b77c27a32ac` |
+| `experiments/robot/libero/libero_utils.py` | `d7a479847350b662e089476a3f967aa84b154d981df960d9f2d1692e6b5d5148` |
+| `experiments/robot/openvla_utils.py` | `859ef53e0745005fdcbd63354aa09468a8f3f6fe995277feb548015ca747bf53` |
