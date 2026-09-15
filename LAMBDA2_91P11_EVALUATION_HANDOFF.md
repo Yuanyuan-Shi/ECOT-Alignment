@@ -23,6 +23,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Task 24/state 14/seed 80 trace | [`task24_state14_seed80_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_trace/) |
 | Task 24/state 14/seed 80 query-1 trace | [`task24_state14_seed80_query1_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_query1_trace/) |
 | Task 24 attention-kernel profile and vision/projector outputs | [`task24_state14_seed80_attention_profile/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_attention_profile/) |
+| Task 24 projector five-layer outputs and parameter hashes | [`task24_state14_seed80_projector_layers/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_projector_layers/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -290,6 +291,23 @@ The enabled-backend flags in the earlier traces were insufficient to identify th
 The RTX PRO 6000 workstation selected PyTorch **Flash SDPA in all three phases** for both queries. Neither `aten::_scaled_dot_product_efficient_attention`, `aten::_scaled_dot_product_cudnn_attention`, nor `aten::_scaled_dot_product_attention_math` appeared as the selected implementation. The JSON profiler records retain the individual selected-operator events and input shapes.
 
 The same artifact directory includes exact CPU copies of the BF16 vision and projector outputs for direct AWS comparison. Query 0 produced vision output shape `1×256×2176` with raw-tensor SHA256 `8a0c8e7869866f94929a57666b3050386b250924bd6dbe50fa050d2e7896ef41` and projector output shape `1×256×896` with SHA256 `bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33`. Query 1 produced corresponding hashes `707a20ea79285f9544e3f60ccf75df032b70c95766aafe9dd029133268bfccc6` and `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a`.
+
+### Projector-only five-layer replay
+
+The requested [projector-layer diagnostic](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_projector_layers/) fed each saved BF16 `vision_encoder_output` directly through the original loaded projector. It did not run the simulator, vision encoders, or language model. The live module was `prismatic.util.nn_utils.FusedMLPProjector` with the following exact structure:
+
+```text
+Linear(2176 -> 8704) -> GELU -> Linear(8704 -> 896) -> GELU -> Linear(896 -> 896)
+```
+
+The combined live-projector parameter hash is `fe13bd8f3745da1088fc1ac4d32bc6243f53073a1722daf3b212a239dfa6b768`. Its source file is `prismatic/util/nn_utils.py`, SHA256 `7aa0562eab374f0585bb53639b861f06b6c44b82384e938dda9cd32d844bc0d0`. The machine-readable report includes hashes for all six individual weight/bias tensors.
+
+| Query | Replayed final-output hash | Archived final-output hash | Exact equality | Maximum absolute difference |
+|---:|---|---|---|---:|
+| 0 | `bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33` | `bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33` | Yes | `0.0` |
+| 1 | `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a` | `bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a` | Yes | `0.0` |
+
+The two saved `.pt` artifacts contain the vision input, outputs after each of the five layers, and the archived final output. The result shows no unexpected difference inside the workstation projector replay.
 
 ## Mismatch definition used in the paper table
 

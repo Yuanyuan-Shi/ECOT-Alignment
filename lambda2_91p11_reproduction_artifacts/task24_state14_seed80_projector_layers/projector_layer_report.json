@@ -1,0 +1,314 @@
+{
+  "status": "complete",
+  "checkpoint": "/mnt1/ECOT-Alignment/pi05_policy_training/runs/minivla_lambda_sweep_20260914/large-data-lambda2-b32-s2000-20260914/checkpoints/step-002000-move-lora.pt",
+  "checkpoint_sha256": "0b0ef328c8d4f5478e6da25fde7639c688fdd1ac3b041c60ea06476424b52b1d",
+  "torch_version": "2.8.0+cu128",
+  "torch_cuda_build": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "execution_dtype": "torch.bfloat16",
+  "projector_class": "prismatic.util.nn_utils.FusedMLPProjector",
+  "projector_repr": "FusedMLPProjector(\n  (projector): Sequential(\n    (0): Linear(in_features=2176, out_features=8704, bias=True)\n    (1): GELU(approximate='none')\n    (2): Linear(in_features=8704, out_features=896, bias=True)\n    (3): GELU(approximate='none')\n    (4): Linear(in_features=896, out_features=896, bias=True)\n  )\n)",
+  "layer_types": [
+    "torch.nn.modules.linear.Linear",
+    "torch.nn.modules.activation.GELU",
+    "torch.nn.modules.linear.Linear",
+    "torch.nn.modules.activation.GELU",
+    "torch.nn.modules.linear.Linear"
+  ],
+  "source_file": "/mnt1/ECOT-Alignment/prismatic/util/nn_utils.py",
+  "source_file_sha256": "7aa0562eab374f0585bb53639b861f06b6c44b82384e938dda9cd32d844bc0d0",
+  "live_parameters": {
+    "combined_sha256": "fe13bd8f3745da1088fc1ac4d32bc6243f53073a1722daf3b212a239dfa6b768",
+    "tensors": [
+      {
+        "kind": "parameter",
+        "name": "projector.0.weight",
+        "shape": [
+          8704,
+          2176
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "1bcb6ac3df053941dcf068e8c80eedd47ae61162bb046e8adcfbc82d91d934af"
+      },
+      {
+        "kind": "parameter",
+        "name": "projector.0.bias",
+        "shape": [
+          8704
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "29c9a966557fbb45a0304784dba7919f475b820c5262ee75e8f9be3270833c34"
+      },
+      {
+        "kind": "parameter",
+        "name": "projector.2.weight",
+        "shape": [
+          896,
+          8704
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "d11948d7d3e020aeb9addc24c3d546cc0d7626ecb732af33d1515d27880b27e3"
+      },
+      {
+        "kind": "parameter",
+        "name": "projector.2.bias",
+        "shape": [
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "ccd6d1e5259c2d17b0709c24090ba4148c20e4543c2ed25bf10ae9dd9244a859"
+      },
+      {
+        "kind": "parameter",
+        "name": "projector.4.weight",
+        "shape": [
+          896,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "76b09d8bd55a6f4aa82cd565b2c0e1432b99f8c646fbb1cd76011fd8bf1d818f"
+      },
+      {
+        "kind": "parameter",
+        "name": "projector.4.bias",
+        "shape": [
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "100964e6c70ff692fe06729ef28dbb9e32afe65d3fd132480922bf72d2ad748c"
+      }
+    ]
+  },
+  "queries": [
+    {
+      "policy_query_index": 0,
+      "source_outputs_file": "/mnt1/ECOT-Alignment/pi05_policy_training/reports/lambda2_task24_state14_seed80_attention_profile/query0_vision_projector_outputs.pt",
+      "source_outputs_file_sha256": "a812e799312bca4f304e3db60acd0561e4244288476c426423ac87014600e7f5",
+      "vision_encoder_output": {
+        "shape": [
+          1,
+          256,
+          2176
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "8a0c8e7869866f94929a57666b3050386b250924bd6dbe50fa050d2e7896ef41",
+        "minimum": -101.5,
+        "maximum": 282.0,
+        "mean": -0.05657731369137764
+      },
+      "layers": [
+        {
+          "index": 0,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              8704
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "d5a65a99d003730f34a62fc23f9e4124378e9b5996842453b5b21e19a8ce48b9",
+            "minimum": -17.25,
+            "maximum": 14.25,
+            "mean": -1.2431913614273071
+          }
+        },
+        {
+          "index": 1,
+          "type": "torch.nn.modules.activation.GELU",
+          "output": {
+            "shape": [
+              1,
+              256,
+              8704
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "7b44c145d4ab19ee3cd3a78d413ad252bcaae39ae265889804b724211e3f2d00",
+            "minimum": -0.169921875,
+            "maximum": 14.25,
+            "mean": 0.408212274312973
+          }
+        },
+        {
+          "index": 2,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "d3438a57ae2496f50ccf7bda3a930af19c276b6d93f760a5069e35f9d1750258",
+            "minimum": -21.125,
+            "maximum": 16.875,
+            "mean": -0.8768678307533264
+          }
+        },
+        {
+          "index": 3,
+          "type": "torch.nn.modules.activation.GELU",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "c25ef9ff006c0612b669e7edba2a48f780d99871b44e93a277e41a00026ff9fd",
+            "minimum": -0.169921875,
+            "maximum": 16.875,
+            "mean": 1.138351321220398
+          }
+        },
+        {
+          "index": 4,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33",
+            "minimum": -11.6875,
+            "maximum": 9.5,
+            "mean": -0.01954435184597969
+          }
+        }
+      ],
+      "archived_projector_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "bd1bdef0f02c48773ec884bb25321f65b44a976fb89762bb25977331d5a72c33",
+        "minimum": -11.6875,
+        "maximum": 9.5,
+        "mean": -0.01954435184597969
+      },
+      "final_exact_match": true,
+      "final_max_abs_difference_float32": 0.0,
+      "saved_layer_outputs_file": "query0_projector_layer_outputs.pt",
+      "saved_layer_outputs_file_sha256": "5ac26823743947e2666e519dd79ff1b07d58eab50415e83d8819a7782a915554"
+    },
+    {
+      "policy_query_index": 1,
+      "source_outputs_file": "/mnt1/ECOT-Alignment/pi05_policy_training/reports/lambda2_task24_state14_seed80_attention_profile/query1_vision_projector_outputs.pt",
+      "source_outputs_file_sha256": "ba7ca1cc35d10fc7df3ec73f376e2e460b2f8bb1e9a586046a69df0bda1d601d",
+      "vision_encoder_output": {
+        "shape": [
+          1,
+          256,
+          2176
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "707a20ea79285f9544e3f60ccf75df032b70c95766aafe9dd029133268bfccc6",
+        "minimum": -101.0,
+        "maximum": 282.0,
+        "mean": -0.06446094065904617
+      },
+      "layers": [
+        {
+          "index": 0,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              8704
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "737292412c7c3dbfdd7574540877fae36884f0a34e5e5f92dfeadea6576c1af2",
+            "minimum": -17.375,
+            "maximum": 14.3125,
+            "mean": -1.2006447315216064
+          }
+        },
+        {
+          "index": 1,
+          "type": "torch.nn.modules.activation.GELU",
+          "output": {
+            "shape": [
+              1,
+              256,
+              8704
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "14bec3bcc35dff7085e6eac0e7a8459f0bad186e7c8c9c6b5f3f1af1088f3335",
+            "minimum": -0.169921875,
+            "maximum": 14.3125,
+            "mean": 0.4036853313446045
+          }
+        },
+        {
+          "index": 2,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "bced17e1dcca3489a5a0b99a9bc7a5543bb9845ea6f030d32513051e22ca1d69",
+            "minimum": -21.125,
+            "maximum": 18.625,
+            "mean": -0.8517318367958069
+          }
+        },
+        {
+          "index": 3,
+          "type": "torch.nn.modules.activation.GELU",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "49a50814d0c04a327b551f39aaa68c95c75e75bc993c625f41276a88c7e66c43",
+            "minimum": -0.169921875,
+            "maximum": 18.625,
+            "mean": 1.137386441230774
+          }
+        },
+        {
+          "index": 4,
+          "type": "torch.nn.modules.linear.Linear",
+          "output": {
+            "shape": [
+              1,
+              256,
+              896
+            ],
+            "dtype": "torch.bfloat16",
+            "sha256_raw_bytes": "bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a",
+            "minimum": -12.625,
+            "maximum": 11.6875,
+            "mean": -0.026339586824178696
+          }
+        }
+      ],
+      "archived_projector_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "bf8397e0a1af4308b80d9da62330e39c654464767af82a4e8183c418e6dc2e0a",
+        "minimum": -12.625,
+        "maximum": 11.6875,
+        "mean": -0.026339586824178696
+      },
+      "final_exact_match": true,
+      "final_max_abs_difference_float32": 0.0,
+      "saved_layer_outputs_file": "query1_projector_layer_outputs.pt",
+      "saved_layer_outputs_file_sha256": "2646021f08977f94a17f65ed998a24c50fbb3606e47a17eb7be3a9f9801b4919"
+    }
+  ]
+}
