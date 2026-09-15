@@ -26,6 +26,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Task 24 projector five-layer outputs and parameter hashes | [`task24_state14_seed80_projector_layers/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_projector_layers/) |
 | Projector BF16 reduction and CUDA GEMM-kernel probe | [`projector-bf16-kernels-20260915T110324/`](lambda2_91p11_reproduction_artifacts/projector-bf16-kernels-20260915T110324/) |
 | Projector layer-2 exact cuBLASLt algorithm descriptor | [`projector-layer2-cublaslt-20260915T112432/`](lambda2_91p11_reproduction_artifacts/projector-layer2-cublaslt-20260915T112432/) |
+| Full vision/LLM inference kernels for task 24 queries 0 and 1 | [`full-inference-kernels-20260915T120700/`](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -348,6 +349,32 @@ The follow-up [layer-2 cuBLASLt capture](lambda2_91p11_reproduction_artifacts/pr
 | Data type / epilogue | `R_16BF` / `EPILOGUE_BIAS` |
 
 All attribute-query return codes were `0`. The exact serialized 64-byte algorithm descriptor is stored in `algo_descriptors.jsonl`; it was identical across all eight warmup/profile calls. The raw cuBLASLt API, heuristic, and performance messages are stored in `cublaslt_logger_messages.jsonl`. The workstation loaded `libcublasLt.so.12` with SHA256 `10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c`. Reusable sources are at repository root: [`projector_layer2_cublaslt_probe.py`](projector_layer2_cublaslt_probe.py) and [`cublaslt_algo_interposer.c`](cublaslt_algo_interposer.c).
+
+### Full vision-and-language inference kernel capture
+
+The final [full-inference capture](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/) runs the saved task 24/state 14/seed 80 inputs for policy queries 0 and 1 directly through the original checkpoint. It retains BF16 execution, greedy decoding, Flash SDPA, and `allow_bf16_reduced_precision_reduction=True`. No simulator or image preprocessing runs in this diagnostic.
+
+| Query | Complete generated tokens | Exact archived-sequence match | CUDA matrix events classified to module/step |
+|---:|---:|---|---:|
+| 0 | 263 | Yes | 57,381/57,382 |
+| 1 | 283 | Yes | 61,720/61,722 |
+
+The bit-exact token matches verify that profiling and descriptor capture preserved the workstation inference behavior. The raw Chrome traces and correlated reports identify the actual CUDA kernel for each matrix operation, its enclosing vision/LLM module, prefill or cached-decode step, input shapes, BF16 dtypes, and strides. Cached Qwen decoding primarily dispatched the standard cuBLAS BF16 `gemvx` kernels with internal variants `6` and `7`; Flash Attention kernel launches are recorded separately for every layer and step.
+
+The cuBLASLt descriptor pass captured 39,726 calls and six distinct configurations:
+
+| Algorithm | Tile | Stages | Split-K | Reduction | Calls |
+|---:|---:|---:|---:|---:|---:|
+| 13 | 0 | 0 | 1 | 0 | 39,168 |
+| 21 | 11 | 20 | 1 | 0 | 254 |
+| 21 | 18 | 12 | 1 | 0 | 204 |
+| 21 | 5 | 20 | 1 | 0 | 96 |
+| 21 | 19 | 10 | 1 | 0 | 2 |
+| 21 | 18 | 12 | 6 | 1 | 2 |
+
+Every descriptor row includes its model context, matrix A/B/C/D types, rows, columns and leading dimensions, compute/scale types, epilogue, CTA swizzle, custom option, workspace size, and serialized 64-byte algorithm descriptor. [`cublaslt_descriptor_summary.json`](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/cublaslt_descriptor_summary.json) extracts all 72 cuBLASLt calls at query 0 generation step 255, the token position where the AWS output first differs, plus the preceding step 254. The corresponding standard cuBLAS GEMV and attention kernels are in [`query0_correlated_matmuls.json.gz`](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/query0_correlated_matmuls.json.gz).
+
+The capture loaded the same workstation libraries already fingerprinted above: `libcublasLt.so.12` SHA256 `10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c` and `libcublas.so.12` SHA256 `031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21`. The exact build and launch procedure is [`run_capture.sh`](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/run_capture.sh). Reusable capture and correlation programs are also at repository root: [`full_inference_kernel_probe.py`](full_inference_kernel_probe.py), [`postprocess_full_inference_trace.py`](postprocess_full_inference_trace.py), and [`cublas_full_inference_interposer.c`](cublas_full_inference_interposer.c).
 
 ## Mismatch definition used in the paper table
 

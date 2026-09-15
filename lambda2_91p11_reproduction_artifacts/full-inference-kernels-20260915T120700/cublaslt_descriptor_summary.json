@@ -1,0 +1,7606 @@
+{
+  "total_calls": 39726,
+  "phase_counts": {
+    "vision": 414,
+    "language_prefill": 144,
+    "language_cached_decode": 39168
+  },
+  "distinct_algorithm_configurations": 6,
+  "algorithm_configurations": [
+    {
+      "count": 39168,
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    },
+    {
+      "count": 254,
+      "algo_id": 21,
+      "tile_id": 11,
+      "stages_id": 20,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 0,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    },
+    {
+      "count": 204,
+      "algo_id": 21,
+      "tile_id": 18,
+      "stages_id": 12,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 0,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    },
+    {
+      "count": 96,
+      "algo_id": 21,
+      "tile_id": 5,
+      "stages_id": 20,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 0,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    },
+    {
+      "count": 2,
+      "algo_id": 21,
+      "tile_id": 19,
+      "stages_id": 10,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 0,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    },
+    {
+      "count": 2,
+      "algo_id": 21,
+      "tile_id": 18,
+      "stages_id": 12,
+      "split_k": 6,
+      "reduction_scheme": 1,
+      "cta_swizzle": 0,
+      "custom_option": 0,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4
+    }
+  ],
+  "query0_generated_token_index_255_cublaslt_calls": [
+    {
+      "sequence": 18567,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.0.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18568,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.0.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18569,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.0.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18570,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.1.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18571,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.1.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18572,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.1.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18573,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.2.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18574,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.2.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18575,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.2.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18576,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.3.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18577,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.3.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18578,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.3.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18579,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.4.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18580,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.4.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18581,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.4.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18582,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.5.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18583,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.5.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18584,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.5.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18585,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.6.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18586,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.6.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18587,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.6.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18588,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.7.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18589,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.7.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18590,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.7.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18591,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.8.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18592,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.8.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18593,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.8.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18594,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.9.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18595,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.9.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18596,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.9.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18597,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.10.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18598,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.10.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18599,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.10.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18600,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.11.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18601,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.11.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18602,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.11.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18603,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.12.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18604,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.12.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18605,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.12.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18606,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.13.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18607,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.13.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18608,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.13.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18609,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.14.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18610,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.14.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18611,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.14.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18612,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.15.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18613,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.15.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18614,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.15.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18615,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.16.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18616,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.16.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18617,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.16.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18618,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.17.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18619,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.17.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18620,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.17.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18621,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.18.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18622,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.18.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18623,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.18.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18624,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.19.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18625,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.19.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18626,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.19.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18627,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.20.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18628,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.20.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18629,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.20.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18630,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.21.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18631,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.21.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18632,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.21.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18633,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.22.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18634,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.22.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18635,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.22.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18636,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.23.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18637,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.23.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18638,
+      "context": "query=0|phase=language_cached_decode|step=255|module=llm_backbone.llm.model.layers.23.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    }
+  ],
+  "query0_generated_token_index_254_cublaslt_calls": [
+    {
+      "sequence": 18495,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.0.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18496,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.0.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18497,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.0.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18498,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.1.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18499,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.1.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18500,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.1.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18501,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.2.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18502,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.2.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18503,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.2.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18504,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.3.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18505,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.3.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18506,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.3.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18507,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.4.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18508,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.4.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18509,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.4.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18510,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.5.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18511,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.5.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18512,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.5.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18513,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.6.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18514,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.6.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18515,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.6.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18516,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.7.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18517,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.7.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18518,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.7.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18519,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.8.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18520,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.8.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18521,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.8.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18522,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.9.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18523,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.9.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18524,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.9.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18525,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.10.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18526,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.10.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18527,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.10.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18528,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.11.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18529,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.11.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18530,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.11.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18531,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.12.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18532,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.12.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18533,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.12.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18534,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.13.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18535,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.13.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18536,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.13.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18537,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.14.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18538,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.14.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18539,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.14.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18540,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.15.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18541,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.15.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18542,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.15.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18543,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.16.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18544,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.16.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18545,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.16.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18546,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.17.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18547,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.17.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18548,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.17.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18549,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.18.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18550,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.18.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18551,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.18.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18552,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.19.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18553,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.19.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18554,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.19.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18555,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.20.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18556,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.20.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18557,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.20.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18558,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.21.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18559,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.21.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18560,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.21.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18561,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.22.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18562,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.22.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18563,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.22.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18564,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.23.self_attn.q_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 896,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "D": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18565,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.23.self_attn.k_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    },
+    {
+      "sequence": 18566,
+      "context": "query=0|phase=language_cached_decode|step=254|module=llm_backbone.llm.model.layers.23.self_attn.v_proj",
+      "algo_id": 13,
+      "tile_id": 0,
+      "stages_id": 0,
+      "split_k": 1,
+      "reduction_scheme": 0,
+      "cta_swizzle": 0,
+      "custom_option": 75,
+      "workspace_size_bytes": 1048576,
+      "workspace_is_null": false,
+      "compute_type": 68,
+      "scale_type": 0,
+      "trans_a": 1,
+      "trans_b": 0,
+      "epilogue": 4,
+      "A": {
+        "type": 14,
+        "rows": 896,
+        "cols": 128,
+        "ld": 896
+      },
+      "B": {
+        "type": 14,
+        "rows": 896,
+        "cols": 1,
+        "ld": 896
+      },
+      "C": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "D": {
+        "type": 14,
+        "rows": 128,
+        "cols": 1,
+        "ld": 128
+      },
+      "serialized_algo_u64_hex": [
+        "000000000000000d",
+        "0000000100000000",
+        "0000000000000000",
+        "000000000000004b",
+        "0001d7e400000001",
+        "0000000e0000000e",
+        "00000044000e000e",
+        "0000000000000000"
+      ]
+    }
+  ],
+  "note": "Cached decoding also launches standard cuBLAS GEMV kernels. Those are recorded with exact names, input shapes/dtypes, layer, and step in the correlated profiler reports."
+}
