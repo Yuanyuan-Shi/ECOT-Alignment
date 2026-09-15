@@ -20,6 +20,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Episode-outcomes SHA256 | `5db476b16dc3947c4dbae1a364d7935116569de988db330b11c08dc342e1b6d5` |
 | Original-run diagnostic artifacts | [`lambda2_91p11_reproduction_artifacts/`](lambda2_91p11_reproduction_artifacts/) |
 | Artifact hash manifest | [`SHA256SUMS`](lambda2_91p11_reproduction_artifacts/SHA256SUMS) |
+| Task 24/state 14/seed 80 trace | [`task24_state14_seed80_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_trace/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -220,7 +221,7 @@ This table and the CSV fully specify the 246 successful episodes and 24 failed e
 - The policy emits seven VQ action tokens. The original VQ decoder maps them to a `10 × 7` continuous chunk, and the controller executes all 10 actions before the next policy query.
 - The reference run made 4,463 policy queries. Per-episode query totals are in the outcome CSV; query-count differences show that closed-loop trajectories or stopping times have diverged.
 - The six local workers processed 45 episodes each and reported success totals `[39, 44, 41, 41, 44, 37]`. Worker count changes scheduling and throughput, while task/state/seed assignment remains defined by the manifest.
-- The checked-in evaluator does not enable `torch.use_deterministic_algorithms`, set deterministic cuDNN/CUBLAS controls, or globally reseed PyTorch during policy loading; the old `set_seed(cfg.seed)` call is commented out. Greedy decoding removes sampling but does not guarantee bit-identical BF16 logits across GPU architectures. A token argmax change can select a different VQ code and cause a discontinuous action-chunk change.
+- At evaluator startup, `set_seed_everywhere(cfg.seed)` seeds Python, NumPy, PyTorch, and every CUDA device; it also sets `cudnn.deterministic=True` and `cudnn.benchmark=False`. The separate commented `set_seed` call inside the model loader is redundant. PyTorch deterministic algorithms and a CUBLAS workspace configuration are not enabled. Greedy decoding removes sampling but does not guarantee bit-identical BF16 logits across GPU architectures. A token argmax change can select a different VQ code and cause a discontinuous action-chunk change.
 - The original report's `experiment_metadata.json` contains legacy descriptive strings saying “one trial per task” and a one-trial seed schedule. Those strings are stale and were not used by execution. The effective config, case manifest, outcome CSV, and evaluator formula in this handoff are authoritative.
 
 For the fastest diagnosis, compare the reference and new runs in this order for the same case: initial-state SHA256, first preprocessed image bytes, first generated token IDs, first decoded `10 × 7` action chunk, then later query tokens. If the initial image matches but the first tokens differ, focus on model/runtime numerics. If initial tokens match and later tokens diverge, compare MuJoCo/robosuite state evolution and CPU-side dependencies.
@@ -240,6 +241,14 @@ The [diagnostic artifact directory](lambda2_91p11_reproduction_artifacts/) suppl
 - [`original_lambda_sweep_launcher.py`](lambda2_91p11_reproduction_artifacts/original_lambda_sweep_launcher.py) is the actual orchestration script that launched the original run. The cleaned portable command earlier in this handoff remains the recommended command for another machine.
 
 The original run did not save lossless camera frames because `alignment_save_frames=False`. The available rollout videos are lossy and cannot serve as byte-level image fingerprints. To isolate the H100 gap without rerunning the workstation evaluation, first compare the AWS outcome file with `lambda2_91p11_episode_outcomes.csv`, then compare first-query token IDs with `first_query_fingerprints.csv` for the changed cases.
+
+### Targeted task 24 trace
+
+The requested [task 24, state 14, seed 80 trace](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_trace/) was captured in a new diagnostic replay while preserving the original state 13 → 14 → 15 execution order. It reproduced the original task outcomes `failure, success, success`. State 14 reproduced the archived action tokens `[151804, 151894, 151751, 151802, 151817, 151751, 151780]` and decoded-action SHA256 `90d24c34086b2a4c4ce0cc637bb3dcf7cb0690749f86e37d6c8a7cf727b7ec41` exactly.
+
+The trace supplies the lossless first-query RGB image, exact BF16 DINO and SigLIP tensors, prompt text and token IDs, complete generated token IDs, decoded 10×7 action chunk, top-two logits for every action-token position, live GPU/backend/determinism flags after model loading, generation configuration, and hashes of the imported evaluator, policy, and robosuite helper files.
+
+One action-token position has a zero stored BF16 margin: the model selected token `151894`, while `151916` and `151894` both recorded logits of `24.125`. This is direct evidence that small rendering, preprocessing, or GPU-kernel numerical differences can flip a VQ token despite greedy decoding. Compare the AWS policy on the packaged `exact_model_inputs.pt`: matching tensors with different generated IDs isolate the gap to inference numerics; different DINO/SigLIP tensor hashes isolate it to rendering or preprocessing.
 
 ## Mismatch definition used in the paper table
 

@@ -6,6 +6,7 @@ These files come from the original MiniVLA λ=2 evaluation that produced 246/270
 |---|---|
 | `episode_summary.json` | All 270 case outcomes, state indices, seeds, query counts, and episode diagnostics |
 | `first_query_fingerprints.csv` | First-query VQ tokens, complete decoded 10×7 action chunk, and hashes of reasoning and simulator state for all 270 cases |
+| `task24_state14_seed80_trace/` | Lossless image, exact model inputs, token/logit trace, runtime flags, and source hashes for the requested diagnostic case |
 | `alignment_queries.jsonl.gz` | All 4,463 original policy queries, including reasoning, VQ tokens, decoded actions, executed end-effector trajectories, and simulator state before/after each chunk |
 | `all_query_scores.jsonl` | Paper-metric score for every policy query |
 | `experiment_metadata.json` | Evaluator-emitted saved configuration; see the stale-field warning in the main handoff |
