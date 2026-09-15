@@ -27,6 +27,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Projector BF16 reduction and CUDA GEMM-kernel probe | [`projector-bf16-kernels-20260915T110324/`](lambda2_91p11_reproduction_artifacts/projector-bf16-kernels-20260915T110324/) |
 | Projector layer-2 exact cuBLASLt algorithm descriptor | [`projector-layer2-cublaslt-20260915T112432/`](lambda2_91p11_reproduction_artifacts/projector-layer2-cublaslt-20260915T112432/) |
 | Full vision/LLM inference kernels for task 24 queries 0 and 1 | [`full-inference-kernels-20260915T120700/`](lambda2_91p11_reproduction_artifacts/full-inference-kernels-20260915T120700/) |
+| Exact λ=2 SFT objective source, configuration, and terminal losses | [`lambda2_sft_objective/`](lambda2_91p11_reproduction_artifacts/lambda2_sft_objective/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -81,6 +82,97 @@ The cached vision backbones used by the `dinosiglip` encoder are:
 | `timm/ViT-SO400M-14-SigLIP` at `9179d15177ece40964c50492136eda2f3e0c9f61` | `open_clip_model.safetensors` | 3,509,517,656 bytes | `0a04a48b797e187a568335ab67e57a8958c32cee5a707a3feb6d4c97149dcd9c` |
 
 The complete MiniVLA checkpoint already contains the learned model parameters. These cache fingerprints identify the exact tokenizer/config inputs and the backbone assets available to the native loader.
+
+## Exact SFT training objective for the λ=2 checkpoint
+
+The λ=2 checkpoint was trained with **teacher-forced supervised fine-tuning**, not an episodic RL objective. There was no differentiable task-success loss and no binary mismatch-ratio loss. The exact optimizer objective was
+
+```text
+L_total = L_performance + 2.0 * L_alignment
+```
+
+Here `L_performance` was the MiniVLA next-token cross-entropy returned as `output.loss`. For each saved policy query, the answer target was
+
+```text
+<original generated ECoT reasoning>;
+ACTION: <seven original VQ action-code tokens><end tokens>
+```
+
+The user/task prompt was masked with label `-100`; cross-entropy covered the complete assistant answer, including reasoning text, `ACTION:`, the seven action-code tokens, and end tokens. The source targets were the original MiniVLA-generated reasoning and actions from both successful and failed collected episodes. Cross-entropy was averaged over unmasked target tokens. There was no success/failure weighting or balanced-outcome sampling.
+
+The alignment term was computed from teacher-forced logits at the **final contiguous seven action-token positions**. Earlier action-like tokens inside generated reasoning were excluded from alignment extraction but remained part of the cross-entropy target. For action-code group `g`, the trainer formed
+
+```text
+p_g = softmax(z_g / T),  T = 1.0
+```
+
+and passed the seven probability vectors through the frozen VQ action decoder. This soft decode produced a differentiable normalized `10×7` action chunk, which was unnormalized with the checkpoint's `libero_lm_90` `q01`, `q99`, and mask statistics. Let `a[h,0:3]` be the first three components of the resulting action at horizon step `h`. The commanded Cartesian translation in metres was
+
+```text
+d = sum(h=1..10) 0.05 * clamp(a[h,0:3], -1, 1)
+rho = ||d||_2
+```
+
+For a parsed directional MOVE vector `v != [0,0,0]`, the differentiable per-query penalty was
+
+```text
+c = dot(v,d) / (||v||_2 * rho + 1e-8)
+L_directional = (ReLU(0.5 - c) / 1.5)^2
+```
+
+For an explicit literal `MOVE: ... → stop` annotation with no directional vector, the penalty was
+
+```text
+L_stop = (rho / 0.03)^2
+```
+
+The stop loss had **no hinge**, so even commanded translation below 3 cm received a nonzero squared penalty. A query was alignment-eligible when it had either a nonzero parsed MOVE direction or an explicit literal stop. `L_alignment` was the single mean of the applicable directional and stop penalties over all eligible queries in the physical batch:
+
+```text
+L_alignment = mean(L_query for every eligible query)
+```
+
+Queries without a parsed direction and without a literal stop were excluded only from `L_alignment`; they still contributed to `L_performance`.
+
+### Role of task success and mismatch during SFT
+
+`episode_success` was carried with each fixed-data query solely for reporting the successful/failed subsets. It did not enter `L_total`, did not weight samples, and did not change sampling. Consequently, the reported closed-loop task success of **246/270 = 91.11%** is an evaluation result after SFT, not a training reward or loss component.
+
+The trainer also logged a nondifferentiable diagnostic mismatch flag:
+
+```text
+directional mismatch: c < 0.5
+literal-stop mismatch: rho > 0.03 m
+```
+
+That thresholded flag and its mismatch ratio did **not** participate in backpropagation. The soft squared penalties above were the alignment signal. This distinction matters for RL: using a binary or pooled mismatch ratio as the reward does not reproduce the SFT alignment objective. The closest episodic analogue is to aggregate the same continuous per-query penalties, while task success must be introduced as a separate reward term because SFT had no task-success term.
+
+### Exact optimization settings and terminal losses
+
+| Setting | Exact value |
+|---|---|
+| Optimized parameters | LoRA adapters on Qwen `q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj` |
+| Frozen parameters | Vision backbone, projector/base VLM parameters, VQ encoder/decoder/codebook |
+| LoRA | rank `16`, alpha `16`, dropout `0.05`, Gaussian initialization, no bias |
+| Optimizer | AdamW, default betas/epsilon, weight decay `0` |
+| Physical/global batch | `32`; no gradient accumulation and no microbatch reduction |
+| Steps | `2,000` |
+| Learning rate | linear warmup over 50 optimizer steps to `5e-5`, then constant |
+| Gradient clipping | global norm `1.0` |
+| Compute | BF16 autocast with gradient checkpointing |
+| Training seed | `20260910` |
+| Objective weights | performance `1.0`; alignment `2.0` |
+
+The exported checkpoint's final fixed-data summaries were:
+
+| Split | `L_performance` | `L_alignment` | `L_total = L_performance + 2 L_alignment` |
+|---|---:|---:|---:|
+| Training | `0.0130706772` | `0.0006710864` | `0.0144128500` |
+| Validation | `0.0319345959` | `0.0041991390` | `0.0403328739` |
+
+These alignment losses use soft-decoded teacher-forced actions and eligible queries. They are distinct from the paper's all-query, hard-decoded fixed-data mismatch of `592/13,093 = 4.52%` and closed-loop mismatch of `360/4,463 = 8.07%`.
+
+The exact source and saved records are packaged in [`lambda2_sft_objective/`](lambda2_91p11_reproduction_artifacts/lambda2_sft_objective/): `finetune_large_alignment.py`, `refined_move_alignment.py`, `move_alignment_training.py`, `training_config.json`, and `result.json`.
 
 ## Exact launch script
 

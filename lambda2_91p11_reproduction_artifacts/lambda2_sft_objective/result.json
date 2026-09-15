@@ -1,0 +1,83 @@
+{
+  "loss_version": "directional_hinge_pooled_net_stop_squared_v2",
+  "base_checkpoint": "/mnt1/ECOT-Alignment/pi05_policy_training/data/minivla_reference/checkpoints/step-100000-epoch-22-loss=0.0261.pt",
+  "optimizer_steps": 2000,
+  "checkpoint": "/mnt1/ECOT-Alignment/pi05_policy_training/runs/minivla_lambda_sweep_20260914/large-data-lambda2-b32-s2000-20260914/checkpoints/step-002000-move-lora.pt",
+  "training": {
+    "overall": {
+      "queries": 12666,
+      "mismatches": 165,
+      "rate": 0.013027001421127428,
+      "excluded": 427,
+      "stop_queries": 193,
+      "stop_mismatches": 1,
+      "directional_queries": 12473,
+      "directional_mismatches": 164
+    },
+    "successful": {
+      "queries": 8742,
+      "mismatches": 91,
+      "rate": 0.010409517272935254,
+      "excluded": 271,
+      "stop_queries": 22,
+      "stop_mismatches": 0,
+      "directional_queries": 8720,
+      "directional_mismatches": 91
+    },
+    "failed": {
+      "queries": 3924,
+      "mismatches": 74,
+      "rate": 0.018858307849133536,
+      "excluded": 156,
+      "stop_queries": 171,
+      "stop_mismatches": 1,
+      "directional_queries": 3753,
+      "directional_mismatches": 73
+    },
+    "directional_loss": 8.317117596719686e-05,
+    "stop_loss": 0.03866625024315676,
+    "alignment_loss": 0.0006710864025555108,
+    "performance_loss": 0.013070677225584637,
+    "total_loss": 0.01441285003069566
+  },
+  "validation": {
+    "overall": {
+      "queries": 3123,
+      "mismatches": 97,
+      "rate": 0.03105987832212616,
+      "excluded": 106,
+      "stop_queries": 43,
+      "stop_mismatches": 0,
+      "directional_queries": 3080,
+      "directional_mismatches": 97
+    },
+    "successful": {
+      "queries": 2117,
+      "mismatches": 48,
+      "rate": 0.02267359470949457,
+      "excluded": 72,
+      "stop_queries": 2,
+      "stop_mismatches": 0,
+      "directional_queries": 2115,
+      "directional_mismatches": 48
+    },
+    "failed": {
+      "queries": 1006,
+      "mismatches": 49,
+      "rate": 0.048707753479125246,
+      "excluded": 34,
+      "stop_queries": 41,
+      "stop_mismatches": 0,
+      "directional_queries": 965,
+      "directional_mismatches": 49
+    },
+    "directional_loss": 0.0036479278498873645,
+    "stop_loss": 0.043681240821069535,
+    "alignment_loss": 0.004199139011514272,
+    "performance_loss": 0.031934595927334476,
+    "total_loss": 0.04033287395036302
+  },
+  "merge_max_logit_error": 0.0006256103515625,
+  "elapsed_seconds": 2462.464334011078,
+  "export_state_verified": true
+}
