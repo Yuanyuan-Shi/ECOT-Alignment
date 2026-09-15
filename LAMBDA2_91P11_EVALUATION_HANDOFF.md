@@ -25,6 +25,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Task 24 attention-kernel profile and vision/projector outputs | [`task24_state14_seed80_attention_profile/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_attention_profile/) |
 | Task 24 projector five-layer outputs and parameter hashes | [`task24_state14_seed80_projector_layers/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_projector_layers/) |
 | Projector BF16 reduction and CUDA GEMM-kernel probe | [`projector-bf16-kernels-20260915T110324/`](lambda2_91p11_reproduction_artifacts/projector-bf16-kernels-20260915T110324/) |
+| Projector layer-2 exact cuBLASLt algorithm descriptor | [`projector-layer2-cublaslt-20260915T112432/`](lambda2_91p11_reproduction_artifacts/projector-layer2-cublaslt-20260915T112432/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -328,6 +329,25 @@ Under that default, both query outputs matched the archived projector tensors by
 | 1 | `False` | No | `0.0625` |
 
 With the default enabled, the profiler observed three CUTLASS BF16 GEMM kernels ending in `128x64_32x6_tn_align8`, `64x256_32x4_tn_align8`, and `32x32_128x2_tn_align8`. With the flag disabled, the `128x64_32x6` kernel changed to `64x64_64x6`; the other two remained unchanged. The artifact report contains the full profiler kernel names and event records. The reusable capture program is also available at repository root as [`projector_bf16_kernel_probe.py`](projector_bf16_kernel_probe.py).
+
+### Projector layer-2 exact cuBLASLt descriptor
+
+The follow-up [layer-2 cuBLASLt capture](lambda2_91p11_reproduction_artifacts/projector-layer2-cublaslt-20260915T112432/) isolated `projector.projector[2]`, the BF16 `Linear(8704→896, bias=True)` operation. It used the archived layer-1 GELU tensors, preserved `allow_bf16_reduced_precision_reduction=True`, and reproduced both archived layer-2 outputs exactly with maximum absolute difference `0.0`.
+
+| cuBLASLt attribute | Workstation value |
+|---|---|
+| Algorithm ID | `21` |
+| Tile ID | `18` (`MATMUL_TILE_128x64`) |
+| Stages ID | `12` (`MATMUL_STAGES_32x6`) |
+| Split-K count | `6` |
+| Reduction scheme | `1` (`REDUCTION_SCHEME_INPLACE`) |
+| CTA swizzle | `0` |
+| Custom option | `0` |
+| Workspace | `1,048,576` bytes, non-null |
+| Compute / scale type | `COMPUTE_32F` / `R_32F` |
+| Data type / epilogue | `R_16BF` / `EPILOGUE_BIAS` |
+
+All attribute-query return codes were `0`. The exact serialized 64-byte algorithm descriptor is stored in `algo_descriptors.jsonl`; it was identical across all eight warmup/profile calls. The raw cuBLASLt API, heuristic, and performance messages are stored in `cublaslt_logger_messages.jsonl`. The workstation loaded `libcublasLt.so.12` with SHA256 `10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c`. Reusable sources are at repository root: [`projector_layer2_cublaslt_probe.py`](projector_layer2_cublaslt_probe.py) and [`cublaslt_algo_interposer.c`](cublaslt_algo_interposer.c).
 
 ## Mismatch definition used in the paper table
 

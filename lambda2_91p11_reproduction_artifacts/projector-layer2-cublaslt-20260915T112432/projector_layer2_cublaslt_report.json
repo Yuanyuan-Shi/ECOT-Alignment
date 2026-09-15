@@ -1,0 +1,163 @@
+{
+  "status": "complete",
+  "target": "projector.projector[2] Linear(8704 -> 896, bias=True)",
+  "checkpoint": "/mnt1/ECOT-Alignment/pi05_policy_training/runs/minivla_lambda_sweep_20260914/large-data-lambda2-b32-s2000-20260914/checkpoints/step-002000-move-lora.pt",
+  "checkpoint_sha256": "0b0ef328c8d4f5478e6da25fde7639c688fdd1ac3b041c60ea06476424b52b1d",
+  "torch_version": "2.8.0+cu128",
+  "torch_cuda_build": "12.8",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Workstation Edition",
+  "gpu_compute_capability": [
+    12,
+    0
+  ],
+  "execution_dtype": "torch.bfloat16",
+  "original_default_allow_bf16_reduced_precision_reduction": true,
+  "effective_allow_bf16_reduced_precision_reduction": true,
+  "cublas_workspace_config": null,
+  "logger_registration": {
+    "library_path": "/mnt1/ECOT-Alignment/pi05_policy_training/data/minivla_venv/lib/python3.10/site-packages/nvidia/cublas/lib/libcublasLt.so.12",
+    "library_sha256": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c",
+    "set_callback_status": 0,
+    "set_level_5_status": 0,
+    "set_mask_31_status": 0
+  },
+  "layer": {
+    "repr": "Linear(in_features=8704, out_features=896, bias=True)",
+    "weight": {
+      "shape": [
+        896,
+        8704
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256_raw_bytes": "d11948d7d3e020aeb9addc24c3d546cc0d7626ecb732af33d1515d27880b27e3"
+    },
+    "bias": {
+      "shape": [
+        896
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256_raw_bytes": "ccd6d1e5259c2d17b0709c24090ba4148c20e4543c2ed25bf10ae9dd9244a859"
+    }
+  },
+  "queries": [
+    {
+      "policy_query_index": 0,
+      "input_file": "/mnt1/ECOT-Alignment/pi05_policy_training/reports/lambda2_task24_state14_seed80_projector_layers/query0_projector_layer_outputs.pt",
+      "input_file_sha256": "5ac26823743947e2666e519dd79ff1b07d58eab50415e83d8819a7782a915554",
+      "layer1_gelu_input": {
+        "shape": [
+          1,
+          256,
+          8704
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "7b44c145d4ab19ee3cd3a78d413ad252bcaae39ae265889804b724211e3f2d00"
+      },
+      "layer2_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "d3438a57ae2496f50ccf7bda3a930af19c276b6d93f760a5069e35f9d1750258"
+      },
+      "archived_layer2_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "d3438a57ae2496f50ccf7bda3a930af19c276b6d93f760a5069e35f9d1750258"
+      },
+      "exact_match_to_archive": true,
+      "max_abs_difference_float32": 0.0,
+      "profiler": {
+        "kernel_counts": [
+          {
+            "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+            "count": 1
+          }
+        ],
+        "events": [
+          {
+            "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+            "cpu_parent_chain": [],
+            "device_time_us": 22.88000000000011
+          }
+        ]
+      },
+      "cublaslt_logger_message_range": [
+        1,
+        123
+      ]
+    },
+    {
+      "policy_query_index": 1,
+      "input_file": "/mnt1/ECOT-Alignment/pi05_policy_training/reports/lambda2_task24_state14_seed80_projector_layers/query1_projector_layer_outputs.pt",
+      "input_file_sha256": "2646021f08977f94a17f65ed998a24c50fbb3606e47a17eb7be3a9f9801b4919",
+      "layer1_gelu_input": {
+        "shape": [
+          1,
+          256,
+          8704
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "14bec3bcc35dff7085e6eac0e7a8459f0bad186e7c8c9c6b5f3f1af1088f3335"
+      },
+      "layer2_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "bced17e1dcca3489a5a0b99a9bc7a5543bb9845ea6f030d32513051e22ca1d69"
+      },
+      "archived_layer2_output": {
+        "shape": [
+          1,
+          256,
+          896
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256_raw_bytes": "bced17e1dcca3489a5a0b99a9bc7a5543bb9845ea6f030d32513051e22ca1d69"
+      },
+      "exact_match_to_archive": true,
+      "max_abs_difference_float32": 0.0,
+      "profiler": {
+        "kernel_counts": [
+          {
+            "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+            "count": 1
+          }
+        ],
+        "events": [
+          {
+            "kernel": "void cutlass::Kernel2<cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8>(cutlass_80_tensorop_bf16_s16816gemm_relu_bf16_128x64_32x6_tn_align8::Params)",
+            "cpu_parent_chain": [],
+            "device_time_us": 25.43999999999994
+          }
+        ]
+      },
+      "cublaslt_logger_message_range": [
+        123,
+        243
+      ]
+    }
+  ],
+  "mapped_libraries_after_execution": {
+    "libcublasLt.so": {
+      "path": "/mnt1/ECOT-Alignment/pi05_policy_training/data/minivla_venv/lib/python3.10/site-packages/nvidia/cublas/lib/libcublasLt.so.12",
+      "size": 751771728,
+      "sha256": "10b5e6631cf8115c661eb895ed1533826308b58f7956466f53d236a40c9b622c"
+    },
+    "libcublas.so": {
+      "path": "/mnt1/ECOT-Alignment/pi05_policy_training/data/minivla_venv/lib/python3.10/site-packages/nvidia/cublas/lib/libcublas.so.12",
+      "size": 116388640,
+      "sha256": "031ce6c2cbfbb9468f040527cab5c599069ce5609e73e28f87503881063eac21"
+    }
+  },
+  "cublaslt_logger_message_count": 243
+}

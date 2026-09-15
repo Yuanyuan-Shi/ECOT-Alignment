@@ -1,0 +1,243 @@
+{"level": 5, "function": "cublasLtLoggerSetMask", "message": "mask=31"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtCtxInit", "message": "ctx=0X558C54B1D220"}
+{"level": 4, "function": "cublasLtCtxInit", "message": "Discovered per-ctx shared memory size limit = 0"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C539474B0 B=0X7FA23E000000 Bdesc=0X558C53947460 C=0X7FA25BA00800 Cdesc=0X558C53EA40B0 D=0X7FA25BA00800 Ddesc=0X558C53EA40B0 computeDesc=0X558C54403090 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23E000000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA00800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA00800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53EA40B0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53947460"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C539474B0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C54403090"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C53FC2B60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C539474B0 B=0X7FA23E000000 Bdesc=0X558C53947460 C=0X7FA25BA00800 Cdesc=0X558C53EA40B0 D=0X7FA25BA00800 Ddesc=0X558C53EA40B0 computeDesc=0X558C54403090 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23E000000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA00800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA00800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53EA40B0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53947460"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C539474B0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C54403090"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C53FC2B60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C54403090 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C53FC2B60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C539474B0 B=0X7FA23E000000 Bdesc=0X558C53947460 C=0X7FA25BA00800 Cdesc=0X558C53EA40B0 D=0X7FA25BA00800 Ddesc=0X558C53EA40B0 computeDesc=0X558C54403090 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23E000000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA00800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA00800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53EA40B0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C53947460"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C539474B0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C54403090"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C53FC2B60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFD8C0"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFD8C0 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E383BF0 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E383BF0 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E383BF0 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E383BF0 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFD8B8 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E2FD010 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFD8B8 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E2FD010 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E2FD010 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E2FD010 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E2FD010 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFD864 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFD86C sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFD868 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFD870 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFD874 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFD878 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFD87C sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C5E67E570 B=0X7FA23E000000 Bdesc=0X558C5E67E620 C=0X7FA25BA00800 Cdesc=0X558C5E67E670 D=0X7FA25BA00800 Ddesc=0X558C5E67E670 computeDesc=0X558C5E383BF0 algo=0X7FFE6CBFDAC0 workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23E000000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA00800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA00800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BA70800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E67E670"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E67E620"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E67E570"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C5E383BF0"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C5E2FD010"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C5E6B6AC0 B=0X7FA23EC60000 Bdesc=0X558C5E6B6BA0 C=0X7FA25BA70800 Cdesc=0X558C5E6B6800 D=0X7FA25BA70800 Ddesc=0X558C5E6B6800 computeDesc=0X558C5E35FFA0 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23EC60000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA70800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA70800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6800"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6BA0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6AC0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C5E35FFA0"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C5E6B6C60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C5E6B6AC0 B=0X7FA23EC60000 Bdesc=0X558C5E6B6BA0 C=0X7FA25BA70800 Cdesc=0X558C5E6B6800 D=0X7FA25BA70800 Ddesc=0X558C5E6B6800 computeDesc=0X558C5E35FFA0 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23EC60000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA70800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA70800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6800"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6BA0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6AC0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C5E35FFA0"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C5E6B6C60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFDD30"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFDD30 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFDD30 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFDD28 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6C60 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFDD2C sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFDCD4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFDCDC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFDCD8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFDCE0 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFDCE4 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFDCE8 sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDF30 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFDCEC sizeInBytes=4 sizeWritten=0X7FFE6CBFDCF0"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C5E6B6AC0 B=0X7FA23EC60000 Bdesc=0X558C5E6B6BA0 C=0X7FA25BA70800 Cdesc=0X558C5E6B6800 D=0X7FA25BA70800 Ddesc=0X558C5E6B6800 computeDesc=0X558C5E35FFA0 algo=0X7FFE6CBFDF30 workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23EC60000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA70800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA70800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6800"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6BA0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6AC0"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C5E35FFA0"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C5E6B6C60"}
+{"level": 5, "function": "cublasLtMatmulPreferenceCreate", "message": "matmulPref=0X7FFE6CBFD8C0"}
+{"level": 5, "function": "cublasLtMatmulDescCreate", "message": "matmulDesc=0X7FFE6CBFD8C0 computeType=COMPUTE_32F scaleType=0"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSA buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_TRANSB buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_EPILOGUE buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulDescSetAttribute", "message": "matmulDesc=0X558C5E35FFA0 attr=MATMUL_DESC_BIAS_POINTER buf=0X7FFE6CBFD8B8 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=8704 cols=896 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=8704 cols=256 ld=8704"}
+{"level": 5, "function": "cublasLtMatrixLayoutCreate", "message": "matLayout=0X7FFE6CBFD8C0 type=R_16BF rows=896 cols=256 ld=896"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6AC0 attr=MATMUL_PREF_MAX_WORKSPACE_BYTES buf=0X7FFE6CBFD8B8 sizeInBytes=8"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6AC0 attr=MATMUL_PREF_MIN_ALIGNMENT_A_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6AC0 attr=MATMUL_PREF_MIN_ALIGNMENT_B_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6AC0 attr=MATMUL_PREF_MIN_ALIGNMENT_C_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulPreferenceSetAttribute", "message": "pref=0X558C5E6B6AC0 attr=MATMUL_PREF_MIN_ALIGNMENT_D_BYTES buf=0X7FFE6CBFD8BC sizeInBytes=4"}
+{"level": 5, "function": "cublasLtMatmulAlgoGetHeuristic", "message": "Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] Cdesc=[type=R_16BF rows=896 cols=256 ld=896] Ddesc=[type=R_16BF rows=896 cols=256 ld=896] preference=[maxWavesCount=0.0 maxWorkspaceSizeinBytes=1048576] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000]"}
+{"level": 4, "function": "cublasLtMatmulAlgoGetHeuristic", "message": " heuristicResults=[21]"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_ID buf=0X7FFE6CBFD864 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_TILE_ID buf=0X7FFE6CBFD86C sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_SPLITK_NUM buf=0X7FFE6CBFD868 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_REDUCTION_SCHEME buf=0X7FFE6CBFD870 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_CTA_SWIZZLING buf=0X7FFE6CBFD874 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_CUSTOM_OPTION buf=0X7FFE6CBFD878 sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmulAlgoConfigGetAttribute", "message": "algo=0X7FFE6CBFDAC0 attr=ALGO_CONFIG_STAGES_ID buf=0X7FFE6CBFD87C sizeInBytes=4 sizeWritten=0X7FFE6CBFD880"}
+{"level": 5, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=0X558C5E2FD190 B=0X7FA23EC60000 Bdesc=0X558C5E6B6800 C=0X7FA25BA70800 Cdesc=0X558C5E6797D0 D=0X7FA25BA70800 Ddesc=0X558C5E6797D0 computeDesc=0X558C5E35FFA0 algo=0X7FFE6CBFDAC0 workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 stream=0X0"}
+{"level": 2, "function": "cublasLtMatmul", "message": "A=0X7FA260C00000 Adesc=[type=R_16BF rows=8704 cols=896 ld=8704] B=0X7FA23EC60000 Bdesc=[type=R_16BF rows=8704 cols=256 ld=8704] C=0X7FA25BA70800 Cdesc=[type=R_16BF rows=896 cols=256 ld=896] D=0X7FA25BA70800 Ddesc=[type=R_16BF rows=896 cols=256 ld=896] computeDesc=[computeType=COMPUTE_32F scaleType=R_32F transa=OP_T epilogue=EPILOGUE_BIAS biasPointer=0x7fa25ba00000] algo=[algoId=21 tile=MATMUL_TILE_128x64 stages=MATMUL_STAGES_32x6 reductionScheme=REDUCTION_SCHEME_INPLACE numSplitsK=6] workSpace=0X7FA25BAE0800 workSpaceSizeInBytes=1048576 beta=0 outOfPlace=0 stream=0X0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6797D0"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E6B6800"}
+{"level": 5, "function": "cublasLtMatrixLayoutDestroy", "message": "matLayout=0X558C5E2FD190"}
+{"level": 5, "function": "cublasLtMatmulDescDestroy", "message": "matmulDesc=0X558C5E35FFA0"}
+{"level": 5, "function": "cublasLtMatmulPreferenceDestroy", "message": "matmulPref=0X558C5E6B6AC0"}
