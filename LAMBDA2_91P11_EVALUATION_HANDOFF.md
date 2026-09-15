@@ -21,6 +21,7 @@ This is the complete handoff for the MiniVLA joint fine-tuning λ=2 checkpoint r
 | Original-run diagnostic artifacts | [`lambda2_91p11_reproduction_artifacts/`](lambda2_91p11_reproduction_artifacts/) |
 | Artifact hash manifest | [`SHA256SUMS`](lambda2_91p11_reproduction_artifacts/SHA256SUMS) |
 | Task 24/state 14/seed 80 trace | [`task24_state14_seed80_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_trace/) |
+| Task 24/state 14/seed 80 query-1 trace | [`task24_state14_seed80_query1_trace/`](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_query1_trace/) |
 | LIBERO commit | `f78abd68ee283de9f9be3c8f7e2a9ad60246e95c` |
 
 The Hugging Face directory contains the checkpoint, `config.json`, and `dataset_statistics.json`. The native loader requires this local layout:
@@ -249,6 +250,12 @@ The requested [task 24, state 14, seed 80 trace](lambda2_91p11_reproduction_arti
 The trace supplies the lossless first-query RGB image, exact BF16 DINO and SigLIP tensors, prompt text and token IDs, complete generated token IDs, decoded 10×7 action chunk, top-two logits for every action-token position, live GPU/backend/determinism flags after model loading, generation configuration, and hashes of the imported evaluator, policy, and robosuite helper files.
 
 One action-token position has a zero stored BF16 margin: the model selected token `151894`, while `151916` and `151894` both recorded logits of `24.125`. This is direct evidence that small rendering, preprocessing, or GPU-kernel numerical differences can flip a VQ token despite greedy decoding. Compare the AWS policy on the packaged `exact_model_inputs.pt`: matching tensors with different generated IDs isolate the gap to inference numerics; different DINO/SigLIP tensor hashes isolate it to rendering or preprocessing.
+
+### Follow-up policy-query-1 trace
+
+The follow-up [task 24, state 14, seed 80, policy-query-1 trace](lambda2_91p11_reproduction_artifacts/task24_state14_seed80_query1_trace/) replayed the same state order and again produced `failure, success, success`, with per-trial policy-query counts `40, 13, 11`. Query 1 exactly reproduced the original archived reasoning hash, pre-action simulator-state hash, tokens `[151723, 151869, 151763, 151796, 151785, 151673, 151895]`, and decoded action-chunk SHA256 `85d307fa3399cdcddef5726a95a0e1b7fbe8714154ba69c73dc22e13b8bb7cfa`.
+
+At action-token position 4, the workstation BF16 score for reference token `151785` is `24.375`; the score for AWS math-SDPA token `151746` is `24.000`. They are the top two candidates, separated by only `0.375`. The trace includes the lossless query-1 image, exact input tensors, full generation, all seven top-two comparisons, both requested candidate scores, live runtime settings, and source hashes.
 
 ## Mismatch definition used in the paper table
 

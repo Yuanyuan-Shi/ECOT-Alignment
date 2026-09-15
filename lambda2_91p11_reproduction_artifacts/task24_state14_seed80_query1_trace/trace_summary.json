@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "0b0ef328c8d4f5478e6da25fde7639c688fdd1ac3b041c60ea06476424b52b1d",
+  "camera_png_sha256": "b8628396a635ecb4d08a5a888326b6e00f2805884203927af67af9e6a63a9001",
+  "model_inputs_pt_sha256": "0283a3022bb0c3767dc6b6af45241893a5b8aeb60b58adf4e2643560a32aa7e0",
+  "inference_trace_sha256": "e2af072c5d28e40a82b728e1e4f7b2074b249aef7866510fbd01a0b87c51746a",
+  "query001_record_sha256": "85d60b1623cc4fda20b96f83cfb212a6d67a84442dc4c7441c36bb30af3854b6",
+  "action_token_ids": [
+    151723,
+    151869,
+    151763,
+    151796,
+    151785,
+    151673,
+    151895
+  ],
+  "decoded_action_chunk_sha256": "85d307fa3399cdcddef5726a95a0e1b7fbe8714154ba69c73dc22e13b8bb7cfa",
+  "episode_success": true,
+  "capture_generation_call": 41,
+  "policy_query_index": 1,
+  "per_trial_query_counts": [
+    40,
+    13,
+    11
+  ]
+}
